@@ -1,0 +1,15 @@
+round 1/1  1.0.0.Final  filter  exit 0  178s
+round 1/1  1.0.0.Final  bloom  exit 0  71s
+round 1/1  1.0.0.Final  window  exit 0  55s
+round 1/1  1.0.0.Final  dictfilter  exit 0  168s
+round 1/1  1.0.0.Final  1brc  exit 0  0s
+round 1/1  1.0.0.Final  binary  exit 0  134s
+round 1/1  1.0.0.Final  nested  exit 0  90s
+round 1/1  1.0.0.Final  nested-columns  exit 0  667s
+round 1/1  1.0.0.Final  flat  exit 0  291s
+round 1/1  1.0.0.Final  narrow  exit 0  151s
+round 1/1  1.0.0.Final  fixedlist  exit 0  0s
+round 1/1  1.0.0.Final  write  exit 0  0s
+round 1/1  1.0.0.Final  encodings  exit 0  0s
+round 1/1  1.0.0.Final  s3  exit 0  356s
+total 2161s

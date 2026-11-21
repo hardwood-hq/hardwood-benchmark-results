@@ -1,0 +1,13 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "bytes": "2.44e+08",
+    "rows": "100000000"
+  },
+  "method": "public StationTable hardwoodColumnSplits() throws IOException, InterruptedException, ExecutionException { return OneBrcScans.columnSplits(FILE, Runtime.getRuntime().availableProcessors()); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--rows 100000000 --warmup 4 --meas 3 --time 5",
+  "script": "1brc"
+}

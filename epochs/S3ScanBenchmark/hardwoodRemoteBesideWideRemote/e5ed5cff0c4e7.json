@@ -1,0 +1,13 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "bytes": "5.92e+07",
+    "rows": "3475226"
+  },
+  "method": "public double hardwoodRemoteBesideWideRemote(BesideWide shared) throws IOException { return projectedScan(source.inputFile(BUCKET, monthKeys.get(0)), shared.context); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 12",
+  "script": "s3"
+}

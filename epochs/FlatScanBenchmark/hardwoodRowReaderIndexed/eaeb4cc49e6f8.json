@@ -1,0 +1,14 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "bytes": "5.92e+07",
+    "rows": "3475226",
+    "window": "2025-01\u20132025-01"
+  },
+  "method": "public long hardwoodRowReaderIndexed() throws IOException { return hardwoodRowIndexed(); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--start 2025-01 --end 2025-01 --warmup 30",
+  "script": "flat"
+}

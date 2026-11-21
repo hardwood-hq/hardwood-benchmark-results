@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "rows": "1000000"
+  },
+  "method": "public TaxiDoubles.Checksum hardwoodRead() throws IOException { return scan(file, data.names); }",
+  "params": [
+    "{\"codec\": \"ZSTD\", \"encoding\": \"ALP\"}"
+  ],
+  "preset": "--codec ZSTD --encoding BYTE_STREAM_SPLIT,ALP --warmup 16",
+  "script": "encodings"
+}

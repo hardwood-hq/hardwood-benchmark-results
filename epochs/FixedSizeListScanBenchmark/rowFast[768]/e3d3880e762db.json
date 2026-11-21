@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "bytes": "3.2e+07"
+  },
+  "method": "public double rowFast() throws IOException { return sumRows(listPath, LIST_FIELD, context, fastConfig); }",
+  "params": [
+    "{\"k\": \"768\"}"
+  ],
+  "preset": "--total-values 8000000 --k 768 --warmup 12",
+  "script": "fixedlist"
+}

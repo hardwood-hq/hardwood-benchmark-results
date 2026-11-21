@@ -1,0 +1,13 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "bytes": "6.3e+06",
+    "rows": "5000000"
+  },
+  "method": "public Result hardwoodRowIn() throws IOException { return hardwoodRowIn(FILE, filter); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 16",
+  "script": "dictfilter"
+}
