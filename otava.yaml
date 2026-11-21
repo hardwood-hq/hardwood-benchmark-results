@@ -350,6 +350,34 @@ tests:
         direction: -1
       live_bytes:
         direction: -1
+  "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@e817b896f03b8@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@e817b896f03b8.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+      live_bytes:
+        direction: -1
+  "S3ScanBenchmark.hardwoodLargeBloomLookup@e3629eb5ef703@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e3629eb5ef703.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+      live_bytes:
+        direction: -1
   "S3ScanBenchmark.hardwoodMultiFileScan@e0bca3d4fb1d2@md02f92f9f202":
     type: csv
     file: "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e0bca3d4fb1d2.csv"
