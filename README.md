@@ -54,3 +54,7 @@ otava analyze --config-file otava.yaml '<test>'
 
 `--config-file` follows the command. Run from this repository's root, since `otava.yaml`
 names its files relative to it.
+
+## License
+
+The contents of this repository are licensed under [Creative Commons BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
