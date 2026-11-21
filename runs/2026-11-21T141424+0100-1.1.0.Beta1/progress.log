@@ -1,0 +1,28 @@
+gate filter: passed before for these sources (1.1.0-main5f3b191-SNAPSHOT 2026-11-21)
+round 1/1  1.1.0.Beta1  filter  exit 0  124s
+gate bloom: passed before for these sources (1.1.0.Beta1 2026-11-21)
+round 1/1  1.1.0.Beta1  bloom  exit 0  105s
+gate window: FAILED against 1.1.0.Beta1  3s, see /home/build/nightly/runs/2026-11-21-1414/backfill-1.1.0.Beta1_/gate-window.log
+gate dictfilter: passed before for these sources (1.1.0.Beta1 2026-11-21)
+round 1/1  1.1.0.Beta1  dictfilter  exit 0  170s
+gate 1brc: passed before for these sources (1.1.0.Beta1 2026-11-21)
+round 1/1  1.1.0.Beta1  1brc  exit 0  0s
+gate binary: passed before for these sources (1.1.0.Beta1 2026-11-21)
+round 1/1  1.1.0.Beta1  binary  exit 0  136s
+gate nested: passed against 1.1.0.Beta1  687s
+round 1/1  1.1.0.Beta1  nested  exit 0  83s
+gate nested-columns: passed against 1.1.0.Beta1  279s
+round 1/1  1.1.0.Beta1  nested-columns  exit 0  254s
+gate flat: passed against 1.1.0.Beta1  520s
+round 1/1  1.1.0.Beta1  flat  exit 0  265s
+gate narrow: passed against 1.1.0.Beta1  21s
+round 1/1  1.1.0.Beta1  narrow  exit 0  148s
+gate fixedlist: passed against 1.1.0.Beta1  62s
+round 1/1  1.1.0.Beta1  fixedlist  exit 0  98s
+gate write: passed against 1.1.0.Beta1  4s
+round 1/1  1.1.0.Beta1  write  exit 0  76s
+gate encodings: passed against 1.1.0.Beta1  9s
+round 1/1  1.1.0.Beta1  encodings  exit 0  156s
+gate s3: passed against 1.1.0.Beta1  123s
+round 1/1  1.1.0.Beta1  s3  exit 0  585s
+total 3911s

@@ -1,0 +1,9 @@
+rows	1000000
+bytes.BYTE_STREAM_SPLIT_UNCOMPRESSED	88004874
+bytes.BYTE_STREAM_SPLIT_ZSTD	16754073
+java	Java 25.0.4 (Eclipse Adoptium)
+hardwood	1.1.0.Beta1 (fe06a5d)
+simd	scalar
+threads	8 (default)
+machine	Intel(R) Core(TM) i3-N300 (8 cores)
+preset	regression

@@ -1,0 +1,9 @@
+rows	10905067
+bytes	151251087
+window	2016-01–2016-01
+java	Java 25.0.4 (Eclipse Adoptium)
+hardwood	1.1.0.Beta1 (fe06a5d)
+simd	scalar
+threads	8 (default)
+machine	Intel(R) Core(TM) i3-N300 (8 cores)
+preset	regression
