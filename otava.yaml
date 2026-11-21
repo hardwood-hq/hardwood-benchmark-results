@@ -350,20 +350,6 @@ tests:
         direction: -1
       live_bytes:
         direction: -1
-  "S3ScanBenchmark.hardwoodLargeBloomLookup@e3c21040da5d5@md02f92f9f202":
-    type: csv
-    file: "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e3c21040da5d5.csv"
-    time_column: time
-    attributes: [commit, version]
-    metrics:
-      wall_ms:
-        direction: -1
-      cpu_ms:
-        direction: -1
-      alloc_bytes:
-        direction: -1
-      live_bytes:
-        direction: -1
   "S3ScanBenchmark.hardwoodMultiFileScan@e0bca3d4fb1d2@md02f92f9f202":
     type: csv
     file: "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e0bca3d4fb1d2.csv"

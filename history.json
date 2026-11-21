@@ -1,6 +1,6 @@
 {
   "changes": [],
-  "generated": "2026-11-21T15:07:45Z",
+  "generated": "2026-11-21T17:28:20Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -237,15 +237,6 @@
       "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@e7465480e713b.csv",
       "machine": "md02f92f9f202",
       "script": "1brc",
-      "unsettled": null
-    },
-    {
-      "benchmark": "S3ScanBenchmark",
-      "contender": "hardwoodLargeBloomLookup",
-      "epoch": "e3c21040da5d5",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e3c21040da5d5.csv",
-      "machine": "md02f92f9f202",
-      "script": "s3",
       "unsettled": null
     },
     {
