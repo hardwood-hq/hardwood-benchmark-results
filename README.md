@@ -5,8 +5,10 @@ Regression results of [Hardwood](https://github.com/hardwood-hq/hardwood), as
 measures them, one series per benchmark contender, for [Apache Otava](https://otava.apache.org/)
 to find change points in.
 
-`charts/record-results.py` in hardwood-benchmarks writes everything here; nothing is edited by
-hand.
+hardwood-benchmarks' nightly job (`nightly.sh`) writes everything here, once a night on an
+Intel N300: its `charts/record-results.py` the series and `charts/nightly.py` the rest.
+Nothing is edited by hand. The [history page](https://hardwood-hq.github.io/hardwood-benchmark-results/)
+charts every series.
 
 ## Layout
 
@@ -18,6 +20,10 @@ hand.
 | `machines/<machine epoch>.json` | the machine and JVM of a machine epoch: CPU, cores, microcode, kernel, JDK build, heap and collector flags, governor, clock and turbo |
 | `runs/<start>-<version>/` | each recorded run as it was: its manifest, its tables and what it did not run, and per round the results files and `RegressionProfiler`'s per-iteration metrics |
 | `otava.yaml` | one Otava test per series file |
+| `nights.csv` | each night the job measured as its own: date, commit, version, run |
+| `changes.json` | every change point Otava found: series, commit before and after, each metric's change, and its status (pending, confirmed, refuted, improvement, or history for one older rows brought), with the confirmation's forks and the issue a confirmed regression opened |
+| `reports/<date>.md`, `reports/latest.md` | each night's report: the version measured, each metric against the median of the series' last five nights, what did not run, the change points found or decided; or why the night recorded nothing |
+| `index.html`, `history.json` | the history page and the index of series, machines and change points it reads |
 
 A change to what a contender measures starts a new epoch, and a new machine, JDK or kernel a
 new machine epoch; either starts a new series, so that no series mixes two definitions or two
