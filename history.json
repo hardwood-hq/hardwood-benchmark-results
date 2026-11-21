@@ -1,6 +1,6 @@
 {
   "changes": [],
-  "generated": "2026-11-21T17:52:12Z",
+  "generated": "2026-11-21T18:05:26Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -183,6 +183,15 @@
       "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@ec2a727553939.csv",
       "machine": "md02f92f9f202",
       "script": "narrow",
+      "unsettled": null
+    },
+    {
+      "benchmark": "NestedScanBenchmark",
+      "contender": "hardwoodColumnReaders",
+      "epoch": "e10d538d1ba70",
+      "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@e10d538d1ba70.csv",
+      "machine": "md02f92f9f202",
+      "script": "nested-columns",
       "unsettled": null
     },
     {

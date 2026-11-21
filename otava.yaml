@@ -266,6 +266,20 @@ tests:
         direction: -1
       live_bytes:
         direction: -1
+  "NestedScanBenchmark.hardwoodColumnReaders@e10d538d1ba70@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@e10d538d1ba70.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+      live_bytes:
+        direction: -1
   "NestedScanBenchmark.hardwoodColumnReaders@ea2d8acf6e584@md02f92f9f202":
     type: csv
     file: "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@ea2d8acf6e584.csv"
