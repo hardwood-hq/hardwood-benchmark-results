@@ -266,37 +266,9 @@ tests:
         direction: -1
       live_bytes:
         direction: -1
-  "NestedScanBenchmark.hardwoodColumnReaders@e10d538d1ba70@md02f92f9f202":
+  "NestedColumnScanBenchmark.hardwoodColumnReaders@e10d538d1ba70@md02f92f9f202":
     type: csv
-    file: "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@e10d538d1ba70.csv"
-    time_column: time
-    attributes: [commit, version]
-    metrics:
-      wall_ms:
-        direction: -1
-      cpu_ms:
-        direction: -1
-      alloc_bytes:
-        direction: -1
-      live_bytes:
-        direction: -1
-  "NestedScanBenchmark.hardwoodColumnReaders@ea2d8acf6e584@md02f92f9f202":
-    type: csv
-    file: "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@ea2d8acf6e584.csv"
-    time_column: time
-    attributes: [commit, version]
-    metrics:
-      wall_ms:
-        direction: -1
-      cpu_ms:
-        direction: -1
-      alloc_bytes:
-        direction: -1
-      live_bytes:
-        direction: -1
-  "NestedScanBenchmark.hardwoodColumnReaders@efe45bb36c3be@md02f92f9f202":
-    type: csv
-    file: "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@efe45bb36c3be.csv"
+    file: "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@e10d538d1ba70.csv"
     time_column: time
     attributes: [commit, version]
     metrics:
@@ -311,20 +283,6 @@ tests:
   "NestedScanBenchmark.hardwoodRowReaderTyped@e6e409320c4b8@md02f92f9f202":
     type: csv
     file: "series/md02f92f9f202/NestedScanBenchmark/hardwoodRowReaderTyped@e6e409320c4b8.csv"
-    time_column: time
-    attributes: [commit, version]
-    metrics:
-      wall_ms:
-        direction: -1
-      cpu_ms:
-        direction: -1
-      alloc_bytes:
-        direction: -1
-      live_bytes:
-        direction: -1
-  "NestedScanBenchmark.hardwoodRowReaderTyped@ec0ad9c3e18d5@md02f92f9f202":
-    type: csv
-    file: "series/md02f92f9f202/NestedScanBenchmark/hardwoodRowReaderTyped@ec0ad9c3e18d5.csv"
     time_column: time
     attributes: [commit, version]
     metrics:

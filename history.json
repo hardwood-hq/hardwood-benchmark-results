@@ -1,6 +1,6 @@
 {
   "changes": [],
-  "generated": "2026-11-21T18:07:47Z",
+  "generated": "2026-11-21T19:13:27Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -186,28 +186,10 @@
       "unsettled": null
     },
     {
-      "benchmark": "NestedScanBenchmark",
+      "benchmark": "NestedColumnScanBenchmark",
       "contender": "hardwoodColumnReaders",
       "epoch": "e10d538d1ba70",
-      "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@e10d538d1ba70.csv",
-      "machine": "md02f92f9f202",
-      "script": "nested-columns",
-      "unsettled": null
-    },
-    {
-      "benchmark": "NestedScanBenchmark",
-      "contender": "hardwoodColumnReaders",
-      "epoch": "ea2d8acf6e584",
-      "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@ea2d8acf6e584.csv",
-      "machine": "md02f92f9f202",
-      "script": "nested-columns",
-      "unsettled": null
-    },
-    {
-      "benchmark": "NestedScanBenchmark",
-      "contender": "hardwoodColumnReaders",
-      "epoch": "efe45bb36c3be",
-      "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodColumnReaders@efe45bb36c3be.csv",
+      "file": "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@e10d538d1ba70.csv",
       "machine": "md02f92f9f202",
       "script": "nested-columns",
       "unsettled": null
@@ -217,15 +199,6 @@
       "contender": "hardwoodRowReaderTyped",
       "epoch": "e6e409320c4b8",
       "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodRowReaderTyped@e6e409320c4b8.csv",
-      "machine": "md02f92f9f202",
-      "script": "nested",
-      "unsettled": null
-    },
-    {
-      "benchmark": "NestedScanBenchmark",
-      "contender": "hardwoodRowReaderTyped",
-      "epoch": "ec0ad9c3e18d5",
-      "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodRowReaderTyped@ec0ad9c3e18d5.csv",
       "machine": "md02f92f9f202",
       "script": "nested",
       "unsettled": null
