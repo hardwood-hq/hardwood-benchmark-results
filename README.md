@@ -17,7 +17,7 @@ charts every series.
 | `series/<machine epoch>/<Benchmark>/<contender>@<epoch>.csv` | one row per recorded run of the contender: the measured Hardwood commit's time, the commit, the version, when the run began, the schema version, and the metrics below |
 | `series/…/<contender>@<epoch>.unsettled.csv` | the rows of runs in which the contender did not settle or its forks disagreed; Otava does not read them |
 | `epochs/<Benchmark>/<contender>/<epoch>.json` | what a contender's epoch measures: its script, preset, the iteration counts every preset shares, its benchmark method's source, its parameters and its fixture's size |
-| `machines/<machine epoch>.json` | the machine and JVM of a machine epoch: CPU, cores, microcode, kernel, JDK build, heap and collector flags, governor, clock and turbo |
+| `machines/<machine epoch>.json` | the machine and JVM of a machine epoch: CPU, cores, microcode, JDK build, heap and collector flags, governor, clock and turbo; each run's manifest under `runs/` also records the kernel |
 | `runs/<start>-<version>/` | each recorded run as it was: its manifest, its tables and what it did not run, and per round the results files and `RegressionProfiler`'s per-iteration metrics |
 | `otava.yaml` | one Otava test per series file |
 | `nights.csv` | each night the job measured as its own: date, commit, version, run |
@@ -25,9 +25,10 @@ charts every series.
 | `reports/<date>.md`, `reports/latest.md` | each night's report: the version measured, each metric against the median of the series' last five nights, what did not run, the change points found or decided; or why the night recorded nothing |
 | `index.html`, `history.json` | the history page and the index of series, machines and change points it reads |
 
-A change to what a contender measures starts a new epoch, and a new machine, JDK or kernel a
-new machine epoch; either starts a new series, so that no series mixes two definitions or two
-machines.
+A change to what a contender measures starts a new epoch, and a new machine or JDK a new
+machine epoch; either starts a new series, so that no series mixes two definitions or two
+machines. A new kernel does not: a step it causes shows as a change point that the
+confirmation run, on one kernel, refutes.
 
 ## Metrics
 
