@@ -262,7 +262,7 @@
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     }
   ],
-  "generated": "2026-11-22T03:28:53Z",
+  "generated": "2026-11-22T04:10:21Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -400,7 +400,7 @@
       "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@e1e6577bf236e.csv",
       "machine": "md02f92f9f202",
       "script": "encodings",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@e1e6577bf236e.unsettled.csv"
     },
     {
       "benchmark": "FloatEncodingBenchmark",
@@ -409,7 +409,7 @@
       "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e8ec07579190e.csv",
       "machine": "md02f92f9f202",
       "script": "encodings",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e8ec07579190e.unsettled.csv"
     },
     {
       "benchmark": "FloatEncodingBenchmark",
@@ -481,7 +481,7 @@
       "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@e7465480e713b.csv",
       "machine": "md02f92f9f202",
       "script": "1brc",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@e7465480e713b.unsettled.csv"
     },
     {
       "benchmark": "S3ScanBenchmark",
