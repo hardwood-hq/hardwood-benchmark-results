@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "bloom_lookup_large_6rg_800000r_ndv800000_max1048576.parquet": "8.31e+07"
+  },
+  "method": "public double hardwoodLargeBloomLookup() throws IOException { return bloomLookup(source, BloomLookupGenerator.LARGE, largeBloomProbe).sum(); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 12",
+  "script": "s3"
+}

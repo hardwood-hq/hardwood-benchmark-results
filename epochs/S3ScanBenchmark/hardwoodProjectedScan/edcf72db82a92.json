@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "yellow_tripdata_2025-01.parquet": "5.92e+07"
+  },
+  "method": "public double hardwoodProjectedScan() throws IOException { return projectedScan(source.inputFile(BUCKET, monthKeys.get(0))); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 12",
+  "script": "s3"
+}

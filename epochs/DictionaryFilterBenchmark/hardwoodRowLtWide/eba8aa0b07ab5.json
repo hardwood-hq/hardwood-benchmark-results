@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "dictionary_filter_wide_benchmark_5000000.parquet": "1.26e+07"
+  },
+  "method": "public Result hardwoodRowLtWide() throws IOException { return hardwoodRowIn(WIDE_FILE, wideRangeFilter); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 16",
+  "script": "dictfilter"
+}

@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "lookup_bloom_8000000.parquet": "1.39e+08"
+  },
+  "method": "public Scans.Result hardwoodBloom() throws IOException { return Scans.hardwoodEqLong(BLOOM, key); }",
+  "params": [
+    "{\"probe\": \"absent\"}"
+  ],
+  "preset": "--rows 8000000 --probe absent --warmup 30",
+  "script": "bloom"
+}

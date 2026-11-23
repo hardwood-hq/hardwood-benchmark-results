@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "dictionary_filter_benchmark_5000000.parquet": "6.3e+06"
+  },
+  "method": "public Result hardwoodRowIn() throws IOException { return hardwoodRowIn(FILE, filter); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 16",
+  "script": "dictfilter"
+}

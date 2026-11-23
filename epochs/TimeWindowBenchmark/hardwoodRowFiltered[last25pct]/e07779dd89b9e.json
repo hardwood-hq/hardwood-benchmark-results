@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "window_benchmark_10000000_16mb.parquet": "2.08e+08"
+  },
+  "method": "public Scans.Result hardwoodRowFiltered() throws IOException { return Scans.hardwoodRowReaderFiltered(FILE, filter); }",
+  "params": [
+    "{\"window\": \"last25pct\"}"
+  ],
+  "preset": "--window last25pct --warmup 13",
+  "script": "window"
+}

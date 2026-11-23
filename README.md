@@ -16,7 +16,7 @@ charts every series.
 | --- | --- |
 | `series/<machine epoch>/<Benchmark>/<contender>@<epoch>.csv` | one row per recorded run of the contender: the measured Hardwood commit's time, the commit, the version, when the run began, the schema version, and the metrics below |
 | `series/…/<contender>@<epoch>.unsettled.csv` | the rows of runs in which the contender did not settle or its forks disagreed; Otava does not read them |
-| `epochs/<Benchmark>/<contender>/<epoch>.json` | what a contender's epoch measures: its script, preset, the iteration counts every preset shares, its benchmark method's source, its parameters and its fixture's size |
+| `epochs/<Benchmark>/<contender>/<epoch>.json` | what a contender's epoch measures: its script, preset, the iteration counts every preset shares, its benchmark method's source, its parameters and the files it reads, each by name and size |
 | `machines/<machine epoch>.json` | the machine and JVM of a machine epoch: CPU, cores, microcode, JDK build, heap and collector flags, governor, clock and turbo; each run's manifest under `runs/` also records the kernel |
 | `runs/<start>-<version>/` | each recorded run as it was: its manifest, its tables and what it did not run, and per round the results files and `RegressionProfiler`'s per-iteration metrics |
 | `otava.yaml` | one Otava test per series file |

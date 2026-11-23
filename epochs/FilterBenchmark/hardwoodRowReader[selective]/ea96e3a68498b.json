@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "filter_benchmark_5000000.parquet": "1.04e+08"
+  },
+  "method": "public Scans.Result hardwoodRowReader() throws IOException { return Scans.hardwoodRowReaderFiltered(FILE, threshold); }",
+  "params": [
+    "{\"selectivity\": \"selective\"}"
+  ],
+  "preset": "--rows 5000000 --warmup 16",
+  "script": "filter"
+}

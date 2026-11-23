@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "wide_filter_200c_40rg_20p.parquet": "2.8e+07"
+  },
+  "method": "public double hardwoodWideFilteredScan() throws IOException { return wideFilteredScan(source.inputFile(BUCKET, WIDE_FILE.getFileName().toString())); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 12",
+  "script": "s3"
+}

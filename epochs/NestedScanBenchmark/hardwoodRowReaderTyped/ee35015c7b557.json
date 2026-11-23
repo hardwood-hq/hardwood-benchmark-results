@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "overture_places.zstd.parquet": "7.43e+08"
+  },
+  "method": "public long hardwoodRowReaderTyped() throws IOException { return hardwoodTypedScan(); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--rows 20000 --warmup 18",
+  "script": "nested"
+}

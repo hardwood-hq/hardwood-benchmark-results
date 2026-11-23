@@ -1,0 +1,12 @@
+{
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "overture_places.zstd.parquet": "7.43e+08"
+  },
+  "method": "public long hardwoodColumnReaders() throws IOException { return hardwoodColumnScan(); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 8 --meas 5 --time 2",
+  "script": "nested-columns"
+}
