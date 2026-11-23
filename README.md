@@ -7,7 +7,7 @@ to find change points in.
 
 hardwood-benchmarks' nightly job (`nightly.sh`) writes everything here, once a night on an
 Intel N300: its `charts/record-results.py` the series and `charts/nightly.py` the rest.
-Nothing is edited by hand. The [history page](https://hardwood-hq.github.io/hardwood-benchmark-results/)
+Nothing is edited by hand. The [history page](https://hardwood.dev/hardwood-benchmark-results/)
 charts every series.
 
 ## Layout
