@@ -260,9 +260,550 @@
       "status": "improvement",
       "test": "S3ScanBenchmark.hardwoodProjectedScan@e691541cab575@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "BinaryScanBenchmark",
+      "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "contender": "hardwoodRowStrings",
+      "epoch": "e770617132c12",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@e770617132c12.csv",
+      "found": "2026-11-23",
+      "id": "BinaryScanBenchmark.hardwoodRowStrings@e770617132c12@md02f92f9f202@4e51455c6",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 801749200.0,
+          "before": 1204963333.333333,
+          "percent": -33.0,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 2583.0,
+          "before": 2841.666667,
+          "percent": -9.0,
+          "pvalue": 0.000192
+        },
+        "live_bytes": {
+          "after": 303607200.0,
+          "before": 201878333.333333,
+          "percent": 50.0,
+          "pvalue": 5.2e-05
+        },
+        "wall_ms": {
+          "after": 998.406,
+          "before": 947.785333,
+          "percent": 5.0,
+          "pvalue": 4.9e-05
+        }
+      },
+      "script": "binary",
+      "status": "history",
+      "test": "BinaryScanBenchmark.hardwoodRowStrings@e770617132c12@md02f92f9f202",
+      "version": "1.1.0-main4e51455-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "BloomFilterBenchmark",
+      "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "contender": "hardwoodBloom[absent]",
+      "epoch": "e81ddca0bab9b",
+      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e81ddca0bab9b.csv",
+      "found": "2026-11-23",
+      "id": "BloomFilterBenchmark.hardwoodBloom[absent]@e81ddca0bab9b@md02f92f9f202@4e51455c6",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 0.617974,
+          "before": 0.243753,
+          "percent": 154.0,
+          "pvalue": 0.00014
+        },
+        "live_bytes": {
+          "after": 74953980.0,
+          "before": 96602866.666667,
+          "percent": -22.0,
+          "pvalue": 8e-06
+        },
+        "wall_ms": {
+          "after": 0.392563,
+          "before": 0.15042,
+          "percent": 161.0,
+          "pvalue": 3.4e-05
+        }
+      },
+      "script": "bloom",
+      "status": "history",
+      "test": "BloomFilterBenchmark.hardwoodBloom[absent]@e81ddca0bab9b@md02f92f9f202",
+      "version": "1.1.0-main4e51455-SNAPSHOT"
+    },
+    {
+      "before_commit": "cb41af6d068792dc1c2bcd43ca7afbffa190aa36",
+      "before_version": "1.0.0.Final",
+      "benchmark": "FilterBenchmark",
+      "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "contender": "hardwoodDefault[matchAll]",
+      "epoch": "ed279f3e1523f",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@ed279f3e1523f.csv",
+      "found": "2026-11-23",
+      "id": "FilterBenchmark.hardwoodDefault[matchAll]@ed279f3e1523f@md02f92f9f202@fe06a5d09",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "live_bytes": {
+          "after": 82653050.0,
+          "before": 103895000.0,
+          "percent": -20.0,
+          "pvalue": 0.000333
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodDefault[matchAll]@ed279f3e1523f@md02f92f9f202",
+      "version": "1.1.0.Beta1"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "FilterBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodDefault[selective]",
+      "epoch": "e97edb21774b0",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@e97edb21774b0.csv",
+      "found": "2026-11-23",
+      "id": "FilterBenchmark.hardwoodDefault[selective]@e97edb21774b0@md02f92f9f202@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "live_bytes": {
+          "after": 80254320.0,
+          "before": 87261350.0,
+          "percent": -8.0,
+          "pvalue": 0.000377
+        },
+        "wall_ms": {
+          "after": 5.767358,
+          "before": 7.028755,
+          "percent": -18.0,
+          "pvalue": 0.000939
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodDefault[selective]@e97edb21774b0@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FilterBenchmark",
+      "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "contender": "hardwoodRowReader[matchAll]",
+      "epoch": "e493cc3dbce93",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@e493cc3dbce93.csv",
+      "found": "2026-11-23",
+      "id": "FilterBenchmark.hardwoodRowReader[matchAll]@e493cc3dbce93@md02f92f9f202@4e51455c6",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 108.2524,
+          "before": 128.846,
+          "percent": -16.0,
+          "pvalue": 0.000231
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodRowReader[matchAll]@e493cc3dbce93@md02f92f9f202",
+      "version": "1.1.0-main4e51455-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FixedSizeListScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "columnFast[768]",
+      "epoch": "ed97720b411f7",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@ed97720b411f7.csv",
+      "found": "2026-11-23",
+      "id": "FixedSizeListScanBenchmark.columnFast[768]@ed97720b411f7@md02f92f9f202@5f3b19115",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 33387400.0,
+          "before": 32180200.0,
+          "percent": 4.0,
+          "pvalue": 0.0
+        }
+      },
+      "script": "fixedlist",
+      "status": "history",
+      "test": "FixedSizeListScanBenchmark.columnFast[768]@ed97720b411f7@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FixedSizeListScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "rowFast[768]",
+      "epoch": "e3d3880e762db",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e3d3880e762db.csv",
+      "found": "2026-11-23",
+      "id": "FixedSizeListScanBenchmark.rowFast[768]@e3d3880e762db@md02f92f9f202@5f3b19115",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 33436666.666667,
+          "before": 32224300.0,
+          "percent": 4.0,
+          "pvalue": 0.0
+        }
+      },
+      "script": "fixedlist",
+      "status": "history",
+      "test": "FixedSizeListScanBenchmark.rowFast[768]@e3d3880e762db@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "FlatScanBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodColumnar",
+      "epoch": "e7bc79faa7dd0",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodColumnar@e7bc79faa7dd0.csv",
+      "found": "2026-11-23",
+      "id": "FlatScanBenchmark.hardwoodColumnar@e7bc79faa7dd0@md02f92f9f202@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "live_bytes": {
+          "after": 409380666.666667,
+          "before": 1570535000.0,
+          "percent": -74.0,
+          "pvalue": 0.0
+        }
+      },
+      "script": "flat",
+      "status": "improvement",
+      "test": "FlatScanBenchmark.hardwoodColumnar@e7bc79faa7dd0@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRead[ZSTD][ALP]",
+      "epoch": "e1e6577bf236e",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@e1e6577bf236e.csv",
+      "found": "2026-11-23",
+      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@e1e6577bf236e@md02f92f9f202@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 102128000.0,
+          "before": 107569000.0,
+          "percent": -5.0,
+          "pvalue": 0.0
+        }
+      },
+      "script": "encodings",
+      "status": "improvement",
+      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@e1e6577bf236e@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]",
+      "epoch": "e8ec07579190e",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e8ec07579190e.csv",
+      "found": "2026-11-23",
+      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e8ec07579190e@md02f92f9f202@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 69.441033,
+          "before": 112.352333,
+          "percent": -38.0,
+          "pvalue": 0.000725
+        }
+      },
+      "script": "encodings",
+      "status": "improvement",
+      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e8ec07579190e@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodWrite[ZSTD][ALP]",
+      "epoch": "e594cc401e409",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][ALP]@e594cc401e409.csv",
+      "found": "2026-11-23",
+      "id": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e594cc401e409@md02f92f9f202@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 657.666667,
+          "before": 727.222,
+          "percent": -10.0,
+          "pvalue": 0.000286
+        },
+        "wall_ms": {
+          "after": 108.382667,
+          "before": 120.5805,
+          "percent": -10.0,
+          "pvalue": 0.000162
+        }
+      },
+      "script": "encodings",
+      "status": "improvement",
+      "test": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e594cc401e409@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "NarrowScanBenchmark",
+      "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "contender": "hardwoodColumnar",
+      "epoch": "e0a08b069838a",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@e0a08b069838a.csv",
+      "found": "2026-11-23",
+      "id": "NarrowScanBenchmark.hardwoodColumnar@e0a08b069838a@md02f92f9f202@4e51455c6",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 305524400.0,
+          "before": 648863333.333333,
+          "percent": -53.0,
+          "pvalue": 3.4e-05
+        },
+        "cpu_ms": {
+          "after": 615.8788,
+          "before": 1278.603333,
+          "percent": -52.0,
+          "pvalue": 0.000998
+        }
+      },
+      "script": "narrow",
+      "status": "improvement",
+      "test": "NarrowScanBenchmark.hardwoodColumnar@e0a08b069838a@md02f92f9f202",
+      "version": "1.1.0-main4e51455-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "NarrowScanBenchmark",
+      "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "contender": "hardwoodRowReaderIndexed",
+      "epoch": "ec2a727553939",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@ec2a727553939.csv",
+      "found": "2026-11-23",
+      "id": "NarrowScanBenchmark.hardwoodRowReaderIndexed@ec2a727553939@md02f92f9f202@4e51455c6",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 108195760.0,
+          "before": 393300333.333333,
+          "percent": -72.0,
+          "pvalue": 0.000113
+        },
+        "wall_ms": {
+          "after": 173.2764,
+          "before": 236.031667,
+          "percent": -27.0,
+          "pvalue": 0.000585
+        }
+      },
+      "script": "narrow",
+      "status": "improvement",
+      "test": "NarrowScanBenchmark.hardwoodRowReaderIndexed@ec2a727553939@md02f92f9f202",
+      "version": "1.1.0-main4e51455-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "NestedColumnScanBenchmark",
+      "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "contender": "hardwoodColumnReaders",
+      "epoch": "e10d538d1ba70",
+      "file": "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@e10d538d1ba70.csv",
+      "found": "2026-11-23",
+      "id": "NestedColumnScanBenchmark.hardwoodColumnReaders@e10d538d1ba70@md02f92f9f202@4e51455c6",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 6753638000.0,
+          "before": 24225100000.0,
+          "percent": -72.0,
+          "pvalue": 0.000727
+        },
+        "cpu_ms": {
+          "after": 20182.0,
+          "before": 49083.333333,
+          "percent": -59.0,
+          "pvalue": 0.000452
+        }
+      },
+      "script": "nested-columns",
+      "status": "improvement",
+      "test": "NestedColumnScanBenchmark.hardwoodColumnReaders@e10d538d1ba70@md02f92f9f202",
+      "version": "1.1.0-main4e51455-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "OneBrcBenchmark",
+      "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "contender": "hardwoodColumnIds",
+      "epoch": "e1044536c5e5e",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnIds@e1044536c5e5e.csv",
+      "found": "2026-11-23",
+      "id": "OneBrcBenchmark.hardwoodColumnIds@e1044536c5e5e@md02f92f9f202@4e51455c6",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 1237025000.0,
+          "before": 2436820000.0,
+          "percent": -49.0,
+          "pvalue": 0.000205
+        }
+      },
+      "script": "1brc",
+      "status": "improvement",
+      "test": "OneBrcBenchmark.hardwoodColumnIds@e1044536c5e5e@md02f92f9f202",
+      "version": "1.1.0-main4e51455-SNAPSHOT"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "OneBrcBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodColumnSplits",
+      "epoch": "e7465480e713b",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@e7465480e713b.csv",
+      "found": "2026-11-23",
+      "id": "OneBrcBenchmark.hardwoodColumnSplits@e7465480e713b@md02f92f9f202@5f3b19115",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "live_bytes": {
+          "after": 980363666.666667,
+          "before": 347312500.0,
+          "percent": 182.0,
+          "pvalue": 0.000162
+        }
+      },
+      "script": "1brc",
+      "status": "history",
+      "test": "OneBrcBenchmark.hardwoodColumnSplits@e7465480e713b@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "contender": "hardwoodMultiFileScan",
+      "epoch": "e0bca3d4fb1d2",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e0bca3d4fb1d2.csv",
+      "found": "2026-11-23",
+      "id": "S3ScanBenchmark.hardwoodMultiFileScan@e0bca3d4fb1d2@md02f92f9f202@4e51455c6",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 505864200.0,
+          "before": 1001107666.666667,
+          "percent": -49.0,
+          "pvalue": 1.5e-05
+        },
+        "live_bytes": {
+          "after": 274139500.0,
+          "before": 129315666.666667,
+          "percent": 112.0,
+          "pvalue": 7.1e-05
+        }
+      },
+      "script": "s3",
+      "status": "history",
+      "test": "S3ScanBenchmark.hardwoodMultiFileScan@e0bca3d4fb1d2@md02f92f9f202",
+      "version": "1.1.0-main4e51455-SNAPSHOT"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodRemoteBesideWideRemote",
+      "epoch": "e5ed5cff0c4e7",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodRemoteBesideWideRemote@e5ed5cff0c4e7.csv",
+      "found": "2026-11-23",
+      "id": "S3ScanBenchmark.hardwoodRemoteBesideWideRemote@e5ed5cff0c4e7@md02f92f9f202@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "live_bytes": {
+          "after": 495582333.333333,
+          "before": 883484000.0,
+          "percent": -44.0,
+          "pvalue": 0.000711
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodRemoteBesideWideRemote@e5ed5cff0c4e7@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "TimeWindowBenchmark",
+      "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "contender": "hardwoodRowFiltered[last25pct]",
+      "epoch": "ebf0851fd9fe5",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@ebf0851fd9fe5.csv",
+      "found": "2026-11-23",
+      "id": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@ebf0851fd9fe5@md02f92f9f202@5f5b27b66",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 24343600.0,
+          "before": 32831500.0,
+          "percent": -26.0,
+          "pvalue": 0.000332
+        }
+      },
+      "script": "window",
+      "status": "improvement",
+      "test": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@ebf0851fd9fe5@md02f92f9f202",
+      "version": "1.1.0-main5f5b27b-SNAPSHOT"
     }
   ],
-  "generated": "2026-11-22T04:51:03Z",
+  "generated": "2026-11-23T02:40:02Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,

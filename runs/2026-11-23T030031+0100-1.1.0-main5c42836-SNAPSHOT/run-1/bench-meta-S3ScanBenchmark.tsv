@@ -1,0 +1,28 @@
+rows	3475226
+bytes	59158238
+requests.projectedScan	8
+bytes.projectedScan	14390343
+requests.filteredScan	3
+bytes.filteredScan	3383607
+requests.wideFilteredScan	44
+bytes.wideFilteredScan	28044989
+indexRequests.wideFilteredScan	2
+indexBytes.wideFilteredScan	5351372
+requests.bloomLookup	3
+bytes.bloomLookup	6622434
+requests.largeBloomLookup	7
+bytes.largeBloomLookup	6553708
+requests.fixedSizeBloomLookup	4
+bytes.fixedSizeBloomLookup	21234024
+requests.multiFileScan	65
+bytes.multiFileScan	62048789
+wide.indexRegionBytes	5436257
+wide.neededIndexBytes	46976
+latencyMs	30
+bandwidthKBps	81920
+java	Java 25.0.4 (Eclipse Adoptium)
+hardwood	1.1.0-main5c42836-SNAPSHOT (5c42836)
+simd	scalar
+threads	7 (default)
+machine	Intel(R) Core(TM) i3-N300 (8 cores)
+preset	regression
