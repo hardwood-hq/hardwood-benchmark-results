@@ -800,5 +800,55 @@
     "status": "improvement",
     "test": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@e07779dd89b9e@md02f92f9f202",
     "version": "1.1.0-main5f5b27b-SNAPSHOT"
+  },
+  {
+    "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "before_version": "1.1.0.Beta2",
+    "benchmark": "FlatScanBenchmark",
+    "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+    "contender": "hardwoodRowReaderIndexed",
+    "epoch": "e765379fa52f5",
+    "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e765379fa52f5.csv",
+    "found": "2026-11-24",
+    "id": "FlatScanBenchmark.hardwoodRowReaderIndexed@e765379fa52f5@md02f92f9f202@4e51455c6",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 328039800.0,
+        "before": 832838333.333333,
+        "percent": -61.0,
+        "pvalue": 0.000626
+      }
+    },
+    "script": "flat",
+    "status": "improvement",
+    "test": "FlatScanBenchmark.hardwoodRowReaderIndexed@e765379fa52f5@md02f92f9f202",
+    "version": "1.1.0-main4e51455-SNAPSHOT"
+  },
+  {
+    "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "before_version": "1.1.0.Beta2",
+    "benchmark": "TimeWindowBenchmark",
+    "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+    "contender": "hardwoodColumnFiltered[last25pct]",
+    "epoch": "e7705bc08a429",
+    "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e7705bc08a429.csv",
+    "found": "2026-11-24",
+    "id": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e7705bc08a429@md02f92f9f202@4e51455c6",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 29606920.0,
+        "before": 82387333.333333,
+        "percent": -64.0,
+        "pvalue": 0.000619
+      }
+    },
+    "script": "window",
+    "status": "improvement",
+    "test": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e7705bc08a429@md02f92f9f202",
+    "version": "1.1.0-main4e51455-SNAPSHOT"
   }
 ]

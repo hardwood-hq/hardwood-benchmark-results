@@ -1,0 +1,29 @@
+gate filter: passed against 1.1.0-main25e397d-SNAPSHOT  91s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  filter  exit 0  244s
+gate bloom: passed against 1.1.0-main25e397d-SNAPSHOT  22s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  bloom  exit 0  104s
+gate window: passed against 1.1.0-main25e397d-SNAPSHOT  6s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  window  exit 0  106s
+gate dictfilter: passed against 1.1.0-main25e397d-SNAPSHOT  9s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  dictfilter  exit 0  124s
+gate 1brc: passed against 1.1.0-main25e397d-SNAPSHOT  16s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  1brc  exit 0  231s
+gate binary: passed against 1.1.0-main25e397d-SNAPSHOT  9s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  binary  exit 0  116s
+gate nested: passed against 1.1.0-main25e397d-SNAPSHOT  286s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  nested  exit 0  79s
+gate nested-columns: passed against 1.1.0-main25e397d-SNAPSHOT  283s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  nested-columns  exit 0  134s
+gate flat: passed against 1.1.0-main25e397d-SNAPSHOT  390s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  flat  exit 0  258s
+gate narrow: passed against 1.1.0-main25e397d-SNAPSHOT  6s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  narrow  exit 0  145s
+gate fixedlist: passed against 1.1.0-main25e397d-SNAPSHOT  8s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  fixedlist  exit 0  99s
+gate write: passed against 1.1.0-main25e397d-SNAPSHOT  3s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  write  exit 0  74s
+gate encodings: passed against 1.1.0-main25e397d-SNAPSHOT  6s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  encodings  exit 0  278s
+gate s3: passed against 1.1.0-main25e397d-SNAPSHOT  16s
+round 1/1  1.1.0-main25e397d-SNAPSHOT  s3  exit 0  360s
+total 3505s
