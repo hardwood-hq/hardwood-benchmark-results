@@ -40,7 +40,8 @@ confirmation run, on one kernel, refutes.
 | `cpu_ms` | the process's CPU time per operation, the median over every fork's measurement iterations | yes |
 | `jit_ms`, `gc_ms` | the JIT compiler's and the collector's share of it | |
 | `alloc_bytes` | bytes allocated per operation by every thread | yes |
-| `live_bytes` | the live-set peak, the most heap in use after a collection, over every measurement iteration | yes |
+| `caller_ms` | the CPU time per operation of the threads calling the benchmark method, JMH's workers, the median over every fork's measurement iterations | |
+| `live_bytes` | the heap-after-collection peak, the most heap in use right after a collection, over every measurement iteration: live data plus objects promoted and not yet reclaimed, so it moves with when collections fall | |
 
 Each is better lower. A column added later is empty in older rows; `schema` gives the row's
 layout.
