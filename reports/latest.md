@@ -1,4 +1,4 @@
-# Nightly 2026-11-25
+# Nightly 2026-11-26
 
 Nothing recorded: cannot clone Hardwood.
 
