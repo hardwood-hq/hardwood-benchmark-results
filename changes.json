@@ -850,5 +850,322 @@
     "status": "improvement",
     "test": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e7705bc08a429@md02f92f9f202",
     "version": "1.1.0-main4e51455-SNAPSHOT"
+  },
+  {
+    "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+    "before_version": "1.1.0.Beta1",
+    "benchmark": "DictionaryFilterBenchmark",
+    "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "contender": "hardwoodRowIn",
+    "epoch": "e611bb1789b2a",
+    "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e611bb1789b2a.csv",
+    "found": "2026-11-27",
+    "id": "DictionaryFilterBenchmark.hardwoodRowIn@e611bb1789b2a@md02f92f9f202@29c1af9c1",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 13816875.0,
+        "before": 432690500.0,
+        "percent": -97.0,
+        "pvalue": 0.0
+      },
+      "wall_ms": {
+        "after": 32.938267,
+        "before": 475.808,
+        "percent": -93.0,
+        "pvalue": 1e-06
+      }
+    },
+    "script": "dictfilter",
+    "status": "improvement",
+    "test": "DictionaryFilterBenchmark.hardwoodRowIn@e611bb1789b2a@md02f92f9f202",
+    "version": "1.1.0.Beta2"
+  },
+  {
+    "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+    "before_version": "1.1.0.Beta1",
+    "benchmark": "DictionaryFilterBenchmark",
+    "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "contender": "hardwoodRowLtWide",
+    "epoch": "eba8aa0b07ab5",
+    "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@eba8aa0b07ab5.csv",
+    "found": "2026-11-27",
+    "id": "DictionaryFilterBenchmark.hardwoodRowLtWide@eba8aa0b07ab5@md02f92f9f202@29c1af9c1",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "cpu_ms": {
+        "after": 155.8995,
+        "before": 1192.5,
+        "percent": -87.0,
+        "pvalue": 0.0
+      }
+    },
+    "script": "dictfilter",
+    "status": "improvement",
+    "test": "DictionaryFilterBenchmark.hardwoodRowLtWide@eba8aa0b07ab5@md02f92f9f202",
+    "version": "1.1.0.Beta2"
+  },
+  {
+    "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "before_version": "1.1.0.Beta2",
+    "benchmark": "FloatEncodingBenchmark",
+    "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+    "contender": "hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]",
+    "epoch": "ef5811df5e455",
+    "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef5811df5e455.csv",
+    "found": "2026-11-27",
+    "id": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef5811df5e455@md02f92f9f202@4e51455c6",
+    "kind": "regression",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 179070285.714286,
+        "before": 165190000.0,
+        "percent": 8.0,
+        "pvalue": 6e-06
+      },
+      "wall_ms": {
+        "after": 203.482857,
+        "before": 1084.795,
+        "percent": -81.0,
+        "pvalue": 0.0
+      }
+    },
+    "script": "encodings",
+    "status": "history",
+    "test": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef5811df5e455@md02f92f9f202",
+    "version": "1.1.0-main4e51455-SNAPSHOT"
+  },
+  {
+    "before_commit": "cb41af6d068792dc1c2bcd43ca7afbffa190aa36",
+    "before_version": "1.0.0.Final",
+    "benchmark": "S3ScanBenchmark",
+    "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+    "contender": "hardwoodFixedSizeBloomLookup",
+    "epoch": "e96ec6869eee2",
+    "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@e96ec6869eee2.csv",
+    "found": "2026-11-27",
+    "id": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@e96ec6869eee2@md02f92f9f202@fe06a5d09",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "cpu_ms": {
+        "after": 161.203667,
+        "before": 390.0,
+        "percent": -59.0,
+        "pvalue": 0.00041
+      }
+    },
+    "script": "s3",
+    "status": "improvement",
+    "test": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@e96ec6869eee2@md02f92f9f202",
+    "version": "1.1.0.Beta1"
+  },
+  {
+    "before_commit": "cb41af6d068792dc1c2bcd43ca7afbffa190aa36",
+    "before_version": "1.0.0.Final",
+    "benchmark": "S3ScanBenchmark",
+    "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+    "contender": "hardwoodLargeBloomLookup",
+    "epoch": "e9212760aa9a8",
+    "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e9212760aa9a8.csv",
+    "found": "2026-11-27",
+    "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202@fe06a5d09",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 7420265.0,
+        "before": 249955000.0,
+        "percent": -97.0,
+        "pvalue": 8.5e-05
+      },
+      "cpu_ms": {
+        "after": 70.833325,
+        "before": 690.0,
+        "percent": -90.0,
+        "pvalue": 2e-06
+      },
+      "wall_ms": {
+        "after": 349.618667,
+        "before": 969.786,
+        "percent": -64.0,
+        "pvalue": 0.000587
+      }
+    },
+    "script": "s3",
+    "status": "improvement",
+    "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202",
+    "version": "1.1.0.Beta1"
+  },
+  {
+    "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "before_version": "1.1.0.Beta2",
+    "benchmark": "S3ScanBenchmark",
+    "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+    "contender": "hardwoodLargeBloomLookup",
+    "epoch": "e9212760aa9a8",
+    "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e9212760aa9a8.csv",
+    "found": "2026-11-27",
+    "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202@4e51455c6",
+    "kind": "regression",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 7504012.857143,
+        "before": 7420265.0,
+        "percent": 1.0,
+        "pvalue": 8.6e-05
+      }
+    },
+    "script": "s3",
+    "status": "history",
+    "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202",
+    "version": "1.1.0-main4e51455-SNAPSHOT"
+  },
+  {
+    "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+    "before_version": "1.1.0-main4e51455-SNAPSHOT",
+    "benchmark": "S3ScanBenchmark",
+    "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+    "contender": "hardwoodLargeBloomLookup",
+    "epoch": "e9212760aa9a8",
+    "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e9212760aa9a8.csv",
+    "found": "2026-11-27",
+    "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202@5f5b27b66",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "wall_ms": {
+        "after": 111.483667,
+        "before": 349.618667,
+        "percent": -68.0,
+        "pvalue": 0.0
+      }
+    },
+    "script": "s3",
+    "status": "improvement",
+    "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202",
+    "version": "1.1.0-main5f5b27b-SNAPSHOT"
+  },
+  {
+    "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+    "before_version": "1.1.0.Beta1",
+    "benchmark": "S3ScanBenchmark",
+    "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "contender": "hardwoodWideFilteredScan",
+    "epoch": "e2b82fb943782",
+    "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodWideFilteredScan@e2b82fb943782.csv",
+    "found": "2026-11-27",
+    "id": "S3ScanBenchmark.hardwoodWideFilteredScan@e2b82fb943782@md02f92f9f202@29c1af9c1",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 43587233.333333,
+        "before": 154203500.0,
+        "percent": -72.0,
+        "pvalue": 1e-06
+      }
+    },
+    "script": "s3",
+    "status": "improvement",
+    "test": "S3ScanBenchmark.hardwoodWideFilteredScan@e2b82fb943782@md02f92f9f202",
+    "version": "1.1.0.Beta2"
+  },
+  {
+    "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "before_version": "1.1.0.Beta2",
+    "benchmark": "WriteBenchmark",
+    "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+    "contender": "hardwoodColumnar[ZSTD]",
+    "epoch": "e3907954adf4e",
+    "file": "series/md02f92f9f202/WriteBenchmark/hardwoodColumnar[ZSTD]@e3907954adf4e.csv",
+    "found": "2026-11-27",
+    "id": "WriteBenchmark.hardwoodColumnar[ZSTD]@e3907954adf4e@md02f92f9f202@4e51455c6",
+    "kind": "regression",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 85471428.571429,
+        "before": 78837350.0,
+        "percent": 8.0,
+        "pvalue": 3.1e-05
+      },
+      "cpu_ms": {
+        "after": 410.389714,
+        "before": 325.8335,
+        "percent": 26.0,
+        "pvalue": 6e-06
+      },
+      "wall_ms": {
+        "after": 102.942571,
+        "before": 327.2895,
+        "percent": -69.0,
+        "pvalue": 0.0
+      }
+    },
+    "script": "write",
+    "status": "history",
+    "test": "WriteBenchmark.hardwoodColumnar[ZSTD]@e3907954adf4e@md02f92f9f202",
+    "version": "1.1.0-main4e51455-SNAPSHOT"
+  },
+  {
+    "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+    "before_version": "1.1.0.Beta2",
+    "benchmark": "WriteBenchmark",
+    "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+    "contender": "hardwoodRow[ZSTD]",
+    "epoch": "e7b49ef507e71",
+    "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e7b49ef507e71.csv",
+    "found": "2026-11-27",
+    "id": "WriteBenchmark.hardwoodRow[ZSTD]@e7b49ef507e71@md02f92f9f202@4e51455c6",
+    "kind": "regression",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "cpu_ms": {
+        "after": 642.857143,
+        "before": 485.8335,
+        "percent": 32.0,
+        "pvalue": 0.000304
+      },
+      "wall_ms": {
+        "after": 304.314143,
+        "before": 474.924,
+        "percent": -36.0,
+        "pvalue": 1.8e-05
+      }
+    },
+    "script": "write",
+    "status": "history",
+    "test": "WriteBenchmark.hardwoodRow[ZSTD]@e7b49ef507e71@md02f92f9f202",
+    "version": "1.1.0-main4e51455-SNAPSHOT"
+  },
+  {
+    "before_commit": "25e397dd44b5652ea25c9927f61728c374c78c4f",
+    "before_version": "1.1.0-main25e397d-SNAPSHOT",
+    "benchmark": "WriteBenchmark",
+    "commit": "98097e6750d6daa7a6cc06238269d14d3a1df026",
+    "contender": "hardwoodRow[ZSTD]",
+    "epoch": "e7b49ef507e71",
+    "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e7b49ef507e71.csv",
+    "found": "2026-11-27",
+    "id": "WriteBenchmark.hardwoodRow[ZSTD]@e7b49ef507e71@md02f92f9f202@98097e675",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "alloc_bytes": {
+        "after": 125712000.0,
+        "before": 137485000.0,
+        "percent": -9.0,
+        "pvalue": 0.0
+      }
+    },
+    "script": "write",
+    "status": "improvement",
+    "test": "WriteBenchmark.hardwoodRow[ZSTD]@e7b49ef507e71@md02f92f9f202",
+    "version": "1.1.0-main98097e6-SNAPSHOT"
   }
 ]
