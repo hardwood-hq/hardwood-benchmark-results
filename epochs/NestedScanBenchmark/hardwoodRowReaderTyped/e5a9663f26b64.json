@@ -1,0 +1,37 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "NestedScanBenchmark#bytes": "21777a77957e",
+    "NestedScanBenchmark#fieldsOf": "5df2515c5909",
+    "NestedScanBenchmark#hardwoodTypedScan": "3f6881c32fb1",
+    "NestedScanBenchmark#kindOf": "e66e45889ec7",
+    "NestedScanBenchmark#leaf": "89ff71c13d4f",
+    "NestedScanBenchmark#matches": "9d1702bcaef4",
+    "NestedScanBenchmark#number": "8fd94dd05e85",
+    "NestedScanBenchmark#of": "dd148a38944d",
+    "NestedScanBenchmark#resolveMaxRows": "99602ba8923f",
+    "NestedScanBenchmark#scanField": "4f6fcd3eeb39",
+    "NestedScanBenchmark#scanLeaf": "d901fc051ae6",
+    "NestedScanBenchmark#scanList": "988c17e7065b",
+    "NestedScanBenchmark#scanMap": "ba7b59554e8e",
+    "NestedScanBenchmark#scanStruct": "a744c5e41c05",
+    "NestedScanBenchmark#string": "9a2879fdffda",
+    "NestedScanBenchmark#toString": "9697f1a24e6f",
+    "NestedScanBenchmark.Checksum": "fc7d64d85348",
+    "NestedScanBenchmark.FILE": "defcbc7db407",
+    "NestedScanBenchmark.Field": "ddc32fb76725",
+    "NestedScanBenchmark.Kind": "ec759a90928f",
+    "NestedScanBenchmark.MAX_ROWS": "5b1e87f0ad8b",
+    "NestedScanBenchmark.inputFile": "daa43574ab29"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "overture_places.zstd.parquet": "7.43e+08"
+  },
+  "method": "public long hardwoodRowReaderTyped() throws IOException { return hardwoodTypedScan(); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--rows 20000 --warmup 18",
+  "script": "nested"
+}

@@ -1,7 +1,18 @@
 {
   "changes": [],
-  "generated": "2026-11-27T15:15:28Z",
-  "machines": {},
+  "generated": "2026-11-27T15:10:04Z",
+  "machines": {
+    "md02f92f9f202": {
+      "cores": 8,
+      "cpu": "Intel(R) Core(TM) i3-N300",
+      "governor": "performance",
+      "java": "openjdk version \"25.0.4\" 2026-07-21 LTS | OpenJDK Runtime Environment Temurin-25.0.4+7 (build 25.0.4+7-LTS) | OpenJDK 64-Bit Server VM Temurin-25.0.4+7 (build 25.0.4+7-LTS, mixed mode, sharing)",
+      "jvm_flags": "-Xms4g -Xmx4g -XX:+UseG1GC",
+      "max_freq_khz": "1500000",
+      "microcode": "0x21",
+      "no_turbo": "0"
+    }
+  },
   "nights": [],
   "releases": [
     {
@@ -59,5 +70,204 @@
       "version": "1.1.0.CR1"
     }
   ],
-  "series": []
+  "series": [
+    {
+      "benchmark": "BinaryScanBenchmark",
+      "contender": "hardwoodColumnViews",
+      "epoch": "eb1c73184fd44",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodColumnViews@eb1c73184fd44.csv",
+      "machine": "md02f92f9f202",
+      "script": "binary",
+      "unsettled": null
+    },
+    {
+      "benchmark": "BinaryScanBenchmark",
+      "contender": "hardwoodRowStrings",
+      "epoch": "ea88286eb648d",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@ea88286eb648d.csv",
+      "machine": "md02f92f9f202",
+      "script": "binary",
+      "unsettled": null
+    },
+    {
+      "benchmark": "BloomFilterBenchmark",
+      "contender": "hardwoodBloom[absent]",
+      "epoch": "e2748e4929223",
+      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e2748e4929223.csv",
+      "machine": "md02f92f9f202",
+      "script": "bloom",
+      "unsettled": null
+    },
+    {
+      "benchmark": "DictionaryFilterBenchmark",
+      "contender": "hardwoodRowIn",
+      "epoch": "e9ea1eeab2fc2",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e9ea1eeab2fc2.csv",
+      "machine": "md02f92f9f202",
+      "script": "dictfilter",
+      "unsettled": null
+    },
+    {
+      "benchmark": "DictionaryFilterBenchmark",
+      "contender": "hardwoodRowLtWide",
+      "epoch": "e921dc696cfe5",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@e921dc696cfe5.csv",
+      "machine": "md02f92f9f202",
+      "script": "dictfilter",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FilterBenchmark",
+      "contender": "hardwoodDefault[matchAll]",
+      "epoch": "e5960e43329b5",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@e5960e43329b5.csv",
+      "machine": "md02f92f9f202",
+      "script": "filter",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FilterBenchmark",
+      "contender": "hardwoodDefault[selective]",
+      "epoch": "ef273ed95e67f",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@ef273ed95e67f.csv",
+      "machine": "md02f92f9f202",
+      "script": "filter",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FlatScanBenchmark",
+      "contender": "columnarDrain",
+      "epoch": "e0d3eb57274cd",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/columnarDrain@e0d3eb57274cd.csv",
+      "machine": "md02f92f9f202",
+      "script": "flat",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FlatScanBenchmark",
+      "contender": "hardwoodColumnar",
+      "epoch": "ede09a944fed6",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodColumnar@ede09a944fed6.csv",
+      "machine": "md02f92f9f202",
+      "script": "flat",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FlatScanBenchmark",
+      "contender": "hardwoodRowReaderIndexed",
+      "epoch": "e2fd5775b764f",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e2fd5775b764f.csv",
+      "machine": "md02f92f9f202",
+      "script": "flat",
+      "unsettled": null
+    },
+    {
+      "benchmark": "NarrowScanBenchmark",
+      "contender": "hardwoodColumnar",
+      "epoch": "e044f18199212",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@e044f18199212.csv",
+      "machine": "md02f92f9f202",
+      "script": "narrow",
+      "unsettled": null
+    },
+    {
+      "benchmark": "NarrowScanBenchmark",
+      "contender": "hardwoodRowReaderIndexed",
+      "epoch": "e59cf9b37f6f5",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@e59cf9b37f6f5.csv",
+      "machine": "md02f92f9f202",
+      "script": "narrow",
+      "unsettled": null
+    },
+    {
+      "benchmark": "NestedColumnScanBenchmark",
+      "contender": "hardwoodColumnReaders",
+      "epoch": "ead3988f9a241",
+      "file": "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@ead3988f9a241.csv",
+      "machine": "md02f92f9f202",
+      "script": "nested-columns",
+      "unsettled": null
+    },
+    {
+      "benchmark": "NestedScanBenchmark",
+      "contender": "hardwoodRowReaderTyped",
+      "epoch": "e5a9663f26b64",
+      "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodRowReaderTyped@e5a9663f26b64.csv",
+      "machine": "md02f92f9f202",
+      "script": "nested",
+      "unsettled": null
+    },
+    {
+      "benchmark": "S3ScanBenchmark",
+      "contender": "hardwoodFixedSizeBloomLookup",
+      "epoch": "ed720ee3e8431",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@ed720ee3e8431.csv",
+      "machine": "md02f92f9f202",
+      "script": "s3",
+      "unsettled": null
+    },
+    {
+      "benchmark": "S3ScanBenchmark",
+      "contender": "hardwoodLargeBloomLookup",
+      "epoch": "e851ae5de5a67",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e851ae5de5a67.csv",
+      "machine": "md02f92f9f202",
+      "script": "s3",
+      "unsettled": null
+    },
+    {
+      "benchmark": "S3ScanBenchmark",
+      "contender": "hardwoodMultiFileScan",
+      "epoch": "e5714553b017d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e5714553b017d.csv",
+      "machine": "md02f92f9f202",
+      "script": "s3",
+      "unsettled": null
+    },
+    {
+      "benchmark": "S3ScanBenchmark",
+      "contender": "hardwoodProjectedScan",
+      "epoch": "e210fc05a6caf",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodProjectedScan@e210fc05a6caf.csv",
+      "machine": "md02f92f9f202",
+      "script": "s3",
+      "unsettled": null
+    },
+    {
+      "benchmark": "S3ScanBenchmark",
+      "contender": "hardwoodRemoteBesideWideRemote",
+      "epoch": "e2acc55cd6201",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodRemoteBesideWideRemote@e2acc55cd6201.csv",
+      "machine": "md02f92f9f202",
+      "script": "s3",
+      "unsettled": null
+    },
+    {
+      "benchmark": "S3ScanBenchmark",
+      "contender": "hardwoodWideFilteredScan",
+      "epoch": "e360bc0b8e09d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodWideFilteredScan@e360bc0b8e09d.csv",
+      "machine": "md02f92f9f202",
+      "script": "s3",
+      "unsettled": null
+    },
+    {
+      "benchmark": "TimeWindowBenchmark",
+      "contender": "hardwoodColumnFiltered[last25pct]",
+      "epoch": "e3077579faf4f",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e3077579faf4f.csv",
+      "machine": "md02f92f9f202",
+      "script": "window",
+      "unsettled": null
+    },
+    {
+      "benchmark": "WideScanBenchmark",
+      "contender": "hardwoodColumnar",
+      "epoch": "e5c5077129af3",
+      "file": "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e5c5077129af3.csv",
+      "machine": "md02f92f9f202",
+      "script": "wide",
+      "unsettled": null
+    }
+  ]
 }

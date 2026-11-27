@@ -1,0 +1,6 @@
+  1.0.0.Final  1brc: Not supported by hardwood-core 1.0.0.Final: run-1brc.sh needs dictionary-ids (from 1.1.0.Beta2)
+  1.0.0.Final  encodings: Not supported by hardwood-core 1.0.0.Final: run-encodings.sh needs writer (from 1.1.0.Beta1)
+  1.0.0.Final  filter: Not supported by this Hardwood version: hardwoodRowReader (needs filter-unprojected, from 1.1.0.Beta2)
+  1.0.0.Final  fixedlist: Not supported by hardwood-core 1.0.0.Final: run-fixedlist.sh needs fixed-list-fast-path (from 1.1.0.Beta1)
+  1.0.0.Final  window: Not supported by this Hardwood version: hardwoodRowFiltered (needs filter-unprojected, from 1.1.0.Beta2)
+  1.0.0.Final  write: Not supported by hardwood-core 1.0.0.Final: run-write.sh needs writer (from 1.1.0.Beta1)

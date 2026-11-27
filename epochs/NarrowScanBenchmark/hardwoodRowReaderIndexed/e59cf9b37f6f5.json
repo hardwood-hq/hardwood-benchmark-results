@@ -1,0 +1,18 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "NarrowScanBenchmark.COLUMNS": "683a9103423d",
+    "NarrowScanBenchmark.files": "37dcca702889",
+    "NarrowScanBenchmark.inputFiles": "b688b2cb597c"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "yellow_tripdata_2016-01.parquet": "1.51e+08"
+  },
+  "method": "public long hardwoodRowReaderIndexed() throws IOException { long checksum = 0; try (HardwoodContext context = BenchContext.create(); ParquetFileReader reader = ParquetFileReader.openAll(inputFiles, context); RowReader rows = reader.buildRowReader().projection(ColumnProjection.columns(COLUMNS)).build()) { while (rows.hasNext()) { rows.next(); if (!rows.isNull(0)) checksum += rows.getLong(0); if (!rows.isNull(1)) checksum += Double.doubleToLongBits(rows.getDouble(1)); if (!rows.isNull(2)) checksum += Double.doubleToLongBits(rows.getDouble(2)); } } return checksum; }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 18",
+  "script": "narrow"
+}

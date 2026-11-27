@@ -1,0 +1,22 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "S3ScanBenchmark#bloomLookup": "feb8c0eff694",
+    "S3ScanBenchmark#source": "15b6c79dd9ac",
+    "S3ScanBenchmark.BUCKET": "af34e635f9fd",
+    "S3ScanBenchmark.Lookup": "2c522d336a44",
+    "S3ScanBenchmark.WINDOW_BUDGET_PROPERTY": "40ed84d81ca2",
+    "S3ScanBenchmark.fixedSizeBloomProbe": "899a5923a185",
+    "S3ScanBenchmark.source": "7cd6774b77e8"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "bloom_lookup_fixed_20rg_20000r_ndv0_max1048576.parquet": "2.74e+07"
+  },
+  "method": "public double hardwoodFixedSizeBloomLookup() throws IOException { return bloomLookup(source, BloomLookupGenerator.FIXED, fixedSizeBloomProbe).sum(); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 12",
+  "script": "s3"
+}

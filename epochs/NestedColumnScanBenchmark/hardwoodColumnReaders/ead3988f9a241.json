@@ -1,0 +1,30 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "NestedColumnScanBenchmark#hardwoodColumnScan": "b831ceefc7f3",
+    "NestedColumnScanBenchmark.inputFile": "223b40c4ea00",
+    "NestedScanBenchmark#bytes": "21777a77957e",
+    "NestedScanBenchmark#columnScan": "93801025acf0",
+    "NestedScanBenchmark#leaf": "89ff71c13d4f",
+    "NestedScanBenchmark#leafValuesOf": "b0debfa338c7",
+    "NestedScanBenchmark#matches": "9d1702bcaef4",
+    "NestedScanBenchmark#number": "8fd94dd05e85",
+    "NestedScanBenchmark#resolveMaxRows": "99602ba8923f",
+    "NestedScanBenchmark#scanColumn": "8d0f2c4e95f4",
+    "NestedScanBenchmark#toString": "9697f1a24e6f",
+    "NestedScanBenchmark.Checksum": "fc7d64d85348",
+    "NestedScanBenchmark.FILE": "defcbc7db407",
+    "NestedScanBenchmark.MAX_ROWS": "5b1e87f0ad8b",
+    "NestedScanBenchmark.inputFile": "daa43574ab29"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "overture_places.zstd.parquet": "7.43e+08"
+  },
+  "method": "public long hardwoodColumnReaders() throws IOException { return hardwoodColumnScan(); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 8 --meas 5 --time 2",
+  "script": "nested-columns"
+}

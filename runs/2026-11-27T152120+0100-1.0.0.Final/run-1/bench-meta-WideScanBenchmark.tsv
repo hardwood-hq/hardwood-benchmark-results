@@ -1,0 +1,10 @@
+rows	2190
+bytes	76333884
+columns	10000
+fixture	wide_scan_10000x2190.parquet:76333884
+java	Java 25.0.4 (Eclipse Adoptium)
+hardwood	1.0.0.Final (cb41af6)
+simd	scalar
+threads	8 (default)
+machine	Intel(R) Core(TM) i3-N300 (8 cores)
+preset	regression
