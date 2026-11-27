@@ -1,0 +1,29 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "FloatEncodingBenchmark#config": "312da4d87adb",
+    "FloatEncodingBenchmark#load": "5b253d585b8e",
+    "FloatEncodingBenchmark#write": "72b58e9a64ba",
+    "FloatEncodingBenchmark.MONTH": "5db7c4cadcfa",
+    "FloatEncodingBenchmark.ROWS": "47559393a4ee",
+    "FloatEncodingBenchmark.ROW_GROUP_TARGET_BYTES": "3824ccd2a753",
+    "FloatEncodingBenchmark.codec": "947cd7187e96",
+    "FloatEncodingBenchmark.config": "f9d4155cdaeb",
+    "FloatEncodingBenchmark.data": "239e40b3e183",
+    "FloatEncodingBenchmark.encoding": "73fbd04dae13",
+    "FloatEncodingBenchmark.out": "71db81f36db8",
+    "FloatEncodingBenchmark.schema": "190a4635cd43",
+    "MemoryOutputFile": "61432cafb702",
+    "TaxiDoubles": "77b3d35d3c6f"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "yellow_tripdata_2025-01.parquet": "5.92e+07"
+  },
+  "method": "public long hardwoodWrite() throws IOException { write(out, data, schema, config); return out.position(); }",
+  "params": [
+    "{\"codec\": \"ZSTD\", \"encoding\": \"ALP\"}"
+  ],
+  "preset": "--codec ZSTD --encoding BYTE_STREAM_SPLIT,ALP --warmup 16",
+  "script": "encodings"
+}

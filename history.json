@@ -1,6 +1,6 @@
 {
   "changes": [],
-  "generated": "2026-11-27T16:44:04Z",
+  "generated": "2026-11-27T17:32:00Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -114,7 +114,7 @@
       "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@e921dc696cfe5.csv",
       "machine": "md02f92f9f202",
       "script": "dictfilter",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@e921dc696cfe5.unsettled.csv"
     },
     {
       "benchmark": "FilterBenchmark",
@@ -199,9 +199,27 @@
     },
     {
       "benchmark": "FloatEncodingBenchmark",
+      "contender": "hardwoodRead[ZSTD][ALP]",
+      "epoch": "ec2994a9b5a47",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@ec2994a9b5a47.csv",
+      "machine": "md02f92f9f202",
+      "script": "encodings",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FloatEncodingBenchmark",
       "contender": "hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]",
       "epoch": "e1835d93d9859",
       "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv",
+      "machine": "md02f92f9f202",
+      "script": "encodings",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FloatEncodingBenchmark",
+      "contender": "hardwoodWrite[ZSTD][ALP]",
+      "epoch": "e49097b4a5400",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][ALP]@e49097b4a5400.csv",
       "machine": "md02f92f9f202",
       "script": "encodings",
       "unsettled": null
@@ -222,7 +240,7 @@
       "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@e044f18199212.csv",
       "machine": "md02f92f9f202",
       "script": "narrow",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@e044f18199212.unsettled.csv"
     },
     {
       "benchmark": "NarrowScanBenchmark",
@@ -267,7 +285,7 @@
       "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@ee312766ec833.csv",
       "machine": "md02f92f9f202",
       "script": "1brc",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@ee312766ec833.unsettled.csv"
     },
     {
       "benchmark": "S3ScanBenchmark",
@@ -339,7 +357,7 @@
       "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e8328799634e7.csv",
       "machine": "md02f92f9f202",
       "script": "window",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e8328799634e7.unsettled.csv"
     },
     {
       "benchmark": "WideScanBenchmark",

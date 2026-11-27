@@ -168,9 +168,33 @@ tests:
         direction: -1
       alloc_bytes:
         direction: -1
+  "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@ec2994a9b5a47@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@ec2994a9b5a47.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
   "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859@md02f92f9f202":
     type: csv
     file: "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+  "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e49097b4a5400@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][ALP]@e49097b4a5400.csv"
     time_column: time
     attributes: [commit, version]
     metrics:
