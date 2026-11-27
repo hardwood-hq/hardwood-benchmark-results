@@ -1,0 +1,4 @@
+pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
+unpinned	FlatScanBenchmark	columnarDrain	323.466	10.744	182.9
+unpinned	FlatScanBenchmark	hardwoodColumnar	466.495	7.450	126.8
+unpinned	FlatScanBenchmark	hardwoodRowReaderIndexed	625.252	5.558	94.6

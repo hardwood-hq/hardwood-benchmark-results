@@ -84,6 +84,30 @@ tests:
         direction: -1
       alloc_bytes:
         direction: -1
+  "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@ebe7477cfa3bb.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+  "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e48f1093e0d89.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
   "FlatScanBenchmark.columnarDrain@e0d3eb57274cd@md02f92f9f202":
     type: csv
     file: "series/md02f92f9f202/FlatScanBenchmark/columnarDrain@e0d3eb57274cd.csv"
@@ -111,6 +135,30 @@ tests:
   "FlatScanBenchmark.hardwoodRowReaderIndexed@e2fd5775b764f@md02f92f9f202":
     type: csv
     file: "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e2fd5775b764f.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+  "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+  "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a.csv"
     time_column: time
     attributes: [commit, version]
     metrics:
@@ -255,6 +303,30 @@ tests:
   "WideScanBenchmark.hardwoodColumnar@e5c5077129af3@md02f92f9f202":
     type: csv
     file: "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e5c5077129af3.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+  "WriteBenchmark.hardwoodColumnar[ZSTD]@e874d37616bec@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/WriteBenchmark/hardwoodColumnar[ZSTD]@e874d37616bec.csv"
+    time_column: time
+    attributes: [commit, version]
+    metrics:
+      wall_ms:
+        direction: -1
+      cpu_ms:
+        direction: -1
+      alloc_bytes:
+        direction: -1
+  "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202":
+    type: csv
+    file: "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e641ad6953670.csv"
     time_column: time
     attributes: [commit, version]
     metrics:

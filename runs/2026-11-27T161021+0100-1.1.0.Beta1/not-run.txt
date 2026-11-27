@@ -1,0 +1,4 @@
+  1.1.0.Beta1  1brc: Not supported by hardwood-core 1.1.0.Beta1: run-1brc.sh needs dictionary-ids (from 1.1.0.Beta2)
+  1.1.0.Beta1  encodings: Not supported by this Hardwood version: encoding ALP (needs alp, from 1.1.0.CR1)
+  1.1.0.Beta1  filter: Not supported by this Hardwood version: hardwoodRowReader (needs filter-unprojected, from 1.1.0.Beta2)
+  1.1.0.Beta1  window: Not supported by this Hardwood version: hardwoodRowFiltered (needs filter-unprojected, from 1.1.0.Beta2)

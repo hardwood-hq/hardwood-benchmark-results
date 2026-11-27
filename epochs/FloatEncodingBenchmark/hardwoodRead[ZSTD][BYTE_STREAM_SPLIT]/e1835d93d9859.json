@@ -1,0 +1,33 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "FloatEncodingBenchmark#config": "312da4d87adb",
+    "FloatEncodingBenchmark#ensureFile": "b20de1ed7f3a",
+    "FloatEncodingBenchmark#load": "5b253d585b8e",
+    "FloatEncodingBenchmark#scan": "e843a60ba57c",
+    "FloatEncodingBenchmark#write": "72b58e9a64ba",
+    "FloatEncodingBenchmark.DIR": "c43710512ded",
+    "FloatEncodingBenchmark.MONTH": "5db7c4cadcfa",
+    "FloatEncodingBenchmark.ROWS": "47559393a4ee",
+    "FloatEncodingBenchmark.ROW_GROUP_TARGET_BYTES": "3824ccd2a753",
+    "FloatEncodingBenchmark.codec": "947cd7187e96",
+    "FloatEncodingBenchmark.config": "f9d4155cdaeb",
+    "FloatEncodingBenchmark.data": "239e40b3e183",
+    "FloatEncodingBenchmark.encoding": "73fbd04dae13",
+    "FloatEncodingBenchmark.file": "513f882a666b",
+    "FloatEncodingBenchmark.out": "71db81f36db8",
+    "FloatEncodingBenchmark.schema": "190a4635cd43",
+    "MemoryOutputFile": "61432cafb702",
+    "TaxiDoubles": "77b3d35d3c6f"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "taxi_doubles_2025-01_1000000_BYTE_STREAM_SPLIT_ZSTD.parquet": "1.68e+07"
+  },
+  "method": "public TaxiDoubles.Checksum hardwoodRead() throws IOException { return scan(file, data.names); }",
+  "params": [
+    "{\"codec\": \"ZSTD\", \"encoding\": \"BYTE_STREAM_SPLIT\"}"
+  ],
+  "preset": "--codec ZSTD --encoding BYTE_STREAM_SPLIT,ALP --warmup 16",
+  "script": "encodings"
+}

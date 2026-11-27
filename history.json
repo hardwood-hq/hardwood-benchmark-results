@@ -1,6 +1,6 @@
 {
   "changes": [],
-  "generated": "2026-11-27T15:10:04Z",
+  "generated": "2026-11-27T15:55:26Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -135,6 +135,24 @@
       "unsettled": null
     },
     {
+      "benchmark": "FixedSizeListScanBenchmark",
+      "contender": "columnFast[768]",
+      "epoch": "ebe7477cfa3bb",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@ebe7477cfa3bb.csv",
+      "machine": "md02f92f9f202",
+      "script": "fixedlist",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FixedSizeListScanBenchmark",
+      "contender": "rowFast[768]",
+      "epoch": "e48f1093e0d89",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e48f1093e0d89.csv",
+      "machine": "md02f92f9f202",
+      "script": "fixedlist",
+      "unsettled": null
+    },
+    {
       "benchmark": "FlatScanBenchmark",
       "contender": "columnarDrain",
       "epoch": "e0d3eb57274cd",
@@ -159,6 +177,24 @@
       "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e2fd5775b764f.csv",
       "machine": "md02f92f9f202",
       "script": "flat",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FloatEncodingBenchmark",
+      "contender": "hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]",
+      "epoch": "e1835d93d9859",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv",
+      "machine": "md02f92f9f202",
+      "script": "encodings",
+      "unsettled": null
+    },
+    {
+      "benchmark": "FloatEncodingBenchmark",
+      "contender": "hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]",
+      "epoch": "ef2970f5ab64a",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a.csv",
+      "machine": "md02f92f9f202",
+      "script": "encodings",
       "unsettled": null
     },
     {
@@ -267,6 +303,24 @@
       "file": "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e5c5077129af3.csv",
       "machine": "md02f92f9f202",
       "script": "wide",
+      "unsettled": null
+    },
+    {
+      "benchmark": "WriteBenchmark",
+      "contender": "hardwoodColumnar[ZSTD]",
+      "epoch": "e874d37616bec",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodColumnar[ZSTD]@e874d37616bec.csv",
+      "machine": "md02f92f9f202",
+      "script": "write",
+      "unsettled": null
+    },
+    {
+      "benchmark": "WriteBenchmark",
+      "contender": "hardwoodRow[ZSTD]",
+      "epoch": "e641ad6953670",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e641ad6953670.csv",
+      "machine": "md02f92f9f202",
+      "script": "write",
       "unsettled": null
     }
   ]
