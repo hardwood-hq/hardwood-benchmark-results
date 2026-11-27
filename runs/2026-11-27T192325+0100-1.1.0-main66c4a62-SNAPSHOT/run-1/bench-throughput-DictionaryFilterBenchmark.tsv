@@ -1,0 +1,3 @@
+pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
+unpinned	DictionaryFilterBenchmark	hardwoodRowIn	31.401	-	-
+unpinned	DictionaryFilterBenchmark	hardwoodRowLtWide	64.440	-	-
