@@ -6,10 +6,10 @@
       "benchmark": "BinaryScanBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodColumnViews",
-      "epoch": "ed2fd34c233f5",
-      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodColumnViews@ed2fd34c233f5.csv",
+      "epoch": "eb1c73184fd44",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodColumnViews@eb1c73184fd44.csv",
       "found": "2026-11-22",
-      "id": "BinaryScanBenchmark.hardwoodColumnViews@ed2fd34c233f5@md02f92f9f202@5f3b19115",
+      "id": "BinaryScanBenchmark.hardwoodColumnViews@eb1c73184fd44@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -28,7 +28,7 @@
       },
       "script": "binary",
       "status": "improvement",
-      "test": "BinaryScanBenchmark.hardwoodColumnViews@ed2fd34c233f5@md02f92f9f202",
+      "test": "BinaryScanBenchmark.hardwoodColumnViews@eb1c73184fd44@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -37,10 +37,10 @@
       "benchmark": "BinaryScanBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodRowStrings",
-      "epoch": "e03fcf65044f2",
-      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@e03fcf65044f2.csv",
+      "epoch": "ea88286eb648d",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@ea88286eb648d.csv",
       "found": "2026-11-22",
-      "id": "BinaryScanBenchmark.hardwoodRowStrings@e03fcf65044f2@md02f92f9f202@5f3b19115",
+      "id": "BinaryScanBenchmark.hardwoodRowStrings@ea88286eb648d@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -53,7 +53,7 @@
       },
       "script": "binary",
       "status": "improvement",
-      "test": "BinaryScanBenchmark.hardwoodRowStrings@e03fcf65044f2@md02f92f9f202",
+      "test": "BinaryScanBenchmark.hardwoodRowStrings@ea88286eb648d@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -62,10 +62,10 @@
       "benchmark": "BloomFilterBenchmark",
       "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
       "contender": "hardwoodBloom[absent]",
-      "epoch": "e856c85d615e1",
-      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e856c85d615e1.csv",
+      "epoch": "e2748e4929223",
+      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e2748e4929223.csv",
       "found": "2026-11-22",
-      "id": "BloomFilterBenchmark.hardwoodBloom[absent]@e856c85d615e1@md02f92f9f202@fe06a5d09",
+      "id": "BloomFilterBenchmark.hardwoodBloom[absent]@e2748e4929223@md02f92f9f202@fe06a5d09",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -84,7 +84,7 @@
       },
       "script": "bloom",
       "status": "improvement",
-      "test": "BloomFilterBenchmark.hardwoodBloom[absent]@e856c85d615e1@md02f92f9f202",
+      "test": "BloomFilterBenchmark.hardwoodBloom[absent]@e2748e4929223@md02f92f9f202",
       "version": "1.1.0.Beta1"
     },
     {
@@ -93,10 +93,10 @@
       "benchmark": "DictionaryFilterBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodRowIn",
-      "epoch": "e611bb1789b2a",
-      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e611bb1789b2a.csv",
+      "epoch": "e9ea1eeab2fc2",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e9ea1eeab2fc2.csv",
       "found": "2026-11-22",
-      "id": "DictionaryFilterBenchmark.hardwoodRowIn@e611bb1789b2a@md02f92f9f202@5f3b19115",
+      "id": "DictionaryFilterBenchmark.hardwoodRowIn@e9ea1eeab2fc2@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -121,7 +121,7 @@
       },
       "script": "dictfilter",
       "status": "improvement",
-      "test": "DictionaryFilterBenchmark.hardwoodRowIn@e611bb1789b2a@md02f92f9f202",
+      "test": "DictionaryFilterBenchmark.hardwoodRowIn@e9ea1eeab2fc2@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -130,10 +130,10 @@
       "benchmark": "FilterBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodDefault[matchAll]",
-      "epoch": "ea7a1773425b6",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@ea7a1773425b6.csv",
+      "epoch": "e006709a579c5",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@e006709a579c5.csv",
       "found": "2026-11-22",
-      "id": "FilterBenchmark.hardwoodDefault[matchAll]@ea7a1773425b6@md02f92f9f202@5f3b19115",
+      "id": "FilterBenchmark.hardwoodDefault[matchAll]@e006709a579c5@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -158,7 +158,7 @@
       },
       "script": "filter",
       "status": "improvement",
-      "test": "FilterBenchmark.hardwoodDefault[matchAll]@ea7a1773425b6@md02f92f9f202",
+      "test": "FilterBenchmark.hardwoodDefault[matchAll]@e006709a579c5@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -167,10 +167,10 @@
       "benchmark": "FixedSizeListScanBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "columnFast[768]",
-      "epoch": "eb3b9da01c7fe",
-      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@eb3b9da01c7fe.csv",
+      "epoch": "ebe7477cfa3bb",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@ebe7477cfa3bb.csv",
       "found": "2026-11-22",
-      "id": "FixedSizeListScanBenchmark.columnFast[768]@eb3b9da01c7fe@md02f92f9f202@5f3b19115",
+      "id": "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -183,7 +183,7 @@
       },
       "script": "fixedlist",
       "status": "improvement",
-      "test": "FixedSizeListScanBenchmark.columnFast[768]@eb3b9da01c7fe@md02f92f9f202",
+      "test": "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -192,10 +192,10 @@
       "benchmark": "FixedSizeListScanBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "rowFast[768]",
-      "epoch": "e166f50f277a2",
-      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e166f50f277a2.csv",
+      "epoch": "e48f1093e0d89",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e48f1093e0d89.csv",
       "found": "2026-11-22",
-      "id": "FixedSizeListScanBenchmark.rowFast[768]@e166f50f277a2@md02f92f9f202@5f3b19115",
+      "id": "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -208,7 +208,7 @@
       },
       "script": "fixedlist",
       "status": "improvement",
-      "test": "FixedSizeListScanBenchmark.rowFast[768]@e166f50f277a2@md02f92f9f202",
+      "test": "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -217,10 +217,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodMultiFileScan",
-      "epoch": "eca0e9dd190cc",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@eca0e9dd190cc.csv",
+      "epoch": "e5714553b017d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e5714553b017d.csv",
       "found": "2026-11-22",
-      "id": "S3ScanBenchmark.hardwoodMultiFileScan@eca0e9dd190cc@md02f92f9f202@5f3b19115",
+      "id": "S3ScanBenchmark.hardwoodMultiFileScan@e5714553b017d@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -233,7 +233,7 @@
       },
       "script": "s3",
       "status": "improvement",
-      "test": "S3ScanBenchmark.hardwoodMultiFileScan@eca0e9dd190cc@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodMultiFileScan@e5714553b017d@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -242,10 +242,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodProjectedScan",
-      "epoch": "edcf72db82a92",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodProjectedScan@edcf72db82a92.csv",
+      "epoch": "e210fc05a6caf",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodProjectedScan@e210fc05a6caf.csv",
       "found": "2026-11-22",
-      "id": "S3ScanBenchmark.hardwoodProjectedScan@edcf72db82a92@md02f92f9f202@5f3b19115",
+      "id": "S3ScanBenchmark.hardwoodProjectedScan@e210fc05a6caf@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -258,7 +258,7 @@
       },
       "script": "s3",
       "status": "improvement",
-      "test": "S3ScanBenchmark.hardwoodProjectedScan@edcf72db82a92@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodProjectedScan@e210fc05a6caf@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -267,10 +267,10 @@
       "benchmark": "BinaryScanBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodRowStrings",
-      "epoch": "e03fcf65044f2",
-      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@e03fcf65044f2.csv",
+      "epoch": "ea88286eb648d",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@ea88286eb648d.csv",
       "found": "2026-11-23",
-      "id": "BinaryScanBenchmark.hardwoodRowStrings@e03fcf65044f2@md02f92f9f202@4e51455c6",
+      "id": "BinaryScanBenchmark.hardwoodRowStrings@ea88286eb648d@md02f92f9f202@4e51455c6",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -301,7 +301,7 @@
       },
       "script": "binary",
       "status": "history",
-      "test": "BinaryScanBenchmark.hardwoodRowStrings@e03fcf65044f2@md02f92f9f202",
+      "test": "BinaryScanBenchmark.hardwoodRowStrings@ea88286eb648d@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -310,10 +310,10 @@
       "benchmark": "BloomFilterBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodBloom[absent]",
-      "epoch": "e856c85d615e1",
-      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e856c85d615e1.csv",
+      "epoch": "e2748e4929223",
+      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e2748e4929223.csv",
       "found": "2026-11-23",
-      "id": "BloomFilterBenchmark.hardwoodBloom[absent]@e856c85d615e1@md02f92f9f202@4e51455c6",
+      "id": "BloomFilterBenchmark.hardwoodBloom[absent]@e2748e4929223@md02f92f9f202@4e51455c6",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -338,7 +338,7 @@
       },
       "script": "bloom",
       "status": "history",
-      "test": "BloomFilterBenchmark.hardwoodBloom[absent]@e856c85d615e1@md02f92f9f202",
+      "test": "BloomFilterBenchmark.hardwoodBloom[absent]@e2748e4929223@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -347,10 +347,10 @@
       "benchmark": "FilterBenchmark",
       "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
       "contender": "hardwoodDefault[matchAll]",
-      "epoch": "ea7a1773425b6",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@ea7a1773425b6.csv",
+      "epoch": "e006709a579c5",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@e006709a579c5.csv",
       "found": "2026-11-23",
-      "id": "FilterBenchmark.hardwoodDefault[matchAll]@ea7a1773425b6@md02f92f9f202@fe06a5d09",
+      "id": "FilterBenchmark.hardwoodDefault[matchAll]@e006709a579c5@md02f92f9f202@fe06a5d09",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -363,7 +363,7 @@
       },
       "script": "filter",
       "status": "improvement",
-      "test": "FilterBenchmark.hardwoodDefault[matchAll]@ea7a1773425b6@md02f92f9f202",
+      "test": "FilterBenchmark.hardwoodDefault[matchAll]@e006709a579c5@md02f92f9f202",
       "version": "1.1.0.Beta1"
     },
     {
@@ -372,10 +372,10 @@
       "benchmark": "FilterBenchmark",
       "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
       "contender": "hardwoodDefault[selective]",
-      "epoch": "e52d8e0ba8c98",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@e52d8e0ba8c98.csv",
+      "epoch": "ee7638931a8c0",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@ee7638931a8c0.csv",
       "found": "2026-11-23",
-      "id": "FilterBenchmark.hardwoodDefault[selective]@e52d8e0ba8c98@md02f92f9f202@29c1af9c1",
+      "id": "FilterBenchmark.hardwoodDefault[selective]@ee7638931a8c0@md02f92f9f202@29c1af9c1",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -394,7 +394,7 @@
       },
       "script": "filter",
       "status": "improvement",
-      "test": "FilterBenchmark.hardwoodDefault[selective]@e52d8e0ba8c98@md02f92f9f202",
+      "test": "FilterBenchmark.hardwoodDefault[selective]@ee7638931a8c0@md02f92f9f202",
       "version": "1.1.0.Beta2"
     },
     {
@@ -403,10 +403,10 @@
       "benchmark": "FilterBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodRowReader[matchAll]",
-      "epoch": "ea353eedb1b66",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@ea353eedb1b66.csv",
+      "epoch": "ef833082e8572",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@ef833082e8572.csv",
       "found": "2026-11-23",
-      "id": "FilterBenchmark.hardwoodRowReader[matchAll]@ea353eedb1b66@md02f92f9f202@4e51455c6",
+      "id": "FilterBenchmark.hardwoodRowReader[matchAll]@ef833082e8572@md02f92f9f202@4e51455c6",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -419,7 +419,7 @@
       },
       "script": "filter",
       "status": "improvement",
-      "test": "FilterBenchmark.hardwoodRowReader[matchAll]@ea353eedb1b66@md02f92f9f202",
+      "test": "FilterBenchmark.hardwoodRowReader[matchAll]@ef833082e8572@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -428,10 +428,10 @@
       "benchmark": "FixedSizeListScanBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "columnFast[768]",
-      "epoch": "eb3b9da01c7fe",
-      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@eb3b9da01c7fe.csv",
+      "epoch": "ebe7477cfa3bb",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@ebe7477cfa3bb.csv",
       "found": "2026-11-23",
-      "id": "FixedSizeListScanBenchmark.columnFast[768]@eb3b9da01c7fe@md02f92f9f202@5f3b19115",
+      "id": "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202@5f3b19115",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -444,7 +444,7 @@
       },
       "script": "fixedlist",
       "status": "history",
-      "test": "FixedSizeListScanBenchmark.columnFast[768]@eb3b9da01c7fe@md02f92f9f202",
+      "test": "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -453,10 +453,10 @@
       "benchmark": "FixedSizeListScanBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "rowFast[768]",
-      "epoch": "e166f50f277a2",
-      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e166f50f277a2.csv",
+      "epoch": "e48f1093e0d89",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e48f1093e0d89.csv",
       "found": "2026-11-23",
-      "id": "FixedSizeListScanBenchmark.rowFast[768]@e166f50f277a2@md02f92f9f202@5f3b19115",
+      "id": "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202@5f3b19115",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -469,7 +469,7 @@
       },
       "script": "fixedlist",
       "status": "history",
-      "test": "FixedSizeListScanBenchmark.rowFast[768]@e166f50f277a2@md02f92f9f202",
+      "test": "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -478,10 +478,10 @@
       "benchmark": "FlatScanBenchmark",
       "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
       "contender": "hardwoodColumnar",
-      "epoch": "ee12cd1e95e55",
-      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodColumnar@ee12cd1e95e55.csv",
+      "epoch": "ede09a944fed6",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodColumnar@ede09a944fed6.csv",
       "found": "2026-11-23",
-      "id": "FlatScanBenchmark.hardwoodColumnar@ee12cd1e95e55@md02f92f9f202@29c1af9c1",
+      "id": "FlatScanBenchmark.hardwoodColumnar@ede09a944fed6@md02f92f9f202@29c1af9c1",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -494,7 +494,7 @@
       },
       "script": "flat",
       "status": "improvement",
-      "test": "FlatScanBenchmark.hardwoodColumnar@ee12cd1e95e55@md02f92f9f202",
+      "test": "FlatScanBenchmark.hardwoodColumnar@ede09a944fed6@md02f92f9f202",
       "version": "1.1.0.Beta2"
     },
     {
@@ -503,10 +503,10 @@
       "benchmark": "FloatEncodingBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodRead[ZSTD][ALP]",
-      "epoch": "e4123316cdada",
-      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@e4123316cdada.csv",
+      "epoch": "ec2994a9b5a47",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@ec2994a9b5a47.csv",
       "found": "2026-11-23",
-      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@e4123316cdada@md02f92f9f202@5f3b19115",
+      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@ec2994a9b5a47@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -519,7 +519,7 @@
       },
       "script": "encodings",
       "status": "improvement",
-      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@e4123316cdada@md02f92f9f202",
+      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@ec2994a9b5a47@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -528,10 +528,10 @@
       "benchmark": "FloatEncodingBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]",
-      "epoch": "eded67249cd62",
-      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@eded67249cd62.csv",
+      "epoch": "e1835d93d9859",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv",
       "found": "2026-11-23",
-      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@eded67249cd62@md02f92f9f202@5f3b19115",
+      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -544,7 +544,7 @@
       },
       "script": "encodings",
       "status": "improvement",
-      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@eded67249cd62@md02f92f9f202",
+      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -553,10 +553,10 @@
       "benchmark": "FloatEncodingBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodWrite[ZSTD][ALP]",
-      "epoch": "e0b9fe4c032ac",
-      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][ALP]@e0b9fe4c032ac.csv",
+      "epoch": "e49097b4a5400",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][ALP]@e49097b4a5400.csv",
       "found": "2026-11-23",
-      "id": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e0b9fe4c032ac@md02f92f9f202@5f3b19115",
+      "id": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e49097b4a5400@md02f92f9f202@5f3b19115",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -575,7 +575,7 @@
       },
       "script": "encodings",
       "status": "improvement",
-      "test": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e0b9fe4c032ac@md02f92f9f202",
+      "test": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e49097b4a5400@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -584,10 +584,10 @@
       "benchmark": "NarrowScanBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodColumnar",
-      "epoch": "ee16c4bee7823",
-      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@ee16c4bee7823.csv",
+      "epoch": "e044f18199212",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@e044f18199212.csv",
       "found": "2026-11-23",
-      "id": "NarrowScanBenchmark.hardwoodColumnar@ee16c4bee7823@md02f92f9f202@4e51455c6",
+      "id": "NarrowScanBenchmark.hardwoodColumnar@e044f18199212@md02f92f9f202@4e51455c6",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -606,7 +606,7 @@
       },
       "script": "narrow",
       "status": "improvement",
-      "test": "NarrowScanBenchmark.hardwoodColumnar@ee16c4bee7823@md02f92f9f202",
+      "test": "NarrowScanBenchmark.hardwoodColumnar@e044f18199212@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -615,10 +615,10 @@
       "benchmark": "NarrowScanBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodRowReaderIndexed",
-      "epoch": "e4b1ee11cc3cd",
-      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@e4b1ee11cc3cd.csv",
+      "epoch": "e59cf9b37f6f5",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@e59cf9b37f6f5.csv",
       "found": "2026-11-23",
-      "id": "NarrowScanBenchmark.hardwoodRowReaderIndexed@e4b1ee11cc3cd@md02f92f9f202@4e51455c6",
+      "id": "NarrowScanBenchmark.hardwoodRowReaderIndexed@e59cf9b37f6f5@md02f92f9f202@4e51455c6",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -637,7 +637,7 @@
       },
       "script": "narrow",
       "status": "improvement",
-      "test": "NarrowScanBenchmark.hardwoodRowReaderIndexed@e4b1ee11cc3cd@md02f92f9f202",
+      "test": "NarrowScanBenchmark.hardwoodRowReaderIndexed@e59cf9b37f6f5@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -646,10 +646,10 @@
       "benchmark": "NestedColumnScanBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodColumnReaders",
-      "epoch": "e4adeabdee9f0",
-      "file": "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@e4adeabdee9f0.csv",
+      "epoch": "ead3988f9a241",
+      "file": "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@ead3988f9a241.csv",
       "found": "2026-11-23",
-      "id": "NestedColumnScanBenchmark.hardwoodColumnReaders@e4adeabdee9f0@md02f92f9f202@4e51455c6",
+      "id": "NestedColumnScanBenchmark.hardwoodColumnReaders@ead3988f9a241@md02f92f9f202@4e51455c6",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -668,7 +668,7 @@
       },
       "script": "nested-columns",
       "status": "improvement",
-      "test": "NestedColumnScanBenchmark.hardwoodColumnReaders@e4adeabdee9f0@md02f92f9f202",
+      "test": "NestedColumnScanBenchmark.hardwoodColumnReaders@ead3988f9a241@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -677,10 +677,10 @@
       "benchmark": "OneBrcBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodColumnIds",
-      "epoch": "e5ae73428ff90",
-      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnIds@e5ae73428ff90.csv",
+      "epoch": "e6b578946ef5d",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnIds@e6b578946ef5d.csv",
       "found": "2026-11-23",
-      "id": "OneBrcBenchmark.hardwoodColumnIds@e5ae73428ff90@md02f92f9f202@4e51455c6",
+      "id": "OneBrcBenchmark.hardwoodColumnIds@e6b578946ef5d@md02f92f9f202@4e51455c6",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -693,7 +693,7 @@
       },
       "script": "1brc",
       "status": "improvement",
-      "test": "OneBrcBenchmark.hardwoodColumnIds@e5ae73428ff90@md02f92f9f202",
+      "test": "OneBrcBenchmark.hardwoodColumnIds@e6b578946ef5d@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -702,10 +702,10 @@
       "benchmark": "OneBrcBenchmark",
       "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
       "contender": "hardwoodColumnSplits",
-      "epoch": "e0c8ca7d6b87e",
-      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@e0c8ca7d6b87e.csv",
+      "epoch": "ee312766ec833",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@ee312766ec833.csv",
       "found": "2026-11-23",
-      "id": "OneBrcBenchmark.hardwoodColumnSplits@e0c8ca7d6b87e@md02f92f9f202@5f3b19115",
+      "id": "OneBrcBenchmark.hardwoodColumnSplits@ee312766ec833@md02f92f9f202@5f3b19115",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -718,7 +718,7 @@
       },
       "script": "1brc",
       "status": "history",
-      "test": "OneBrcBenchmark.hardwoodColumnSplits@e0c8ca7d6b87e@md02f92f9f202",
+      "test": "OneBrcBenchmark.hardwoodColumnSplits@ee312766ec833@md02f92f9f202",
       "version": "1.1.0-main5f3b191-SNAPSHOT"
     },
     {
@@ -727,10 +727,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodMultiFileScan",
-      "epoch": "eca0e9dd190cc",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@eca0e9dd190cc.csv",
+      "epoch": "e5714553b017d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e5714553b017d.csv",
       "found": "2026-11-23",
-      "id": "S3ScanBenchmark.hardwoodMultiFileScan@eca0e9dd190cc@md02f92f9f202@4e51455c6",
+      "id": "S3ScanBenchmark.hardwoodMultiFileScan@e5714553b017d@md02f92f9f202@4e51455c6",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -749,7 +749,7 @@
       },
       "script": "s3",
       "status": "history",
-      "test": "S3ScanBenchmark.hardwoodMultiFileScan@eca0e9dd190cc@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodMultiFileScan@e5714553b017d@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -758,10 +758,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
       "contender": "hardwoodRemoteBesideWideRemote",
-      "epoch": "e8fd119aef4f6",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodRemoteBesideWideRemote@e8fd119aef4f6.csv",
+      "epoch": "e2acc55cd6201",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodRemoteBesideWideRemote@e2acc55cd6201.csv",
       "found": "2026-11-23",
-      "id": "S3ScanBenchmark.hardwoodRemoteBesideWideRemote@e8fd119aef4f6@md02f92f9f202@29c1af9c1",
+      "id": "S3ScanBenchmark.hardwoodRemoteBesideWideRemote@e2acc55cd6201@md02f92f9f202@29c1af9c1",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -774,7 +774,7 @@
       },
       "script": "s3",
       "status": "improvement",
-      "test": "S3ScanBenchmark.hardwoodRemoteBesideWideRemote@e8fd119aef4f6@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodRemoteBesideWideRemote@e2acc55cd6201@md02f92f9f202",
       "version": "1.1.0.Beta2"
     },
     {
@@ -783,10 +783,10 @@
       "benchmark": "TimeWindowBenchmark",
       "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
       "contender": "hardwoodRowFiltered[last25pct]",
-      "epoch": "e07779dd89b9e",
-      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e07779dd89b9e.csv",
+      "epoch": "e8328799634e7",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e8328799634e7.csv",
       "found": "2026-11-23",
-      "id": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@e07779dd89b9e@md02f92f9f202@5f5b27b66",
+      "id": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@e8328799634e7@md02f92f9f202@5f5b27b66",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -799,7 +799,7 @@
       },
       "script": "window",
       "status": "improvement",
-      "test": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@e07779dd89b9e@md02f92f9f202",
+      "test": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@e8328799634e7@md02f92f9f202",
       "version": "1.1.0-main5f5b27b-SNAPSHOT"
     },
     {
@@ -808,10 +808,10 @@
       "benchmark": "FlatScanBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodRowReaderIndexed",
-      "epoch": "e765379fa52f5",
-      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e765379fa52f5.csv",
+      "epoch": "e2fd5775b764f",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e2fd5775b764f.csv",
       "found": "2026-11-24",
-      "id": "FlatScanBenchmark.hardwoodRowReaderIndexed@e765379fa52f5@md02f92f9f202@4e51455c6",
+      "id": "FlatScanBenchmark.hardwoodRowReaderIndexed@e2fd5775b764f@md02f92f9f202@4e51455c6",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -824,7 +824,7 @@
       },
       "script": "flat",
       "status": "improvement",
-      "test": "FlatScanBenchmark.hardwoodRowReaderIndexed@e765379fa52f5@md02f92f9f202",
+      "test": "FlatScanBenchmark.hardwoodRowReaderIndexed@e2fd5775b764f@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -833,10 +833,10 @@
       "benchmark": "TimeWindowBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodColumnFiltered[last25pct]",
-      "epoch": "e7705bc08a429",
-      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e7705bc08a429.csv",
+      "epoch": "e3077579faf4f",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e3077579faf4f.csv",
       "found": "2026-11-24",
-      "id": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e7705bc08a429@md02f92f9f202@4e51455c6",
+      "id": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e3077579faf4f@md02f92f9f202@4e51455c6",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -849,7 +849,7 @@
       },
       "script": "window",
       "status": "improvement",
-      "test": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e7705bc08a429@md02f92f9f202",
+      "test": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e3077579faf4f@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -858,10 +858,10 @@
       "benchmark": "DictionaryFilterBenchmark",
       "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
       "contender": "hardwoodRowIn",
-      "epoch": "e611bb1789b2a",
-      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e611bb1789b2a.csv",
+      "epoch": "e9ea1eeab2fc2",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e9ea1eeab2fc2.csv",
       "found": "2026-11-27",
-      "id": "DictionaryFilterBenchmark.hardwoodRowIn@e611bb1789b2a@md02f92f9f202@29c1af9c1",
+      "id": "DictionaryFilterBenchmark.hardwoodRowIn@e9ea1eeab2fc2@md02f92f9f202@29c1af9c1",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -880,7 +880,7 @@
       },
       "script": "dictfilter",
       "status": "improvement",
-      "test": "DictionaryFilterBenchmark.hardwoodRowIn@e611bb1789b2a@md02f92f9f202",
+      "test": "DictionaryFilterBenchmark.hardwoodRowIn@e9ea1eeab2fc2@md02f92f9f202",
       "version": "1.1.0.Beta2"
     },
     {
@@ -889,10 +889,10 @@
       "benchmark": "DictionaryFilterBenchmark",
       "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
       "contender": "hardwoodRowLtWide",
-      "epoch": "eba8aa0b07ab5",
-      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@eba8aa0b07ab5.csv",
+      "epoch": "e921dc696cfe5",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@e921dc696cfe5.csv",
       "found": "2026-11-27",
-      "id": "DictionaryFilterBenchmark.hardwoodRowLtWide@eba8aa0b07ab5@md02f92f9f202@29c1af9c1",
+      "id": "DictionaryFilterBenchmark.hardwoodRowLtWide@e921dc696cfe5@md02f92f9f202@29c1af9c1",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -905,7 +905,7 @@
       },
       "script": "dictfilter",
       "status": "improvement",
-      "test": "DictionaryFilterBenchmark.hardwoodRowLtWide@eba8aa0b07ab5@md02f92f9f202",
+      "test": "DictionaryFilterBenchmark.hardwoodRowLtWide@e921dc696cfe5@md02f92f9f202",
       "version": "1.1.0.Beta2"
     },
     {
@@ -914,10 +914,10 @@
       "benchmark": "FloatEncodingBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]",
-      "epoch": "ef5811df5e455",
-      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef5811df5e455.csv",
+      "epoch": "ef2970f5ab64a",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a.csv",
       "found": "2026-11-27",
-      "id": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef5811df5e455@md02f92f9f202@4e51455c6",
+      "id": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a@md02f92f9f202@4e51455c6",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -936,7 +936,7 @@
       },
       "script": "encodings",
       "status": "history",
-      "test": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef5811df5e455@md02f92f9f202",
+      "test": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -945,10 +945,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
       "contender": "hardwoodFixedSizeBloomLookup",
-      "epoch": "e96ec6869eee2",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@e96ec6869eee2.csv",
+      "epoch": "ed720ee3e8431",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@ed720ee3e8431.csv",
       "found": "2026-11-27",
-      "id": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@e96ec6869eee2@md02f92f9f202@fe06a5d09",
+      "id": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@ed720ee3e8431@md02f92f9f202@fe06a5d09",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -961,7 +961,7 @@
       },
       "script": "s3",
       "status": "improvement",
-      "test": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@e96ec6869eee2@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@ed720ee3e8431@md02f92f9f202",
       "version": "1.1.0.Beta1"
     },
     {
@@ -970,10 +970,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
       "contender": "hardwoodLargeBloomLookup",
-      "epoch": "e9212760aa9a8",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e9212760aa9a8.csv",
+      "epoch": "e851ae5de5a67",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e851ae5de5a67.csv",
       "found": "2026-11-27",
-      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202@fe06a5d09",
+      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202@fe06a5d09",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -998,7 +998,7 @@
       },
       "script": "s3",
       "status": "improvement",
-      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202",
       "version": "1.1.0.Beta1"
     },
     {
@@ -1007,10 +1007,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodLargeBloomLookup",
-      "epoch": "e9212760aa9a8",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e9212760aa9a8.csv",
+      "epoch": "e851ae5de5a67",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e851ae5de5a67.csv",
       "found": "2026-11-27",
-      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202@4e51455c6",
+      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202@4e51455c6",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -1023,7 +1023,7 @@
       },
       "script": "s3",
       "status": "history",
-      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -1032,10 +1032,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
       "contender": "hardwoodLargeBloomLookup",
-      "epoch": "e9212760aa9a8",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e9212760aa9a8.csv",
+      "epoch": "e851ae5de5a67",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e851ae5de5a67.csv",
       "found": "2026-11-27",
-      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202@5f5b27b66",
+      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202@5f5b27b66",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -1048,7 +1048,7 @@
       },
       "script": "s3",
       "status": "improvement",
-      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e9212760aa9a8@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202",
       "version": "1.1.0-main5f5b27b-SNAPSHOT"
     },
     {
@@ -1057,10 +1057,10 @@
       "benchmark": "S3ScanBenchmark",
       "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
       "contender": "hardwoodWideFilteredScan",
-      "epoch": "e2b82fb943782",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodWideFilteredScan@e2b82fb943782.csv",
+      "epoch": "e360bc0b8e09d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodWideFilteredScan@e360bc0b8e09d.csv",
       "found": "2026-11-27",
-      "id": "S3ScanBenchmark.hardwoodWideFilteredScan@e2b82fb943782@md02f92f9f202@29c1af9c1",
+      "id": "S3ScanBenchmark.hardwoodWideFilteredScan@e360bc0b8e09d@md02f92f9f202@29c1af9c1",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -1073,7 +1073,7 @@
       },
       "script": "s3",
       "status": "improvement",
-      "test": "S3ScanBenchmark.hardwoodWideFilteredScan@e2b82fb943782@md02f92f9f202",
+      "test": "S3ScanBenchmark.hardwoodWideFilteredScan@e360bc0b8e09d@md02f92f9f202",
       "version": "1.1.0.Beta2"
     },
     {
@@ -1082,10 +1082,10 @@
       "benchmark": "WriteBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodColumnar[ZSTD]",
-      "epoch": "e3907954adf4e",
-      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodColumnar[ZSTD]@e3907954adf4e.csv",
+      "epoch": "e874d37616bec",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodColumnar[ZSTD]@e874d37616bec.csv",
       "found": "2026-11-27",
-      "id": "WriteBenchmark.hardwoodColumnar[ZSTD]@e3907954adf4e@md02f92f9f202@4e51455c6",
+      "id": "WriteBenchmark.hardwoodColumnar[ZSTD]@e874d37616bec@md02f92f9f202@4e51455c6",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -1110,7 +1110,7 @@
       },
       "script": "write",
       "status": "history",
-      "test": "WriteBenchmark.hardwoodColumnar[ZSTD]@e3907954adf4e@md02f92f9f202",
+      "test": "WriteBenchmark.hardwoodColumnar[ZSTD]@e874d37616bec@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -1119,10 +1119,10 @@
       "benchmark": "WriteBenchmark",
       "commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
       "contender": "hardwoodRow[ZSTD]",
-      "epoch": "e7b49ef507e71",
-      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e7b49ef507e71.csv",
+      "epoch": "e641ad6953670",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e641ad6953670.csv",
       "found": "2026-11-27",
-      "id": "WriteBenchmark.hardwoodRow[ZSTD]@e7b49ef507e71@md02f92f9f202@4e51455c6",
+      "id": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202@4e51455c6",
       "kind": "regression",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -1141,7 +1141,7 @@
       },
       "script": "write",
       "status": "history",
-      "test": "WriteBenchmark.hardwoodRow[ZSTD]@e7b49ef507e71@md02f92f9f202",
+      "test": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202",
       "version": "1.1.0-main4e51455-SNAPSHOT"
     },
     {
@@ -1150,10 +1150,10 @@
       "benchmark": "WriteBenchmark",
       "commit": "98097e6750d6daa7a6cc06238269d14d3a1df026",
       "contender": "hardwoodRow[ZSTD]",
-      "epoch": "e7b49ef507e71",
-      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e7b49ef507e71.csv",
+      "epoch": "e641ad6953670",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e641ad6953670.csv",
       "found": "2026-11-27",
-      "id": "WriteBenchmark.hardwoodRow[ZSTD]@e7b49ef507e71@md02f92f9f202@98097e675",
+      "id": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202@98097e675",
       "kind": "improvement",
       "machine": "md02f92f9f202",
       "metrics": {
@@ -1166,11 +1166,11 @@
       },
       "script": "write",
       "status": "improvement",
-      "test": "WriteBenchmark.hardwoodRow[ZSTD]@e7b49ef507e71@md02f92f9f202",
+      "test": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202",
       "version": "1.1.0-main98097e6-SNAPSHOT"
     }
   ],
-  "generated": "2026-11-27T05:41:13Z",
+  "generated": "2026-11-27T14:48:52Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -1183,12 +1183,433 @@
       "no_turbo": "0"
     }
   },
+  "nights": [
+    {
+      "changes": {
+        "improvement": 9
+      },
+      "commit": "5c428366f47fe456958d8a9aa6959745c93b9c35",
+      "date": "2026-11-22",
+      "flagged": [],
+      "minutes": 47,
+      "report": "reports/2026-11-22.md",
+      "run": "2026-11-22T03:01:28+0100",
+      "scripts": [
+        {
+          "gate_s": 120,
+          "measure_s": 244,
+          "script": "filter"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 104,
+          "script": "bloom"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 106,
+          "script": "window"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 124,
+          "script": "dictfilter"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 277,
+          "script": "1brc"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 115,
+          "script": "binary"
+        },
+        {
+          "gate_s": 285,
+          "measure_s": 80,
+          "script": "nested"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 137,
+          "script": "nested-columns"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 257,
+          "script": "flat"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 145,
+          "script": "narrow"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 99,
+          "script": "fixedlist"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 72,
+          "script": "write"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 278,
+          "script": "encodings"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 361,
+          "script": "s3"
+        }
+      ],
+      "version": "1.1.0-main5c42836-SNAPSHOT"
+    },
+    {
+      "changes": {
+        "history": 6,
+        "improvement": 13
+      },
+      "commit": "5c428366f47fe456958d8a9aa6959745c93b9c35",
+      "date": "2026-11-23",
+      "flagged": [],
+      "minutes": 39,
+      "report": "reports/2026-11-23.md",
+      "run": "2026-11-23T03:00:31+0100",
+      "scripts": [
+        {
+          "gate_s": 0,
+          "measure_s": 244,
+          "script": "filter"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 104,
+          "script": "bloom"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 106,
+          "script": "window"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 124,
+          "script": "dictfilter"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 235,
+          "script": "1brc"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 118,
+          "script": "binary"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 80,
+          "script": "nested"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 136,
+          "script": "nested-columns"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 259,
+          "script": "flat"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 145,
+          "script": "narrow"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 99,
+          "script": "fixedlist"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 74,
+          "script": "write"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 277,
+          "script": "encodings"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 364,
+          "script": "s3"
+        }
+      ],
+      "version": "1.1.0-main5c42836-SNAPSHOT"
+    },
+    {
+      "changes": {
+        "improvement": 2
+      },
+      "commit": "25e397dd44b5652ea25c9927f61728c374c78c4f",
+      "date": "2026-11-24",
+      "flagged": [],
+      "minutes": 58,
+      "report": "reports/2026-11-24.md",
+      "run": "2026-11-24T03:01:28+0100",
+      "scripts": [
+        {
+          "gate_s": 91,
+          "measure_s": 244,
+          "script": "filter"
+        },
+        {
+          "gate_s": 22,
+          "measure_s": 104,
+          "script": "bloom"
+        },
+        {
+          "gate_s": 6,
+          "measure_s": 106,
+          "script": "window"
+        },
+        {
+          "gate_s": 9,
+          "measure_s": 124,
+          "script": "dictfilter"
+        },
+        {
+          "gate_s": 16,
+          "measure_s": 231,
+          "script": "1brc"
+        },
+        {
+          "gate_s": 9,
+          "measure_s": 116,
+          "script": "binary"
+        },
+        {
+          "gate_s": 286,
+          "measure_s": 79,
+          "script": "nested"
+        },
+        {
+          "gate_s": 283,
+          "measure_s": 134,
+          "script": "nested-columns"
+        },
+        {
+          "gate_s": 390,
+          "measure_s": 258,
+          "script": "flat"
+        },
+        {
+          "gate_s": 6,
+          "measure_s": 145,
+          "script": "narrow"
+        },
+        {
+          "gate_s": 8,
+          "measure_s": 99,
+          "script": "fixedlist"
+        },
+        {
+          "gate_s": 3,
+          "measure_s": 74,
+          "script": "write"
+        },
+        {
+          "gate_s": 6,
+          "measure_s": 278,
+          "script": "encodings"
+        },
+        {
+          "gate_s": 16,
+          "measure_s": 360,
+          "script": "s3"
+        }
+      ],
+      "version": "1.1.0-main25e397d-SNAPSHOT"
+    },
+    {
+      "changes": {},
+      "date": "2026-11-25",
+      "flagged": [],
+      "report": "reports/2026-11-25.md",
+      "status": "Nothing recorded: cannot clone Hardwood."
+    },
+    {
+      "changes": {},
+      "date": "2026-11-26",
+      "flagged": [],
+      "report": "reports/2026-11-26.md",
+      "status": "Nothing recorded: cannot clone Hardwood."
+    },
+    {
+      "changes": {
+        "history": 4,
+        "improvement": 7
+      },
+      "commit": "98097e6750d6daa7a6cc06238269d14d3a1df026",
+      "date": "2026-11-27",
+      "flagged": [],
+      "minutes": 65,
+      "report": "reports/2026-11-27.md",
+      "run": "2026-11-27T03:01:35+0100",
+      "scripts": [
+        {
+          "gate_s": 92,
+          "measure_s": 414,
+          "script": "filter"
+        },
+        {
+          "gate_s": 23,
+          "measure_s": 104,
+          "script": "bloom"
+        },
+        {
+          "gate_s": 6,
+          "measure_s": 107,
+          "script": "window"
+        },
+        {
+          "gate_s": 10,
+          "measure_s": 124,
+          "script": "dictfilter"
+        },
+        {
+          "gate_s": 16,
+          "measure_s": 234,
+          "script": "1brc"
+        },
+        {
+          "gate_s": 9,
+          "measure_s": 116,
+          "script": "binary"
+        },
+        {
+          "gate_s": 290,
+          "measure_s": 80,
+          "script": "nested"
+        },
+        {
+          "gate_s": 286,
+          "measure_s": 132,
+          "script": "nested-columns"
+        },
+        {
+          "gate_s": 393,
+          "measure_s": 368,
+          "script": "flat"
+        },
+        {
+          "gate_s": 6,
+          "measure_s": 145,
+          "script": "narrow"
+        },
+        {
+          "gate_s": 28,
+          "measure_s": 70,
+          "script": "wide"
+        },
+        {
+          "gate_s": 7,
+          "measure_s": 99,
+          "script": "fixedlist"
+        },
+        {
+          "gate_s": 4,
+          "measure_s": 71,
+          "script": "write"
+        },
+        {
+          "gate_s": 6,
+          "measure_s": 276,
+          "script": "encodings"
+        },
+        {
+          "gate_s": 16,
+          "measure_s": 362,
+          "script": "s3"
+        }
+      ],
+      "version": "1.1.0-main98097e6-SNAPSHOT"
+    }
+  ],
+  "releases": [
+    {
+      "base": "09b1fe3be7ef9de5d38d7c876d111c544825f489",
+      "commit": "09b1fe3be7ef9de5d38d7c876d111c544825f489",
+      "time": "2026-02-26T12:27:33Z",
+      "version": "1.0.0.Alpha1"
+    },
+    {
+      "base": "0cdd8920e7ea8356ed91972ae463d8615768eb3b",
+      "commit": "d042ff994c30365d226cc84c40fa83f6411e4276",
+      "time": "2026-04-02T11:38:03Z",
+      "version": "1.0.0.Beta1"
+    },
+    {
+      "base": "9f28463b8bc5bbabbed5b2e4025104490cdf1f98",
+      "commit": "9f28463b8bc5bbabbed5b2e4025104490cdf1f98",
+      "time": "2026-04-29T16:25:06Z",
+      "version": "1.0.0.Beta2"
+    },
+    {
+      "base": "67cbb682936e5afa8e0f8119d9d74f13465d5930",
+      "commit": "67cbb682936e5afa8e0f8119d9d74f13465d5930",
+      "time": "2026-05-31T18:50:14Z",
+      "version": "1.0.0.CR1"
+    },
+    {
+      "base": "80b0df891d06d75f92894d56f99d4096013ee0f9",
+      "commit": "80b0df891d06d75f92894d56f99d4096013ee0f9",
+      "time": "2026-06-07T19:03:18Z",
+      "version": "1.0.0.CR2"
+    },
+    {
+      "base": "cb41af6d068792dc1c2bcd43ca7afbffa190aa36",
+      "commit": "cb41af6d068792dc1c2bcd43ca7afbffa190aa36",
+      "time": "2026-06-25T10:51:35Z",
+      "version": "1.0.0.Final"
+    },
+    {
+      "base": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "time": "2026-08-31T14:51:58Z",
+      "version": "1.1.0.Beta1"
+    },
+    {
+      "base": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "time": "2026-10-11T16:02:59Z",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "base": "55fab692f60705b4a8cd2f91ef869cd420cbedc3",
+      "commit": "98439a59aab5d3add97d7b9b82372bde47aeb51c",
+      "time": "2026-10-11T16:03:44Z",
+      "version": "1.1.0.Beta3"
+    },
+    {
+      "base": "c371968606d40e8f3db260bc8b71b6112ab41336",
+      "commit": "c371968606d40e8f3db260bc8b71b6112ab41336",
+      "time": "2026-11-24T13:16:35Z",
+      "version": "1.1.0.CR1"
+    }
+  ],
   "series": [
     {
       "benchmark": "BinaryScanBenchmark",
       "contender": "hardwoodColumnViews",
-      "epoch": "ed2fd34c233f5",
-      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodColumnViews@ed2fd34c233f5.csv",
+      "epoch": "eb1c73184fd44",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodColumnViews@eb1c73184fd44.csv",
       "machine": "md02f92f9f202",
       "script": "binary",
       "unsettled": null
@@ -1196,8 +1617,8 @@
     {
       "benchmark": "BinaryScanBenchmark",
       "contender": "hardwoodRowStrings",
-      "epoch": "e03fcf65044f2",
-      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@e03fcf65044f2.csv",
+      "epoch": "ea88286eb648d",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@ea88286eb648d.csv",
       "machine": "md02f92f9f202",
       "script": "binary",
       "unsettled": null
@@ -1205,17 +1626,17 @@
     {
       "benchmark": "BloomFilterBenchmark",
       "contender": "hardwoodBloom[absent]",
-      "epoch": "e856c85d615e1",
-      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e856c85d615e1.csv",
+      "epoch": "e2748e4929223",
+      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e2748e4929223.csv",
       "machine": "md02f92f9f202",
       "script": "bloom",
-      "unsettled": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e856c85d615e1.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e2748e4929223.unsettled.csv"
     },
     {
       "benchmark": "DictionaryFilterBenchmark",
       "contender": "hardwoodRowIn",
-      "epoch": "e611bb1789b2a",
-      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e611bb1789b2a.csv",
+      "epoch": "e9ea1eeab2fc2",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e9ea1eeab2fc2.csv",
       "machine": "md02f92f9f202",
       "script": "dictfilter",
       "unsettled": null
@@ -1223,17 +1644,17 @@
     {
       "benchmark": "DictionaryFilterBenchmark",
       "contender": "hardwoodRowLtWide",
-      "epoch": "eba8aa0b07ab5",
-      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@eba8aa0b07ab5.csv",
+      "epoch": "e921dc696cfe5",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@e921dc696cfe5.csv",
       "machine": "md02f92f9f202",
       "script": "dictfilter",
-      "unsettled": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@eba8aa0b07ab5.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@e921dc696cfe5.unsettled.csv"
     },
     {
       "benchmark": "FilterBenchmark",
       "contender": "hardwoodDefault[matchAll]",
-      "epoch": "ea7a1773425b6",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@ea7a1773425b6.csv",
+      "epoch": "e006709a579c5",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@e006709a579c5.csv",
       "machine": "md02f92f9f202",
       "script": "filter",
       "unsettled": null
@@ -1241,8 +1662,8 @@
     {
       "benchmark": "FilterBenchmark",
       "contender": "hardwoodDefault[matchAll]",
-      "epoch": "ea89ba1a81f28",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@ea89ba1a81f28.csv",
+      "epoch": "e5960e43329b5",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@e5960e43329b5.csv",
       "machine": "md02f92f9f202",
       "script": "filter",
       "unsettled": null
@@ -1250,17 +1671,17 @@
     {
       "benchmark": "FilterBenchmark",
       "contender": "hardwoodDefault[selective]",
-      "epoch": "e52d8e0ba8c98",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@e52d8e0ba8c98.csv",
+      "epoch": "ee7638931a8c0",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@ee7638931a8c0.csv",
       "machine": "md02f92f9f202",
       "script": "filter",
-      "unsettled": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@e52d8e0ba8c98.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@ee7638931a8c0.unsettled.csv"
     },
     {
       "benchmark": "FilterBenchmark",
       "contender": "hardwoodDefault[selective]",
-      "epoch": "e5e3aacbe8aaf",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@e5e3aacbe8aaf.csv",
+      "epoch": "ef273ed95e67f",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@ef273ed95e67f.csv",
       "machine": "md02f92f9f202",
       "script": "filter",
       "unsettled": null
@@ -1268,8 +1689,8 @@
     {
       "benchmark": "FilterBenchmark",
       "contender": "hardwoodRowReader[matchAll]",
-      "epoch": "ea353eedb1b66",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@ea353eedb1b66.csv",
+      "epoch": "e2070af4af58a",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@e2070af4af58a.csv",
       "machine": "md02f92f9f202",
       "script": "filter",
       "unsettled": null
@@ -1277,8 +1698,8 @@
     {
       "benchmark": "FilterBenchmark",
       "contender": "hardwoodRowReader[matchAll]",
-      "epoch": "ed7aee2649ec4",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@ed7aee2649ec4.csv",
+      "epoch": "ef833082e8572",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@ef833082e8572.csv",
       "machine": "md02f92f9f202",
       "script": "filter",
       "unsettled": null
@@ -1286,26 +1707,26 @@
     {
       "benchmark": "FilterBenchmark",
       "contender": "hardwoodRowReader[selective]",
-      "epoch": "e667870525afe",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@e667870525afe.csv",
+      "epoch": "e508666e2e628",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@e508666e2e628.csv",
       "machine": "md02f92f9f202",
       "script": "filter",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@e508666e2e628.unsettled.csv"
     },
     {
       "benchmark": "FilterBenchmark",
       "contender": "hardwoodRowReader[selective]",
-      "epoch": "ea96e3a68498b",
-      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@ea96e3a68498b.csv",
+      "epoch": "e77f7d13d9411",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@e77f7d13d9411.csv",
       "machine": "md02f92f9f202",
       "script": "filter",
-      "unsettled": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@ea96e3a68498b.unsettled.csv"
+      "unsettled": null
     },
     {
       "benchmark": "FixedSizeListScanBenchmark",
       "contender": "columnFast[768]",
-      "epoch": "eb3b9da01c7fe",
-      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@eb3b9da01c7fe.csv",
+      "epoch": "ebe7477cfa3bb",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@ebe7477cfa3bb.csv",
       "machine": "md02f92f9f202",
       "script": "fixedlist",
       "unsettled": null
@@ -1313,8 +1734,8 @@
     {
       "benchmark": "FixedSizeListScanBenchmark",
       "contender": "rowFast[768]",
-      "epoch": "e166f50f277a2",
-      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e166f50f277a2.csv",
+      "epoch": "e48f1093e0d89",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e48f1093e0d89.csv",
       "machine": "md02f92f9f202",
       "script": "fixedlist",
       "unsettled": null
@@ -1322,8 +1743,8 @@
     {
       "benchmark": "FlatScanBenchmark",
       "contender": "columnarDrain",
-      "epoch": "e069dce6f678f",
-      "file": "series/md02f92f9f202/FlatScanBenchmark/columnarDrain@e069dce6f678f.csv",
+      "epoch": "e0d3eb57274cd",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/columnarDrain@e0d3eb57274cd.csv",
       "machine": "md02f92f9f202",
       "script": "flat",
       "unsettled": null
@@ -1331,8 +1752,8 @@
     {
       "benchmark": "FlatScanBenchmark",
       "contender": "hardwoodColumnar",
-      "epoch": "ee12cd1e95e55",
-      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodColumnar@ee12cd1e95e55.csv",
+      "epoch": "ede09a944fed6",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodColumnar@ede09a944fed6.csv",
       "machine": "md02f92f9f202",
       "script": "flat",
       "unsettled": null
@@ -1340,35 +1761,35 @@
     {
       "benchmark": "FlatScanBenchmark",
       "contender": "hardwoodRowReaderIndexed",
-      "epoch": "e765379fa52f5",
-      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e765379fa52f5.csv",
+      "epoch": "e2fd5775b764f",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e2fd5775b764f.csv",
       "machine": "md02f92f9f202",
       "script": "flat",
-      "unsettled": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e765379fa52f5.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e2fd5775b764f.unsettled.csv"
     },
     {
       "benchmark": "FloatEncodingBenchmark",
       "contender": "hardwoodRead[ZSTD][ALP]",
-      "epoch": "e4123316cdada",
-      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@e4123316cdada.csv",
+      "epoch": "ec2994a9b5a47",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@ec2994a9b5a47.csv",
       "machine": "md02f92f9f202",
       "script": "encodings",
-      "unsettled": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@e4123316cdada.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@ec2994a9b5a47.unsettled.csv"
     },
     {
       "benchmark": "FloatEncodingBenchmark",
       "contender": "hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]",
-      "epoch": "eded67249cd62",
-      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@eded67249cd62.csv",
+      "epoch": "e1835d93d9859",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv",
       "machine": "md02f92f9f202",
       "script": "encodings",
-      "unsettled": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@eded67249cd62.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.unsettled.csv"
     },
     {
       "benchmark": "FloatEncodingBenchmark",
       "contender": "hardwoodWrite[ZSTD][ALP]",
-      "epoch": "e0b9fe4c032ac",
-      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][ALP]@e0b9fe4c032ac.csv",
+      "epoch": "e49097b4a5400",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][ALP]@e49097b4a5400.csv",
       "machine": "md02f92f9f202",
       "script": "encodings",
       "unsettled": null
@@ -1376,8 +1797,8 @@
     {
       "benchmark": "FloatEncodingBenchmark",
       "contender": "hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]",
-      "epoch": "ef5811df5e455",
-      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef5811df5e455.csv",
+      "epoch": "ef2970f5ab64a",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a.csv",
       "machine": "md02f92f9f202",
       "script": "encodings",
       "unsettled": null
@@ -1385,8 +1806,8 @@
     {
       "benchmark": "NarrowScanBenchmark",
       "contender": "hardwoodColumnar",
-      "epoch": "ee16c4bee7823",
-      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@ee16c4bee7823.csv",
+      "epoch": "e044f18199212",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@e044f18199212.csv",
       "machine": "md02f92f9f202",
       "script": "narrow",
       "unsettled": null
@@ -1394,8 +1815,8 @@
     {
       "benchmark": "NarrowScanBenchmark",
       "contender": "hardwoodRowReaderIndexed",
-      "epoch": "e4b1ee11cc3cd",
-      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@e4b1ee11cc3cd.csv",
+      "epoch": "e59cf9b37f6f5",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@e59cf9b37f6f5.csv",
       "machine": "md02f92f9f202",
       "script": "narrow",
       "unsettled": null
@@ -1403,8 +1824,8 @@
     {
       "benchmark": "NestedColumnScanBenchmark",
       "contender": "hardwoodColumnReaders",
-      "epoch": "e4adeabdee9f0",
-      "file": "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@e4adeabdee9f0.csv",
+      "epoch": "ead3988f9a241",
+      "file": "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@ead3988f9a241.csv",
       "machine": "md02f92f9f202",
       "script": "nested-columns",
       "unsettled": null
@@ -1412,8 +1833,8 @@
     {
       "benchmark": "NestedScanBenchmark",
       "contender": "hardwoodRowReaderTyped",
-      "epoch": "ee35015c7b557",
-      "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodRowReaderTyped@ee35015c7b557.csv",
+      "epoch": "e5a9663f26b64",
+      "file": "series/md02f92f9f202/NestedScanBenchmark/hardwoodRowReaderTyped@e5a9663f26b64.csv",
       "machine": "md02f92f9f202",
       "script": "nested",
       "unsettled": null
@@ -1421,8 +1842,8 @@
     {
       "benchmark": "OneBrcBenchmark",
       "contender": "hardwoodColumnIds",
-      "epoch": "e5ae73428ff90",
-      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnIds@e5ae73428ff90.csv",
+      "epoch": "e6b578946ef5d",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnIds@e6b578946ef5d.csv",
       "machine": "md02f92f9f202",
       "script": "1brc",
       "unsettled": null
@@ -1430,17 +1851,17 @@
     {
       "benchmark": "OneBrcBenchmark",
       "contender": "hardwoodColumnSplits",
-      "epoch": "e0c8ca7d6b87e",
-      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@e0c8ca7d6b87e.csv",
+      "epoch": "ee312766ec833",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@ee312766ec833.csv",
       "machine": "md02f92f9f202",
       "script": "1brc",
-      "unsettled": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@e0c8ca7d6b87e.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@ee312766ec833.unsettled.csv"
     },
     {
       "benchmark": "S3ScanBenchmark",
       "contender": "hardwoodFixedSizeBloomLookup",
-      "epoch": "e96ec6869eee2",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@e96ec6869eee2.csv",
+      "epoch": "ed720ee3e8431",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@ed720ee3e8431.csv",
       "machine": "md02f92f9f202",
       "script": "s3",
       "unsettled": null
@@ -1448,8 +1869,8 @@
     {
       "benchmark": "S3ScanBenchmark",
       "contender": "hardwoodLargeBloomLookup",
-      "epoch": "e9212760aa9a8",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e9212760aa9a8.csv",
+      "epoch": "e851ae5de5a67",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e851ae5de5a67.csv",
       "machine": "md02f92f9f202",
       "script": "s3",
       "unsettled": null
@@ -1457,8 +1878,8 @@
     {
       "benchmark": "S3ScanBenchmark",
       "contender": "hardwoodMultiFileScan",
-      "epoch": "eca0e9dd190cc",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@eca0e9dd190cc.csv",
+      "epoch": "e5714553b017d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e5714553b017d.csv",
       "machine": "md02f92f9f202",
       "script": "s3",
       "unsettled": null
@@ -1466,8 +1887,8 @@
     {
       "benchmark": "S3ScanBenchmark",
       "contender": "hardwoodProjectedScan",
-      "epoch": "edcf72db82a92",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodProjectedScan@edcf72db82a92.csv",
+      "epoch": "e210fc05a6caf",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodProjectedScan@e210fc05a6caf.csv",
       "machine": "md02f92f9f202",
       "script": "s3",
       "unsettled": null
@@ -1475,8 +1896,8 @@
     {
       "benchmark": "S3ScanBenchmark",
       "contender": "hardwoodRemoteBesideWideRemote",
-      "epoch": "e8fd119aef4f6",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodRemoteBesideWideRemote@e8fd119aef4f6.csv",
+      "epoch": "e2acc55cd6201",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodRemoteBesideWideRemote@e2acc55cd6201.csv",
       "machine": "md02f92f9f202",
       "script": "s3",
       "unsettled": null
@@ -1484,8 +1905,8 @@
     {
       "benchmark": "S3ScanBenchmark",
       "contender": "hardwoodWideFilteredScan",
-      "epoch": "e2b82fb943782",
-      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodWideFilteredScan@e2b82fb943782.csv",
+      "epoch": "e360bc0b8e09d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodWideFilteredScan@e360bc0b8e09d.csv",
       "machine": "md02f92f9f202",
       "script": "s3",
       "unsettled": null
@@ -1493,35 +1914,35 @@
     {
       "benchmark": "TimeWindowBenchmark",
       "contender": "hardwoodColumnFiltered[last25pct]",
-      "epoch": "e7705bc08a429",
-      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e7705bc08a429.csv",
+      "epoch": "e3077579faf4f",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e3077579faf4f.csv",
       "machine": "md02f92f9f202",
       "script": "window",
-      "unsettled": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e7705bc08a429.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e3077579faf4f.unsettled.csv"
     },
     {
       "benchmark": "TimeWindowBenchmark",
       "contender": "hardwoodRowFiltered[last25pct]",
-      "epoch": "e07779dd89b9e",
-      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e07779dd89b9e.csv",
+      "epoch": "e8328799634e7",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e8328799634e7.csv",
       "machine": "md02f92f9f202",
       "script": "window",
-      "unsettled": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e07779dd89b9e.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e8328799634e7.unsettled.csv"
     },
     {
       "benchmark": "WideScanBenchmark",
       "contender": "hardwoodColumnar",
-      "epoch": "e3e26e54680ef",
-      "file": "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e3e26e54680ef.csv",
+      "epoch": "e5c5077129af3",
+      "file": "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e5c5077129af3.csv",
       "machine": "md02f92f9f202",
       "script": "wide",
-      "unsettled": "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e3e26e54680ef.unsettled.csv"
+      "unsettled": "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e5c5077129af3.unsettled.csv"
     },
     {
       "benchmark": "WriteBenchmark",
       "contender": "hardwoodColumnar[ZSTD]",
-      "epoch": "e3907954adf4e",
-      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodColumnar[ZSTD]@e3907954adf4e.csv",
+      "epoch": "e874d37616bec",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodColumnar[ZSTD]@e874d37616bec.csv",
       "machine": "md02f92f9f202",
       "script": "write",
       "unsettled": null
@@ -1529,8 +1950,8 @@
     {
       "benchmark": "WriteBenchmark",
       "contender": "hardwoodRow[ZSTD]",
-      "epoch": "e7b49ef507e71",
-      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e7b49ef507e71.csv",
+      "epoch": "e641ad6953670",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e641ad6953670.csv",
       "machine": "md02f92f9f202",
       "script": "write",
       "unsettled": null

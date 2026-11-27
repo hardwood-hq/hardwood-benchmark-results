@@ -1,0 +1,17 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "WideScanBenchmark.FILE": "533b379c2ee3",
+    "WideScanBenchmark.inputFile": "42d63cda6a5e"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "wide_scan_10000x2190.parquet": "7.63e+07"
+  },
+  "method": "public long hardwoodColumnar() throws IOException { long checksum = 0; try (HardwoodContext context = BenchContext.create(); ParquetFileReader reader = ParquetFileReader.open(inputFile, context); ColumnReaders cols = reader.buildColumnReaders(ColumnProjection.all()).build()) { int columns = WideFileGenerator.COLUMNS; while (cols.nextBatch()) { int n = cols.getRecordCount(); for (int c = 0; c < columns; c++) { float[] values = cols.getColumnReader(c).getFloats(); for (int i = 0; i < n; i++) { checksum += Float.floatToRawIntBits(values[i]); } } } } return checksum; }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 15",
+  "script": "wide"
+}

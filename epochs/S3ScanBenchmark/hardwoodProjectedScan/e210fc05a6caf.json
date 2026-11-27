@@ -1,0 +1,25 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "S3ScanBenchmark#monthKeys": "d231f3e577ed",
+    "S3ScanBenchmark#projectedScan": "8ea991dec7d0",
+    "S3ScanBenchmark#projectedSum": "b660995cad64",
+    "S3ScanBenchmark#source": "15b6c79dd9ac",
+    "S3ScanBenchmark.BUCKET": "af34e635f9fd",
+    "S3ScanBenchmark.FIRST_MONTH": "17467daed2ca",
+    "S3ScanBenchmark.LAST_MONTH": "f0f0d5bd046b",
+    "S3ScanBenchmark.PROJECTED": "fa8032d3a18a",
+    "S3ScanBenchmark.monthKeys": "f1010968b3e5",
+    "S3ScanBenchmark.source": "7cd6774b77e8"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "yellow_tripdata_2025-01.parquet": "5.92e+07"
+  },
+  "method": "public double hardwoodProjectedScan() throws IOException { return projectedScan(source.inputFile(BUCKET, monthKeys.get(0))); }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 12",
+  "script": "s3"
+}

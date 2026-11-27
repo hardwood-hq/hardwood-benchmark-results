@@ -1,0 +1,18 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "NarrowScanBenchmark.COLUMNS": "683a9103423d",
+    "NarrowScanBenchmark.files": "37dcca702889",
+    "NarrowScanBenchmark.inputFiles": "b688b2cb597c"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "yellow_tripdata_2016-01.parquet": "1.51e+08"
+  },
+  "method": "public long hardwoodColumnar() throws IOException { long checksum = 0; try (HardwoodContext context = BenchContext.create(); ParquetFileReader reader = ParquetFileReader.openAll(inputFiles, context); ColumnReaders cols = reader.buildColumnReaders(ColumnProjection.columns(COLUMNS)).build()) { ColumnReader passengerCount = cols.getColumnReader(0); ColumnReader tripDistance = cols.getColumnReader(1); ColumnReader fareAmount = cols.getColumnReader(2); while (cols.nextBatch()) { int n = cols.getRecordCount(); long[] passengers = passengerCount.getLongs(); double[] distances = tripDistance.getDoubles(); double[] fares = fareAmount.getDoubles(); for (int i = 0; i < n; i++) { checksum += passengers[i] + Double.doubleToLongBits(distances[i]) + Double.doubleToLongBits(fares[i]); } } } return checksum; }",
+  "params": [
+    "{}"
+  ],
+  "preset": "--warmup 18",
+  "script": "narrow"
+}

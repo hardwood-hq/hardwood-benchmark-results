@@ -4,35 +4,80 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Hardwood regression history</title>
-<!-- Written by hardwood-benchmarks' charts/nightly.py page; reads history.json and the series files. -->
+<link rel="icon" type="image/svg+xml" href="https://hardwood.dev/latest/assets/hardwood.svg">
+<!-- Written by hardwood-benchmarks' charts/nightly.py page; reads history.json, the series files and the epoch files. -->
 <style>
   :root {
     --bg: #fbfbfa; --fg: #1d1d1b; --muted: #6b6b66; --grid: #e4e4e0; --line: #2f6db5;
-    --fork: rgba(47, 109, 181, 0.28); --regression: #c2412d; --improvement: #2e8b57; --history: #9a9a94;
+    --epoch-2: #f47230; --epoch-3: #6a4ce2; --epoch-4: #00b894;
+    --regression: #c2412d; --improvement: #2e8b57; --history: #9a9a94;
     --release: #b0b0aa; --card: #ffffff;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --bg: #161615; --fg: #e8e8e4; --muted: #9a9a94; --grid: #2c2c2a; --line: #6ea2e0;
-      --fork: rgba(110, 162, 224, 0.3); --regression: #e46a55; --improvement: #5cbf86; --history: #77776f;
+      --epoch-2: #e76624; --epoch-3: #9887ef; --epoch-4: #00a888;
+      --regression: #e46a55; --improvement: #5cbf86; --history: #77776f;
       --release: #55554f; --card: #1e1e1c;
     }
   }
   :root[data-theme="dark"] {
     --bg: #161615; --fg: #e8e8e4; --muted: #9a9a94; --grid: #2c2c2a; --line: #6ea2e0;
-    --fork: rgba(110, 162, 224, 0.3); --regression: #e46a55; --improvement: #5cbf86; --history: #77776f;
+    --epoch-2: #e76624; --epoch-3: #9887ef; --epoch-4: #00a888;
+    --regression: #e46a55; --improvement: #5cbf86; --history: #77776f;
     --release: #55554f; --card: #1e1e1c;
   }
   body { margin: 0; background: var(--bg); color: var(--fg); font: 14px/1.45 system-ui, sans-serif; }
   main { max-width: 1240px; margin: 0 auto; padding-block: 16px;
     padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-  h1 { font-size: 20px; margin: 0 0 4px; }
+  header.top { position: sticky; top: 0; z-index: 8; background: var(--bg); border-bottom: 1px solid var(--grid); }
+  header .bar { max-width: 1240px; margin: 0 auto; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  h1 { font-size: 21px; margin: 0; line-height: 1.2; font-weight: 650; }
+  .tools { display: flex; align-items: center; gap: 16px; font-size: 13px; color: var(--muted); }
+  .panels { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; align-items: stretch; margin: 14px 0 6px; }
+  @media (max-width: 760px) { .panels { grid-template-columns: minmax(0, 1fr); } }
+  .panel { background: var(--card); border: 1px solid var(--grid); border-radius: 6px; padding: 10px 14px; font-size: 13px; }
+  .panel h3 { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); margin: 0 0 8px; }
+  .panel.night { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+  .panel.night > section + section { border-left: 1px solid var(--grid); padding-left: 20px; }
+  @media (max-width: 1000px) {
+    .panel.night { grid-template-columns: minmax(0, 1fr); }
+    .panel.night > section + section { border-left: 0; padding-left: 0; border-top: 1px solid var(--grid); padding-top: 10px; }
+  }
+  .panel.night > section:first-child { display: flex; flex-direction: column; }
+  .facts { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; margin: 0; }
+  .facts dt { color: var(--muted); font-size: 12px; padding-top: 1px; text-align: right; }
+  .facts dd { margin: 0; font-variant-numeric: tabular-nums; }
+  .facts dd.version { font-weight: 600; }
+  .facts dd div + div { margin-top: 1px; }
+  .panel svg.durations { width: 100%; height: auto; display: block; }
+  .panel h3:has(a.report) { display: flex; align-items: baseline; }
+  .panel h3 a.report { margin-left: auto; text-transform: none; letter-spacing: 0; font-weight: 400; }
+  .legend { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 20px; }
+  .legend .group { color: var(--muted); font-size: 12px; margin-bottom: 4px; }
+  .legend .item { display: flex; align-items: center; gap: 8px; line-height: 1.7; }
+  .legend svg.swatch { width: 20px; height: 12px; flex: 0 0 20px; overflow: visible; }
+  details.help { margin-top: 10px; color: var(--muted); }
+  details.help summary { cursor: pointer; }
+  details.help dl { display: grid; grid-template-columns: max-content 1fr; gap: 4px 14px; margin: 8px 0 2px; }
+  details.help dt { color: var(--fg); }
+  details.help dd { margin: 0; }
+  h2 { scroll-margin-top: 80px; }
   h2 { font-size: 16px; margin: 28px 0 8px; }
-  .meta, .legend, .note { color: var(--muted); font-size: 13px; }
-  .legend span { margin-right: 14px; white-space: nowrap; }
-  select { font: inherit; background: var(--card); color: var(--fg); border: 1px solid var(--grid); padding: 2px 6px; }
+  .meta { color: var(--muted); font-size: 12px; }
+  .row { scroll-margin-top: 64px; transition: box-shadow 0.4s; }
+  .row.flash { box-shadow: 0 0 0 2px var(--regression); }
+  .facts a.jump { display: inline-block; min-width: 1.4em; margin-left: 6px; padding: 0 5px; border: 1px solid currentColor;
+    border-radius: 9px; font-size: 11px; line-height: 16px; text-align: center; color: inherit; text-decoration: none; }
+  .facts a.jump:hover { background: var(--regression); border-color: var(--regression); color: var(--card); }
   .row { background: var(--card); border: 1px solid var(--grid); border-radius: 6px; padding: 8px 10px; margin: 8px 0; }
   .row h3 { font-size: 14px; margin: 0 0 4px; font-weight: 600; word-break: break-all; }
+  .row h3 .badge { margin-left: 8px; font-size: 11px; font-weight: 600; color: var(--regression);
+    border: 1px solid var(--regression); border-radius: 9px; padding: 0 7px; white-space: nowrap; }
+  .epochs { font-size: 12px; color: var(--muted); margin: -2px 0 6px; }
+  .epochs span { margin-right: 16px; cursor: default; }
+  .epochs b { font-weight: 400; }
   .charts { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
   @media (max-width: 900px) { .charts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   @media (max-width: 520px) { .charts { grid-template-columns: minmax(0, 1fr); } }
@@ -40,25 +85,114 @@
   svg { width: 100%; height: auto; display: block; overflow: visible; }
   svg text { fill: var(--muted); font-size: 10px; }
   a { color: var(--line); }
+
+  /* A superseded epoch is faded until it is hovered; hovering an epoch fades every other one in the row. */
+  [data-epoch] { transition: opacity 0.12s; }
+  .superseded { opacity: 0.35; }
+  .row.focus [data-epoch] { opacity: 0.12; }
+  .row.focus [data-epoch].on { opacity: 1; }
+  .row.focus g.on polyline { stroke-width: 2.4; }
+  .row.focus g.on circle.dot { r: 3.4; }
+  circle.dot.at { r: 4.6; stroke: var(--fg); }
+  circle.hit { fill: transparent; stroke: none; cursor: pointer; }
+  .row.focus .epochs span:not(.on) { opacity: 0.4; }
+
+  svg { touch-action: pan-y; user-select: none; -webkit-user-select: none; }
+  svg line.marker { cursor: default; }
+  svg g.forks { stroke-opacity: 0.55; }
+  svg rect.band { fill: var(--muted); fill-opacity: 0.22; stroke: var(--muted); stroke-opacity: 0.5; pointer-events: none; }
+
+  svg text.failed { fill: var(--regression); font-size: 12px; }
+  svg rect.nighthit { cursor: pointer; }
+  svg g.night:hover rect:not(.nighthit) { filter: brightness(1.2); }
+  #tip table.scripts { border-collapse: collapse; font-size: 12px; }
+  #tip table.scripts th { color: var(--muted); font-weight: 400; text-align: left; padding: 0 10px 0 0; }
+  #tip table.scripts td { padding: 0 10px 0 0; font-variant-numeric: tabular-nums; }
+  #tip table.scripts td + td, #tip table.scripts th + th { text-align: right; }
+  .bad { color: var(--regression); }
+  #zoom { display: flex; gap: 8px; align-items: center; font-size: 12px; color: var(--muted); }
+  #zoom[hidden], #reset[hidden] { display: none; }
+  .seg { display: inline-flex; }
+  .seg button { border-radius: 0; margin-left: -1px; }
+  .seg button:first-child { border-radius: 4px 0 0 4px; margin-left: 0; }
+  .seg button:last-child { border-radius: 0 4px 4px 0; }
+  .seg button.on { background: var(--fg); color: var(--card); border-color: var(--fg); }
+  #range { font-variant-numeric: tabular-nums; }
+  button, select { font: inherit; background: var(--card); color: var(--fg); border: 1px solid var(--grid); border-radius: 4px; padding: 2px 8px; }
+  button { cursor: pointer; }
+  button:hover { border-color: var(--muted); }
+  #tip { position: fixed; z-index: 10; pointer-events: none; display: none; max-width: 380px;
+    background: var(--card); color: var(--fg); border: 1px solid var(--grid); border-radius: 6px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18); padding: 7px 10px; font-size: 12px; line-height: 1.4; }
+  #tip .value { font-size: 15px; font-weight: 600; }
+  #tip .metric, #tip .dim { color: var(--muted); }
+  #tip .key { display: inline-block; width: 14px; height: 0; border-top: 2px solid; vertical-align: middle; margin-right: 6px; }
+  #tip .sep { border-top: 1px solid var(--grid); margin: 5px 0; }
+  #tip div { overflow-wrap: anywhere; }
 </style>
 </head>
 <body>
+<header class="top">
+  <div class="bar">
+    <div class="brand"><img src="https://hardwood.dev/latest/assets/hardwood.svg" alt="" width="30" height="30"><h1>Hardwood regression history</h1></div>
+    <div class="tools">
+      <div id="zoom"><span id="range"></span><button id="reset" type="button" title="Esc" hidden>Reset zoom</button><span class="seg"><button type="button" data-preset="recent" class="on">Last 60 days</button><button type="button" data-preset="all">All</button></span></div>
+      <label class="machine">Machine <select id="machine"></select></label>
+    </div>
+  </div>
+</header>
 <main>
-  <h1>Hardwood regression history</h1>
-  <div class="meta" id="meta">Loading…</div>
-  <p class="legend">
-    <span>● settled</span><span>○ not settled or bimodal</span><span style="color:var(--fork)">● each fork's mean (wall)</span>
-    <span style="color:var(--regression)">┃ confirmed regression</span><span style="color:var(--improvement)">┃ improvement</span>
-    <span style="color:var(--history)">┃ earlier change point</span><span style="color:var(--release)">┆ release</span>
-  </p>
-  <p class="note">Wall, CPU and allocated are per operation, lower is better. Heap after GC is the largest heap in use right after a collection in an iteration: live data plus objects promoted and not yet reclaimed, so it moves with when collections fall, by as much as 40 % between runs of one commit where an iteration sees only one or two; a step in it means more survives a young collection only where GC time moves with it. It is charted, not analysed for change points, and no change point is marked on it. The caller share is the CPU time of the thread calling the benchmark against wall time: near 1, that thread never waits on Hardwood, and wall time misses decode changes that CPU time still shows. Rows are placed at the measured commit's time. A break in a line is a new epoch: what the contender measures changed.
-    Machine: <select id="machine"></select></p>
+  <div class="panels">
+    <div class="panel night" id="night"><section><h3>Latest run</h3><div class="meta">Loading…</div></section></div>
+    <section class="panel">
+      <h3>Legend</h3>
+      <div class="legend">
+        <div>
+          <div class="group">Points</div>
+          <div class="item"><svg class="swatch" viewBox="0 0 20 12" aria-hidden="true"><line x1="0" x2="20" y1="6" y2="6" stroke="var(--line)" stroke-width="1.2"/><circle cx="10" cy="6" r="2.8" fill="var(--line)"/></svg>settled run, on the line</div>
+          <div class="item"><svg class="swatch" viewBox="0 0 20 12" aria-hidden="true"><circle cx="10" cy="6" r="2.8" fill="var(--card)" stroke="var(--line)" stroke-width="1.2"/></svg>not settled or bimodal</div>
+          <div class="item"><svg class="swatch" viewBox="0 0 20 12" aria-hidden="true"><g stroke="var(--line)" stroke-opacity="0.55"><line x1="10" x2="10" y1="1" y2="11" stroke-width="0.8"/><line x1="7.5" x2="12.5" y1="1" y2="1"/><line x1="7.5" x2="12.5" y1="5" y2="5"/><line x1="7.5" x2="12.5" y1="11" y2="11"/></g></svg>forks, slowest to fastest</div>
+          <div class="item"><svg class="swatch" viewBox="0 0 20 12" aria-hidden="true"><line x1="0" x2="20" y1="6" y2="6" stroke="var(--epoch-2)" stroke-width="1.2" opacity="0.35"/><circle cx="10" cy="6" r="2.8" fill="var(--epoch-2)" opacity="0.35"/></svg>superseded epoch</div>
+        </div>
+        <div>
+          <div class="group">Markers</div>
+          <div class="item"><svg class="swatch" viewBox="0 0 20 12" aria-hidden="true"><line x1="10" x2="10" y1="0" y2="12" stroke="var(--release)" stroke-dasharray="2 3"/></svg>release</div>
+          <div class="item"><svg class="swatch" viewBox="0 0 20 12" aria-hidden="true"><line x1="10" x2="10" y1="0" y2="12" stroke="var(--regression)" stroke-width="1.5"/></svg>regression</div>
+          <div class="item"><svg class="swatch" viewBox="0 0 20 12" aria-hidden="true"><line x1="10" x2="10" y1="0" y2="12" stroke="var(--improvement)" stroke-width="1.5"/></svg>improvement</div>
+          <div class="item"><svg class="swatch" viewBox="0 0 20 12" aria-hidden="true"><line x1="10" x2="10" y1="0" y2="12" stroke="var(--history)" stroke-width="1.5"/></svg>regression between backfills</div>
+        </div>
+      </div>
+      <details class="help">
+        <summary>How to read these charts</summary>
+      <dl>
+        <dt>Metrics</dt>
+        <dd>Wall, CPU and allocated are per operation; lower is better. Each point sits at the time of the commit it measured; the whiskers on wall time run from the slowest fork's mean to the fastest.</dd>
+        <dt>Heap after GC</dt>
+        <dd>The largest heap in use right after a collection in an iteration: live data plus objects promoted and not yet reclaimed. It moves with when collections fall, by as much as 40 % between runs of one commit, so a step in it means more survives a young collection only where GC time moves with it. It is not analysed for change points.</dd>
+        <dt>Caller share</dt>
+        <dd>The CPU time of the thread calling the benchmark against wall time. Near 1, that thread never waits on Hardwood, and wall time misses decode changes that CPU time still shows.</dd>
+        <dt>Change points</dt>
+        <dd>Apache Otava finds them in wall time, CPU and allocation, from a 3, 5 and 1 % change up. A regression at a commit a night measured opens an issue; one at a commit only backfills measured is drawn grey and opens none. Hover a line for the change in the history and, for a new regression, the change when both commits ran again side by side.</dd>
+        <dt>Epochs</dt>
+        <dd>A new epoch starts when what a contender measures changes, such as its preset. Each epoch has its own colour: the current one blue, superseded ones faded. Unsettled points stay off the line and out of the change-point analysis; a contender whose current epoch has not settled for 3 nights in a row is marked, and opens an issue.</dd>
+        <dt>Time per run</dt>
+        <dd>The bars beside the latest run: each nightly run, measuring in blue and gates in grey, against the dashed 60-minute target; × marks a run that recorded nothing. Backfills are left out.</dd>
+        <dt>Interaction</dt>
+        <dd>Hover a point to see its details and highlight its epoch; click it to open the report of the run that measured it. The charts open on the last 60 days of commits; All shows every recorded row. Drag across any chart to zoom every chart to that time range; Esc or Reset zoom returns.</dd>
+      </dl>
+      </details>
+    </section>
+  </div>
   <div id="content"></div>
 </main>
+<div id="tip" role="tooltip"></div>
 <script>
 const METRICS = [["wall_ms", "Wall", "ms"], ["cpu_ms", "CPU", "ms"], ["alloc_bytes", "Allocated", "B"], ["live_bytes", "Heap after GC", "B"],
   ["caller_share", "Caller share", "ratio"]];
 const W = 280, H = 130, L = 46, R = 6, T = 14, B = 18;
+// Epoch colours by recency within a contender: the current epoch first. Older epochs past the last slot share grey.
+const EPOCH_COLORS = ["var(--line)", "var(--epoch-2)", "var(--epoch-3)", "var(--epoch-4)"];
+const EPOCH_KEYS = ["script", "preset", "common", "params", "fixture", "method", "code"];
 
 function parseCsv(text) {
   const lines = text.trim().split(/\r?\n/);
@@ -74,7 +208,8 @@ function parseCsv(text) {
 
 async function csv(path) {
   if (!path) return [];
-  const response = await fetch(path);
+  // Contender names hold brackets, which some servers (jwebserver) reject unescaped.
+  const response = await fetch(path.split("/").map(encodeURIComponent).join("/"), {cache: "no-cache"});
   return response.ok ? parseCsv(await response.text()) : [];
 }
 
@@ -96,14 +231,54 @@ function el(name, attrs, text) {
   return node;
 }
 
+function div(cls, text) {
+  const node = document.createElement("div");
+  if (cls) node.className = cls;
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
+
+// What an epoch measures, from epochs/<Benchmark>/<contender>/<epoch>.json; fetched once, on first hover.
+function epochMeta(e) {
+  if (!e.meta) {
+    const path = ["epochs", e.benchmark, e.contender, e.epoch + ".json"].map(encodeURIComponent).join("/");
+    e.meta = fetch(path).then(r => r.ok ? r.json() : null, () => null);
+  }
+  return e.meta;
+}
+
+function show(value) {
+  return typeof value === "string" ? value : JSON.stringify(value);
+}
+
+// The fields in which an epoch differs from another, as "key: this → other".
+function differences(meta, other) {
+  const out = [];
+  for (const k of EPOCH_KEYS) {
+    const a = show(meta[k] ?? ""), b = show(other[k] ?? "");
+    if (a === b) continue;
+    if (k === "code") {
+      const x = meta.code || {}, y = other.code || {};
+      const changed = [...new Set([...Object.keys(x), ...Object.keys(y)])].filter(n => x[n] !== y[n]).sort();
+      out.push(`code it reaches differs: ${changed.join(", ")}`);
+    } else {
+      out.push(k === "method" ? "method source differs" : `${k}: ${a || "–"} → ${b || "–"}`);
+    }
+  }
+  return out;
+}
+
 function chart(epochs, metric, unit, span, releases, changes) {
   const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img"});
+  const inside = t => t >= span[0] && t <= span[1];
   const values = [];
   for (const e of epochs) for (const r of e.rows) {
+    if (!inside(r.t)) continue;
     if (r[metric]) values.push(+r[metric]);
     if (metric === "wall_ms" && r.wall_forks_ms) r.wall_forks_ms.split(";").forEach(v => v && values.push(+v));
   }
-  if (!values.length) { svg.append(el("text", {x: L, y: H / 2}, "no data")); return svg; }
+  zoomable(svg);
+  if (!values.length) { svg.append(el("text", {x: L, y: H / 2}, view ? "no data in this range" : "no data")); return svg; }
   let lo = Math.min(...values), hi = Math.max(...values);
   const pad = (hi - lo) * 0.08 || hi * 0.05 || 1;
   lo -= pad; hi += pad;
@@ -113,36 +288,490 @@ function chart(epochs, metric, unit, span, releases, changes) {
     svg.append(el("line", {x1: L, x2: W - R, y1: y(v), y2: y(v), stroke: "var(--grid)"}));
     svg.append(el("text", {x: L - 4, y: y(v) + 3, "text-anchor": "end"}, format(v, unit)));
   }
-  for (const [version, t] of releases) {
-    svg.append(el("line", {x1: x(t), x2: x(t), y1: T, y2: H - B, stroke: "var(--release)", "stroke-dasharray": "2 3"}));
-    if (metric === "wall_ms") svg.append(el("text", {x: x(t) + 2, y: T - 3}, version));
+  // Lines run on to the points just outside a zoomed range; the clip cuts them at the plot's edges.
+  const clip = "clip" + (++clips);
+  const defs = el("defs", {});
+  const rect = el("clipPath", {id: clip});
+  rect.append(el("rect", {x: L - 5, y: 0, width: W - L - R + 10, height: H - B + 5}));
+  defs.append(rect);
+  svg.append(defs);
+  const plot = el("g", {"clip-path": `url(#${clip})`});
+  svg.append(plot);
+  // Labels go on the wall chart only, newest first, each skipped where it would overlap the one to its right.
+  // Releases within a unit of each other share one marker and label.
+  const marks = [];
+  for (const release of [...releases].filter(r => inside(r.t)).sort((a, b) => b.t - a.t)) {
+    const rx = x(release.t), last = marks[marks.length - 1];
+    if (last && last.x - rx < 1) last.releases.unshift(release); else marks.push({x: rx, releases: [release]});
+  }
+  let room = W - R;
+  for (const mark of marks) {
+    const rx = mark.x;
+    plot.append(el("line", {x1: rx, x2: rx, y1: T, y2: H - B, stroke: "var(--release)", "stroke-dasharray": "2 3"}));
+    plot.append(marker(rx, mark.releases.flatMap(r => r.title.split("\n"))));
+    if (metric !== "wall_ms") continue;
+    const label = shortVersions(mark.releases.map(r => r.version)), width = label.length * 5.2;
+    const end = rx + 2 + width > W - R;
+    const left = end ? rx - 2 - width : rx + 2;
+    if (left < L - 5 || left + width > room) continue;
+    plot.append(el("text", end ? {x: rx - 2, y: T - 3, "text-anchor": "end"} : {x: rx + 2, y: T - 3}, label));
+    room = left - 6;
   }
   for (const c of changes) {
-    const color = c.status === "confirmed" ? "var(--regression)" : c.kind === "improvement" ? "var(--improvement)" : "var(--history)";
-    const line = el("line", {x1: x(c.t), x2: x(c.t), y1: T, y2: H - B, stroke: color, "stroke-width": 1.5});
-    line.append(el("title", {}, `${c.status}: ${c.before_commit.slice(0, 9)} → ${c.commit.slice(0, 9)}`));
-    if (c.issue) { const a = el("a", {href: c.issue}); a.append(line); svg.append(a); } else svg.append(line);
+    if (!inside(c.t)) continue;
+    const color = c.status === "regression" ? "var(--regression)" : c.kind === "improvement" ? "var(--improvement)" : "var(--history)";
+    plot.append(el("line", {x1: x(c.t), x2: x(c.t), y1: T, y2: H - B, stroke: color, "stroke-width": 1.5}));
+    const moved = Object.entries(c.metrics).map(([m, v]) => `${m} ${v.percent > 0 ? "+" : ""}${v.percent.toFixed(1)} %`);
+    const beside = Object.entries((c.side_by_side || {}).metrics || {})
+      .map(([m, v]) => `side by side ${m} ${v.percent > 0 ? "+" : ""}${v.percent.toFixed(1)} %`);
+    const hit = marker(x(c.t), [STATUS_WORDS[c.status] || c.status,
+      `${c.before_commit.slice(0, 9)} → ${c.commit.slice(0, 9)}`, ...moved, ...beside,
+      ...(c.issue ? ["Click the line to open " + c.issue + " ↗"] : [])]);
+    if (c.issue) hit.dataset.href = c.issue;
+    plot.append(hit);
   }
-  for (const e of epochs) {
+  // Superseded epochs first, so the current one is drawn on top.
+  const order = [...epochs].sort((a, b) => b.rank - a.rank);
+  const hits = [];
+  for (const e of order) {
+    const g = el("g", {"data-epoch": e.epoch, class: e.rank ? "superseded" : ""});
     const settled = e.rows.filter(r => !r.verdict && r[metric]);
-    if (settled.length > 1) {
-      svg.append(el("polyline", {points: settled.map(r => `${x(r.t)},${y(+r[metric])}`).join(" "),
-        fill: "none", stroke: "var(--line)", "stroke-width": 1.2}));
+    const first = settled.findIndex(r => r.t >= span[0]), next = settled.findIndex(r => r.t > span[1]);
+    const drawn = first < 0 ? [] : settled.slice(Math.max(0, first - 1), next < 0 ? settled.length : next + 1);
+    if (drawn.length > 1) {
+      g.append(el("polyline", {points: drawn.map(r => `${x(r.t)},${y(+r[metric])}`).join(" "),
+        fill: "none", stroke: e.color, "stroke-width": 1.2}));
     }
     for (const r of e.rows) {
-      if (!r[metric]) continue;
-      if (metric === "wall_ms" && r.wall_forks_ms) {
-        for (const v of r.wall_forks_ms.split(";")) if (v) svg.append(el("circle", {cx: x(r.t), cy: y(+v), r: 1.6, fill: "var(--fork)"}));
+      if (!r[metric] || !inside(r.t)) continue;
+      if (metric === "wall_ms" && r.wall_forks_ms) g.append(forks(r, x(r.t), y, e.color));
+      g.append(el("circle", {class: "dot", cx: x(r.t), cy: y(+r[metric]), r: 2.8, "data-key": r.key,
+        fill: r.verdict ? "var(--card)" : e.color, stroke: e.color, "stroke-width": 1.2}));
+      const hit = el("circle", {class: "hit", cx: x(r.t), cy: y(+r[metric]), r: 7});
+      hit.dataset.href = source(r).href;
+      hit.addEventListener("pointerenter", ev => { if (!drag) enter(ev, {e, r, metric, unit}); });
+      hit.addEventListener("pointermove", place);
+      hit.addEventListener("pointerleave", leave);
+      hits.push(hit);
+    }
+    plot.append(g);
+  }
+  // Hit areas above every mark, in drawing order: older epochs first, so newer ones win where points overlap.
+  hits.forEach(h => svg.append(h));
+  svg.append(el("text", {x: L, y: H - 4}, day(span[0])));
+  svg.append(el("text", {x: W - R, y: H - 4, "text-anchor": "end"}, day(span[1])));
+  return svg;
+}
+
+// The run's forks as a whisker: a thin line from the slowest to the fastest fork's mean, a tick at each.
+function forks(r, cx, y, color) {
+  const g = el("g", {class: "forks", stroke: color});
+  const ys = r.wall_forks_ms.split(";").filter(v => v).map(v => y(+v));
+  g.append(el("line", {x1: cx, x2: cx, y1: Math.min(...ys), y2: Math.max(...ys), "stroke-width": 0.8}));
+  for (const fy of ys) g.append(el("line", {x1: cx - 2.5, x2: cx + 2.5, y1: fy, y2: fy, "stroke-width": 1}));
+  return g;
+}
+
+// "1.1.0.CR1" as "1.1 CR1", "1.0.1.Final" as "1.0.1 Final".
+function shortVersion(version) {
+  const m = version.match(/^(\d+)\.(\d+)\.(\d+)\.(.+)$/);
+  return m ? `${m[1]}.${m[2]}${m[3] === "0" ? "" : "." + m[3]} ${m[4]}` : version;
+}
+
+// Versions of one line share its prefix: "1.1 Beta2/Beta3".
+function shortVersions(versions) {
+  const parts = versions.map(v => shortVersion(v).split(" "));
+  return parts.every(p => p.length === 2 && p[0] === parts[0][0])
+    ? parts[0][0] + " " + parts.map(p => p[1]).join("/") : parts.map(p => p.join(" ")).join("/");
+}
+
+// The rendered reports and run files, on GitHub: the page serves them as raw Markdown.
+const RESULTS_REPO = "https://github.com/hardwood-hq/hardwood-benchmark-results/blob/main/";
+let nightOfRun = new Map();
+
+// Where a row was measured: a night's own run has the night's report, any other run (a backfill, a manual one) only its tables.
+function source(r) {
+  const night = nightOfRun.get(r.run);
+  if (night) return {href: RESULTS_REPO + night.report, label: `the ${night.date} report`};
+  return {href: `${RESULTS_REPO}runs/${encodeURIComponent(r.run.replace(/:/g, "") + "-" + r.version)}/tables.md`,
+    label: `the tables of its ${r.run.slice(0, 10)} run`};
+}
+
+const CHANGE_WORDS = [["regression", "regression", "regressions"],
+  ["unstable", "contender no longer settles", "contenders no longer settle"],
+  ["improvement", "improvement", "improvements"],
+  ["history", "regression between backfills", "regressions between backfills"]];
+const STATUS_WORDS = {regression: "regression", improvement: "improvement",
+  history: "regression between backfills (no issue)"};
+
+// The last night: what it measured and how long it took, or why it recorded nothing, and the change points it found.
+function fact(dl, label, ...values) {
+  const dt = document.createElement("dt");
+  dt.textContent = label;
+  const dd = document.createElement("dd");
+  dd.append(...values);
+  dl.append(dt, dd);
+  return dd;
+}
+
+function lastNight(panel, nights) {
+  const night = nights[nights.length - 1];
+  const current = document.createElement("section");
+  const h = document.createElement("h3");
+  h.textContent = night ? `Latest run · ${night.date}` : "Latest run";
+  if (night) {
+    const report = document.createElement("a");
+    report.className = "report";
+    report.href = RESULTS_REPO + night.report;
+    report.textContent = "Report ↗";
+    h.append(report);
+  }
+  current.append(h);
+  const past = document.createElement("section");
+  const h2 = document.createElement("h3");
+  h2.textContent = "Time per run";
+  past.append(h2);
+  panel.replaceChildren(current, past);
+  if (!night) {
+    current.append(div("meta", "No run recorded yet."));
+    return;
+  }
+  const facts = document.createElement("dl");
+  facts.className = "facts";
+  if (night.version) {
+    const link = document.createElement("a");
+    link.href = "https://github.com/hardwood-hq/hardwood/commit/" + night.commit;
+    link.textContent = night.version.replace(/-SNAPSHOT$/, "");
+    link.title = `${night.version} (${night.commit.slice(0, 9)})`;
+    fact(facts, "Version", link).className = "version";
+    fact(facts, "Run time", night.minutes ? `${night.minutes} min` : "–");
+    const lines = [];
+    const counts = new Map();
+    for (const [status, one, many] of CHANGE_WORDS) {
+      if (night.changes[status]) counts.set(one, {many, status, n: (counts.has(one) ? counts.get(one).n : 0) + night.changes[status]});
+    }
+    for (const [one, {many, status, n}] of counts) {
+      const line = div(status === "regression" || status === "unstable" ? "bad" : "", `${n} ${n > 1 ? many : one}`);
+      // Numbered, the name on hover: a contender's full name would not fit the panel.
+      (night.flagged || []).filter(f => f.status === status).forEach((f, i) => {
+        const a = document.createElement("a");
+        a.className = "jump";
+        a.href = "#" + encodeURIComponent(anchorOf(f.benchmark, f.contender));
+        a.textContent = String(i + 1);
+        a.title = `${f.benchmark.replace(/Benchmark$/, "")} · ${f.contender}: show its charts`;
+        a.addEventListener("click", ev => { ev.preventDefault(); jump(f); });
+        line.append(a);
+      });
+      lines.push(line);
+    }
+    if (night.status) fact(facts, "Status", Object.assign(div("bad"), {textContent: night.status}));
+    else fact(facts, "Change points", ...(lines.length ? lines : ["none"]));
+  } else {
+    fact(facts, "Status", Object.assign(div("bad"), {textContent: night.status}));
+  }
+  current.append(facts);
+  past.append(durations(nights));
+}
+
+// The nights' run times: each night's own run as a bar of measuring and gate time, a cross where it
+// recorded nothing. Backfills are left out: their time depends on the version and on the scripts they ran.
+const BUDGET_MIN = 60;
+
+function durations(nights) {
+  const SW = 260, SH = 120, PB = 12, PR = 30, gap = 1;
+  const svg = el("svg", {viewBox: `0 0 ${SW} ${SH}`, role: "img", class: "durations", "aria-label": "Time per run"});
+  const minutes = n => (n.scripts || []).reduce((a, s) => a + s.gate_s + s.measure_s, 0) / 60;
+  const shown = nights.slice(-30);
+  const top = Math.max(BUDGET_MIN, ...shown.map(minutes)) * 1.12;
+  const plotW = SW - PR, plotH = SH - PB;
+  const y = m => plotH - m / top * plotH;
+  const slot = Math.min(14, plotW / Math.max(shown.length, 1));
+  const x0 = plotW - shown.length * slot;
+  svg.append(el("line", {x1: 0, x2: plotW, y1: plotH, y2: plotH, stroke: "var(--grid)"}));
+  shown.forEach((n, i) => {
+    const bx = x0 + i * slot;
+    const g = el("g", {class: "night"});
+    if (n.scripts && n.scripts.length) {
+      const measure = n.scripts.reduce((a, s) => a + s.measure_s, 0) / 60;
+      const gate = n.scripts.reduce((a, s) => a + s.gate_s, 0) / 60;
+      g.append(el("rect", {x: bx + gap, y: y(measure), width: slot - 2 * gap, height: plotH - y(measure), fill: "var(--line)", rx: 1}));
+      if (gate > 0) g.append(el("rect", {x: bx + gap, y: y(measure + gate), width: slot - 2 * gap, height: Math.max(0, y(measure) - y(measure + gate) - 1),
+        fill: "var(--history)", rx: 1}));
+    } else {
+      g.append(el("text", {x: bx + slot / 2, y: plotH - 2, "text-anchor": "middle", class: "failed"}, "×"));
+    }
+    const hit = el("rect", {x: bx, y: 0, width: slot, height: plotH, fill: "transparent", class: "nighthit"});
+    hit.addEventListener("pointerenter", ev => {
+      tip.replaceChildren(...nightTip(n));
+      tip.style.display = "block";
+      place(ev);
+    });
+    hit.addEventListener("pointermove", place);
+    hit.addEventListener("pointerleave", () => { tip.style.display = "none"; });
+    hit.addEventListener("click", () => window.open(RESULTS_REPO + n.report, "_blank", "noopener"));
+    g.append(hit);
+    svg.append(g);
+  });
+  svg.append(el("line", {x1: 0, x2: plotW, y1: y(BUDGET_MIN), y2: y(BUDGET_MIN), stroke: "var(--muted)", "stroke-dasharray": "3 2",
+    "stroke-width": 0.8, "pointer-events": "none"}));
+  svg.append(el("text", {x: plotW + 4, y: y(BUDGET_MIN) + 3}, `${BUDGET_MIN} min`));
+  if (shown.length) {
+    svg.append(el("text", {x: x0, y: SH - 1}, shown[0].date.slice(5)));
+    if (shown.length > 1) svg.append(el("text", {x: plotW, y: SH - 1, "text-anchor": "end"}, shown[shown.length - 1].date.slice(5)));
+  }
+  return svg;
+}
+
+function nightTip(n) {
+  const out = [];
+  const head = div("");
+  const value = document.createElement("span");
+  value.className = "value";
+  const scripts = n.scripts || [];
+  const measure = scripts.reduce((a, s) => a + s.measure_s, 0), gate = scripts.reduce((a, s) => a + s.gate_s, 0);
+  value.textContent = scripts.length ? `${Math.round((measure + gate) / 60)} min` : "nothing recorded";
+  const name = document.createElement("span");
+  name.className = "metric";
+  name.textContent = "  " + n.date;
+  head.append(value, name);
+  out.push(head);
+  if (!scripts.length) {
+    out.push(div("", n.status || ""));
+  } else {
+    out.push(div("dim", `${n.version} · measuring ${Math.round(measure / 60)} min, gates ${Math.round(gate / 60)} min`));
+    out.push(div("sep"));
+    const table = document.createElement("table");
+    table.className = "scripts";
+    const header = document.createElement("tr");
+    for (const t of ["script", "measuring", "gate"]) { const th = document.createElement("th"); th.textContent = t; header.append(th); }
+    table.append(header);
+    for (const s of scripts) {
+      const tr = document.createElement("tr");
+      for (const t of [s.script, `${s.measure_s} s`, s.gate_failed ? `failed, ${s.gate_s} s` : s.gate_s ? `${s.gate_s} s` : "–"]) {
+        const td = document.createElement("td");
+        td.textContent = t;
+        tr.append(td);
       }
-      const dot = el("circle", {cx: x(r.t), cy: y(+r[metric]), r: 2.8,
-        fill: r.verdict ? "var(--card)" : "var(--line)", stroke: "var(--line)", "stroke-width": 1.2});
-      dot.append(el("title", {}, `${format(+r[metric], unit)}\n${r.version} (${r.commit.slice(0, 9)})\n${r.time.slice(0, 10)}${r.verdict ? "\n" + r.verdict : ""}`));
-      svg.append(dot);
+      table.append(tr);
+    }
+    out.push(table);
+  }
+  out.push(div("sep"), div("dim", "Click the bar to open the run's report ↗"));
+  return out;
+}
+
+function day(t) {
+  return new Date(t).toISOString().slice(0, 10);
+}
+
+// Zoom: dragging across any chart's plot narrows every chart to that time range, each with its
+// y axis fitted to the values in it; Escape or the reset button returns to every recorded row.
+let full = null, view = null, drag = null, clips = 0;
+// The charts open on the last RECENT_DAYS of commits, where the nights are; "all" spans every row.
+const RECENT_DAYS = 60;
+let preset = "recent";
+function base() {
+  return preset === "all" ? full : [Math.max(full[0], full[1] - RECENT_DAYS * 864e5), full[1]];
+}
+const drawn = [];
+
+function zoomable(svg) {
+  svg.addEventListener("pointerdown", ev => {
+    if (ev.button !== 0) return;
+    const box = svg.getBoundingClientRect();
+    const toX = clientX => Math.min(W - R, Math.max(L, (clientX - box.left) * W / box.width));
+    const x0 = toX(ev.clientX);
+    const band = el("rect", {class: "band", x: x0, y: T, width: 0, height: H - T - B});
+    svg.append(band);
+    drag = {svg, band, x0, x1: x0, toX, target: ev.target};
+    svg.setPointerCapture(ev.pointerId);
+    leave();
+    ev.preventDefault();
+  });
+  svg.addEventListener("pointermove", ev => {
+    if (!drag || drag.svg !== svg) return;
+    drag.x1 = drag.toX(ev.clientX);
+    drag.band.setAttribute("x", Math.min(drag.x0, drag.x1));
+    drag.band.setAttribute("width", Math.abs(drag.x1 - drag.x0));
+  });
+  const end = ev => {
+    if (!drag || drag.svg !== svg) return;
+    const {band, x0, x1, target} = drag;
+    drag = null;
+    band.remove();
+    if (ev.type !== "pointerup") return;
+    // The svg captures the pointer, so a click on a dot or a marker arrives here, as a drag too short to zoom.
+    if (Math.abs(x1 - x0) < 4) {
+      if (target.dataset && target.dataset.href) window.open(target.dataset.href, "_blank", "noopener");
+      return;
+    }
+    if (!isFinite(full[0])) return;
+    const span = view || base();
+    const toT = px => span[0] + (px - L) / (W - L - R) * (span[1] - span[0]);
+    zoom([toT(Math.min(x0, x1)), toT(Math.max(x0, x1))]);
+  };
+  svg.addEventListener("pointerup", end);
+  svg.addEventListener("pointercancel", end);
+}
+
+function zoom(span) {
+  view = span;
+  for (const d of drawn) d.box.lastChild.replaceWith(chart(d.epochs, d.metric, d.unit, view || base(), d.releases, d.changes));
+  showRange();
+}
+
+// The bar names the span on show: a zoom, or the preset, which is highlighted only while no zoom narrows it.
+function showRange() {
+  const shown = view || (full && isFinite(full[0]) ? base() : null);
+  document.getElementById("range").textContent = shown ? `${day(shown[0])} – ${day(shown[1])}` : "";
+  document.getElementById("reset").hidden = !view;
+  for (const b of document.querySelectorAll(".seg button")) b.classList.toggle("on", !view && b.dataset.preset === preset);
+}
+
+for (const b of document.querySelectorAll(".seg button")) {
+  b.addEventListener("click", () => { preset = b.dataset.preset; if (full) zoom(null); else showRange(); });
+}
+document.getElementById("reset").addEventListener("click", () => zoom(null));
+document.addEventListener("keydown", ev => { if (ev.key === "Escape" && view) zoom(null); });
+
+const tip = document.getElementById("tip");
+let hovered = null;
+
+function highlight(row, epoch, key) {
+  row.classList.toggle("focus", epoch !== null);
+  for (const node of row.querySelectorAll("[data-epoch]")) node.classList.toggle("on", node.dataset.epoch === epoch);
+  for (const span of row.querySelectorAll(".epochs span")) span.classList.toggle("on", span.dataset.for === epoch);
+  for (const node of row.querySelectorAll("circle.dot")) node.classList.toggle("at", key !== null && node.dataset.key === key);
+}
+
+function enter(ev, point) {
+  hovered = point;
+  highlight(point.e.row, point.e.epoch, point.r.key);
+  fillTip(point);
+  tip.style.display = "block";
+  place(ev);
+  Promise.all(point.e.siblings.map(epochMeta)).then(() => { if (hovered === point) { fillTip(point); place(ev); } });
+}
+
+// A marker's hover area: wider than its line, with its lines of text in the tooltip.
+function marker(mx, lines) {
+  const hit = el("line", {x1: mx, x2: mx, y1: T - 10, y2: H - B, stroke: "transparent", "stroke-width": 7, class: "marker"});
+  hit.addEventListener("pointerenter", ev => {
+    if (drag) return;
+    tip.replaceChildren(...lines.map((l, i) => div(i ? "dim" : "", l)));
+    tip.style.display = "block";
+    place(ev);
+  });
+  hit.addEventListener("pointermove", place);
+  hit.addEventListener("pointerleave", () => { tip.style.display = "none"; });
+  return hit;
+}
+
+function leave() {
+  if (hovered) highlight(hovered.e.row, null, null);
+  hovered = null;
+  tip.style.display = "none";
+}
+
+function place(ev) {
+  const gap = 14, w = tip.offsetWidth, h = tip.offsetHeight;
+  let left = ev.clientX + gap, top = ev.clientY + gap;
+  if (left + w > window.innerWidth - 4) left = ev.clientX - gap - w;
+  if (top + h > window.innerHeight - 4) top = ev.clientY - gap - h;
+  tip.style.left = Math.max(4, left) + "px";
+  tip.style.top = Math.max(4, top) + "px";
+}
+
+// Built with textContent only: versions, verdicts and epoch fields come from data files.
+function fillTip({e, r, metric, unit}) {
+  const label = METRICS.find(m => m[0] === metric)[1];
+  tip.replaceChildren();
+  const head = div("");
+  const value = document.createElement("span");
+  value.className = "value";
+  value.textContent = format(+r[metric], unit);
+  const name = document.createElement("span");
+  name.className = "metric";
+  name.textContent = "  " + label;
+  head.append(value, name);
+  tip.append(head);
+  if (metric === "wall_ms" && r.wall_forks_ms) {
+    const spread = r.wall_spread_pct ? ` (±${(+r.wall_spread_pct).toFixed(1)} %)` : "";
+    tip.append(div("dim", "forks " + r.wall_forks_ms.split(";").filter(v => v).map(v => format(+v, unit)).join(" · ") + spread));
+  }
+  if (r.verdict) tip.append(div("", "not counted: " + r.verdict));
+  tip.append(div("sep"));
+  tip.append(div("", `${r.version} (${r.commit.slice(0, 9)})`));
+  tip.append(div("dim", `committed ${r.time.slice(0, 10)} · measured ${r.run.slice(0, 10)}`));
+  tip.append(div("dim", "Click the point to open " + source(r).label + " ↗"));
+  tip.append(div("sep"));
+  const epoch = div("");
+  const key = document.createElement("span");
+  key.className = "key";
+  key.style.borderColor = e.color;
+  epoch.append(key, document.createTextNode(`epoch ${e.epoch} · ${e.rank ? "superseded" : "current"}`));
+  tip.append(epoch);
+  const meta = e.metaValue;
+  if (meta === undefined) {
+    tip.append(div("dim", "loading…"));
+  } else if (meta === null) {
+    tip.append(div("dim", "no epoch file"));
+  } else {
+    tip.append(div("dim", `${meta.script} ${meta.preset || ""} ${meta.common || ""}`.replace(/\s+/g, " ").trim()));
+    if (meta.params && meta.params.length) tip.append(div("dim", "params " + meta.params.join(", ")));
+    const current = e.siblings.find(s => s.rank === 0);
+    if (e.rank && current && current.metaValue) {
+      for (const d of differences(meta, current.metaValue)) tip.append(div("", "vs current — " + d));
     }
   }
-  svg.append(el("text", {x: L, y: H - 4}, new Date(span[0]).toISOString().slice(0, 10)));
-  svg.append(el("text", {x: W - R, y: H - 4, "text-anchor": "end"}, new Date(span[1]).toISOString().slice(0, 10)));
-  return svg;
+}
+
+function legend(row, epochs) {
+  const p = div("epochs");
+  for (const e of [...epochs].sort((a, b) => a.rank - b.rank)) {
+    const span = document.createElement("span");
+    span.dataset.for = e.epoch;
+    const key = document.createElement("b");
+    key.style.color = e.color;
+    key.textContent = "━ ";
+    span.append(key, document.createTextNode(`${e.epoch.slice(0, 7)} ${e.rank ? "superseded" : "current"}`));
+    span.addEventListener("pointerenter", () => highlight(row, e.epoch, null));
+    span.addEventListener("pointerleave", () => highlight(row, null, null));
+    Promise.all(epochs.map(epochMeta)).then(() => {
+      const current = epochs.find(s => s.rank === 0);
+      if (e.rank && e.metaValue && current && current.metaValue) {
+        const d = differences(e.metaValue, current.metaValue);
+        if (d.length) span.title = d.join("\n");
+        const preset = d.find(s => s.startsWith("preset: "));
+        if (preset) span.append(document.createTextNode(` (${preset})`));
+      }
+    });
+    p.append(span);
+  }
+  return p;
+}
+
+function anchorOf(benchmark, contender) {
+  return benchmark + "." + contender;
+}
+
+// The rendering of the machine on show; a jump to another machine's contender renders that one first.
+let shown = {history: null, machine: null, rendered: Promise.resolve()};
+function showMachine(history, machine) {
+  document.getElementById("machine").value = machine;
+  shown = {history, machine, rendered: render(history, machine)};
+  return shown.rendered;
+}
+
+async function jump(f) {
+  if (f.machine && f.machine !== shown.machine && shown.history.machines[f.machine]) await showMachine(shown.history, f.machine);
+  await shown.rendered;
+  const row = document.getElementById(anchorOf(f.benchmark, f.contender));
+  if (!row) return;
+  window.history.replaceState(null, "", "#" + encodeURIComponent(row.id));
+  row.scrollIntoView({behavior: "smooth", block: "start"});
+  row.classList.add("flash");
+  setTimeout(() => row.classList.remove("flash"), 1600);
 }
 
 async function render(history, machine) {
@@ -152,11 +781,25 @@ async function render(history, machine) {
   await Promise.all(series.map(async s => {
     const rows = [...await csv(s.file), ...await csv(s.unsettled)];
     rows.sort((a, b) => a.t - b.t);
+    rows.forEach(r => r.key = r.commit + "@" + r.run);
     s.rows = rows;
+    // A run's offset has no colon (+0100), which only lenient engines parse.
+    s.last = Math.max(...rows.map(r => Date.parse(r.run.replace(/([+-]\d\d)(\d\d)$/, "$1:$2")) || 0));
   }));
   const all = series.flatMap(s => s.rows);
-  const span = [Math.min(...all.map(r => r.t)), Math.max(...all.map(r => r.t))];
-  const releases = [...new Map(all.filter(r => !r.version.includes("SNAPSHOT")).map(r => [r.version, r.t])).entries()];
+  full = [Math.min(...all.map(r => r.t)), Math.max(...all.map(r => r.t))];
+  view = null;
+  drawn.length = 0;
+  // Releases at the commits of main their tags were cut from; a history.json from before the tags has only the measured ones.
+  const tagged = new Map((history.releases || []).map(r => [r.version, {version: r.version, t: Date.parse(r.time),
+    title: `${r.version}\ncut from ${r.base.slice(0, 9)}, committed ${r.time.slice(0, 10)}`}]));
+  for (const r of history.releases ? [] : all) {
+    if (!r.version.includes("SNAPSHOT") && !tagged.has(r.version)) {
+      tagged.set(r.version, {version: r.version, t: r.t, title: `${r.version}\n${r.commit.slice(0, 9)}`});
+    }
+  }
+  const releases = [...tagged.values()];
+  nightOfRun = new Map((history.nights || []).filter(n => n.run).map(n => [n.run, n]));
   const changes = history.changes.filter(c => c.machine === machine);
   for (const c of changes) {
     const s = series.find(s => s.file === c.file);
@@ -179,45 +822,66 @@ async function render(history, machine) {
       h.textContent = cls.replace(/Benchmark$/, "");
       content.append(h);
     }
-    const row = document.createElement("div");
-    row.className = "row";
+    const row = div("row");
+    row.id = anchorOf(cls, contender);
+    // The epoch last measured is current; the others are ranked by how recently they were measured.
+    epochs.sort((a, b) => b.last - a.last).forEach((e, i) => {
+      e.rank = i;
+      e.color = EPOCH_COLORS[i] || "var(--history)";
+      e.row = row;
+      e.siblings = epochs;
+      e.metaValue = undefined;
+      const loaded = epochMeta(e).then(m => { e.metaValue = m; return m; });
+      e.meta = loaded;
+    });
     const h = document.createElement("h3");
     h.textContent = contender;
+    const current = epochs.find(e => e.rank === 0);
+    if (current.unstable) {
+      const badge = document.createElement("span");
+      badge.className = "badge";
+      badge.textContent = `not settled for ${current.unstable} night${current.unstable > 1 ? "s" : ""}`;
+      badge.title = "Its rows stay off the line and out of the change-point analysis until it settles again.";
+      h.append(badge);
+    }
     row.append(h);
-    const charts = document.createElement("div");
-    charts.className = "charts";
+    if (epochs.length > 1) row.append(legend(row, epochs));
+    const charts = div("charts");
     const files = new Set(epochs.map(e => e.file));
     const own = changes.filter(c => files.has(c.file) && !isNaN(c.t));
     for (const [metric, label, unit] of METRICS) {
-      const box = document.createElement("div");
-      box.className = "chart";
-      const title = document.createElement("div");
-      title.className = "title";
-      title.textContent = label;
-      box.append(title, chart(epochs, metric, unit, span, releases, own.filter(c => metric !== "live_bytes" && metric in c.metrics)));
+      const box = div("chart");
+      const d = {box, epochs, metric, unit, releases, changes: own.filter(c => metric !== "live_bytes" && metric in c.metrics)};
+      box.append(div("title", label), chart(d.epochs, d.metric, d.unit, base(), d.releases, d.changes));
+      drawn.push(d);
       charts.append(box);
     }
     row.append(charts);
     content.append(row);
   }
+  showRange();
 }
 
 (async () => {
-  const history = await (await fetch("history.json")).json();
+  // Revalidated on every load, as the series files are: each night rewrites them under the same names.
+  const history = await (await fetch("history.json", {cache: "no-cache"})).json();
   const machines = Object.entries(history.machines);
   const select = document.getElementById("machine");
   for (const [id, m] of machines) {
     const option = document.createElement("option");
     option.value = id;
-    option.textContent = `${m.cpu}, ${(m.max_freq_khz / 1e6).toFixed(2)} GHz, ${(m.java.match(/build ([^,)]+)/) || [, ""])[1]}`;
+    option.textContent = `${m.cpu.replace(/\((R|TM)\)/g, "").replace(/\s+/g, " ")} · ${(m.max_freq_khz / 1e6).toFixed(2)} GHz · JDK ${(m.java.match(/build ([^,)]+)/) || [, ""])[1]}`;
     select.append(option);
   }
-  const report = await fetch("reports/latest.md", {method: "HEAD"}).then(r => r.ok, () => false);
-  document.getElementById("meta").innerHTML =
-    `Nightly regression runs of <a href="https://github.com/hardwood-hq/hardwood">Hardwood</a>; updated ${history.generated}.` +
-    (report ? ` Latest night: <a href="reports/latest.md">report</a>.` : "");
-  select.addEventListener("change", () => render(history, select.value));
-  if (machines.length) render(history, select.value);
+  const nights = history.nights || [];
+  lastNight(document.getElementById("night"), nights);
+  select.addEventListener("change", () => showMachine(history, select.value));
+  if (machines.length) {
+    await showMachine(history, select.value);
+    // A link to a contender (#Benchmark.contender) scrolls to it once its charts are there.
+    const target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (target) target.scrollIntoView({block: "start"});
+  }
 })();
 </script>
 </body>

@@ -1,0 +1,23 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "FixedSizeListScanBenchmark#fold": "60d94e80203b",
+    "FixedSizeListScanBenchmark#sumColumn": "3a52bfda6e1b",
+    "FixedSizeListScanBenchmark.LIST_COLUMN": "8f973169a950",
+    "FixedSizeListScanBenchmark.LIST_FIELD": "c86c85e825c0",
+    "FixedSizeListScanBenchmark.context": "a63dee93da84",
+    "FixedSizeListScanBenchmark.fastConfig": "3364d756b8dc",
+    "FixedSizeListScanBenchmark.k": "f18b4a9f6d6c",
+    "FixedSizeListScanBenchmark.listPath": "63e8d7749074"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "fixed_size_list_k768_n8000000.parquet": "3.21e+07"
+  },
+  "method": "public double columnFast() throws IOException { return sumColumn(listPath, LIST_COLUMN, context, fastConfig, k); }",
+  "params": [
+    "{\"k\": \"768\"}"
+  ],
+  "preset": "--total-values 8000000 --k 768 --warmup 12",
+  "script": "fixedlist"
+}

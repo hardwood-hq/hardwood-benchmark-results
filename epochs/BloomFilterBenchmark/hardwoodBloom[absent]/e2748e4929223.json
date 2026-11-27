@@ -1,0 +1,22 @@
+{
+  "code": {
+    "BenchContext#create": "790af74b017f",
+    "BloomFilterBenchmark#probeKey": "39a5c44f268d",
+    "BloomFilterBenchmark.BLOOM": "ce6e8ab32961",
+    "BloomFilterBenchmark.ROWS": "00451fadee65",
+    "BloomFilterBenchmark.key": "29df71e943bd",
+    "BloomFilterBenchmark.probe": "f8eed23a8145",
+    "Scans#hardwoodEqLong": "6f8761f43fea",
+    "Scans.Result": "56ed77cf1fd2"
+  },
+  "common": "--warmup 3 --meas 3 --time 1 --forks 3",
+  "fixture": {
+    "lookup_bloom_8000000.parquet": "1.39e+08"
+  },
+  "method": "public Scans.Result hardwoodBloom() throws IOException { return Scans.hardwoodEqLong(BLOOM, key); }",
+  "params": [
+    "{\"probe\": \"absent\"}"
+  ],
+  "preset": "--rows 8000000 --probe absent --warmup 30",
+  "script": "bloom"
+}
