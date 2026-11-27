@@ -1,0 +1,3 @@
+pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
+unpinned	OneBrcBenchmark	hardwoodColumnIds	1333.792	74.974	182.6
+unpinned	OneBrcBenchmark	hardwoodColumnSplits	545.083	183.458	446.9

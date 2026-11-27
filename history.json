@@ -1,6 +1,6 @@
 {
   "changes": [],
-  "generated": "2026-11-27T19:14:21Z",
+  "generated": "2026-11-27T20:05:23Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -213,7 +213,7 @@
       "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv",
       "machine": "md02f92f9f202",
       "script": "encodings",
-      "unsettled": null
+      "unsettled": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.unsettled.csv"
     },
     {
       "benchmark": "FloatEncodingBenchmark",

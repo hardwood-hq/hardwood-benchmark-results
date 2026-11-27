@@ -1,0 +1,3 @@
+pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
+unpinned	NarrowScanBenchmark	hardwoodColumnar	121.756	89.565	1242.2
+unpinned	NarrowScanBenchmark	hardwoodRowReaderIndexed	178.850	60.973	845.7
