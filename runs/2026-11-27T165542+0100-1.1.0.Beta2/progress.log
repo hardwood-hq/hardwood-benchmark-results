@@ -1,0 +1,31 @@
+gate filter: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  filter  exit 0  465s
+gate bloom: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  bloom  exit 0  106s
+gate window: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  window  exit 0  106s
+gate dictfilter: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  dictfilter  exit 0  125s
+gate 1brc: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  1brc  exit 0  248s
+gate binary: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  binary  exit 0  140s
+gate nested: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  nested  exit 0  79s
+gate nested-columns: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  nested-columns  exit 0  221s
+gate flat: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  flat  exit 0  362s
+gate narrow: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  narrow  exit 0  152s
+gate wide: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  wide  exit 0  171s
+gate fixedlist: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  fixedlist  exit 0  99s
+gate write: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  write  exit 0  79s
+gate encodings: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  encodings  exit 0  146s
+gate s3: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0.Beta2  s3  exit 0  394s
+total 2896s

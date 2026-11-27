@@ -1,0 +1,5 @@
+pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
+unpinned	FilterBenchmark	hardwoodDefault[selective]	5.598	-	-
+unpinned	FilterBenchmark	hardwoodDefault[matchAll]	25.024	-	-
+unpinned	FilterBenchmark	hardwoodRowReader[selective]	7.028	-	-
+unpinned	FilterBenchmark	hardwoodRowReader[matchAll]	38.989	-	-
