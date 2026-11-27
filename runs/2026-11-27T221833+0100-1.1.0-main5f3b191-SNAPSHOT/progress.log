@@ -1,0 +1,31 @@
+gate filter: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  filter  exit 0  458s
+gate bloom: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  bloom  exit 0  104s
+gate window: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  window  exit 0  107s
+gate dictfilter: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  dictfilter  exit 0  124s
+gate 1brc: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  1brc  exit 0  232s
+gate binary: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  binary  exit 0  116s
+gate nested: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  nested  exit 0  78s
+gate nested-columns: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  nested-columns  exit 0  139s
+gate flat: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  flat  exit 0  372s
+gate narrow: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  narrow  exit 0  146s
+gate wide: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  wide  exit 0  2272s
+gate fixedlist: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  fixedlist  exit 0  99s
+gate write: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  write  exit 0  73s
+gate encodings: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  encodings  exit 0  278s
+gate s3: passed before for these sources (1.1.0-main98097e6-SNAPSHOT 2026-11-27)
+round 1/1  1.1.0-main5f3b191-SNAPSHOT  s3  exit 0  363s
+total 4964s
