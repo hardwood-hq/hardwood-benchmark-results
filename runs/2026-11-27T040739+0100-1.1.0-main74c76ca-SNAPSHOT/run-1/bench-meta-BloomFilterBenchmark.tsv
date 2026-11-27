@@ -1,0 +1,12 @@
+rows	8000000
+bytes	138542666
+window	unique 64-bit key
+fixture	lookup_bloom_8000000.parquet:138542666
+fixture.hardwoodNoBloom	lookup_nobloom_8000000.parquet:128056878
+fixture.parquetJavaNoBloom	lookup_nobloom_8000000.parquet:128056878
+java	Java 25.0.4 (Eclipse Adoptium)
+hardwood	1.1.0-main74c76ca-SNAPSHOT (74c76ca)
+simd	scalar
+threads	8 (default)
+machine	Intel(R) Core(TM) i3-N300 (8 cores)
+preset	regression

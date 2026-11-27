@@ -1,0 +1,3 @@
+pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
+unpinned	FixedSizeListScanBenchmark	columnFast[768]	25.164	-	-
+unpinned	FixedSizeListScanBenchmark	rowFast[768]	27.095	-	-
