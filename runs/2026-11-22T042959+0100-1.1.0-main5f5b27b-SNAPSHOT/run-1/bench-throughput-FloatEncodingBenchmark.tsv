@@ -1,5 +1,0 @@
-pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
-unpinned	FloatEncodingBenchmark	hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]	93.444	-	-
-unpinned	FloatEncodingBenchmark	hardwoodRead[ZSTD][ALP]	35.053	-	-
-unpinned	FloatEncodingBenchmark	hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]	207.656	-	-
-unpinned	FloatEncodingBenchmark	hardwoodWrite[ZSTD][ALP]	120.854	-	-

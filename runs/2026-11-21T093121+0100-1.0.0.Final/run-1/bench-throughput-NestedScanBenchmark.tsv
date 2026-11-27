@@ -1,3 +1,0 @@
-pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
-unpinned	NestedScanBenchmark	hardwoodRowReaderTyped	587.369	0.034	4.7
-unpinned	NestedScanBenchmark	hardwoodColumnReaders	16881.528	0.272	37.6

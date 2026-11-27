@@ -1,3 +1,0 @@
-time,commit,version,run,schema,verdict,wall_ms,wall_spread_pct,wall_forks_ms,cpu_ms,jit_ms,gc_ms,alloc_bytes,live_bytes,caller_ms
-2026-11-11T10:21:26+01:00,5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5,1.1.0-main5f5b27b-SNAPSHOT,2026-11-22T04:29:59+0100,1,not settled,537.023,0.13,535.755;537.023;537.154,4063,33.2,4.8,1.24489e+09,2.07501e+08,
-2026-11-27T00:34:40+01:00,98097e6750d6daa7a6cc06238269d14d3a1df026,1.1.0-main98097e6-SNAPSHOT,2026-11-27T03:01:35+0100,1,not settled,493.474,0.257,494.871;493.474;492.333,3604.55,58.9091,14.0909,1.22677e+09,8.34028e+08,3.25007

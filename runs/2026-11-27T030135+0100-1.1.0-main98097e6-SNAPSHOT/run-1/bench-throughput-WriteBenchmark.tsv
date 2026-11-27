@@ -1,3 +1,0 @@
-pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
-unpinned	WriteBenchmark	hardwoodColumnar[ZSTD]	101.294	-	-
-unpinned	WriteBenchmark	hardwoodRow[ZSTD]	269.132	-	-

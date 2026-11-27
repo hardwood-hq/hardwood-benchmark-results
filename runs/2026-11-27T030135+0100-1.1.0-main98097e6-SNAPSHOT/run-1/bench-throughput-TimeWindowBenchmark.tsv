@@ -1,3 +1,0 @@
-pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
-unpinned	TimeWindowBenchmark	hardwoodColumnFiltered[last25pct]	14.623	-	-
-unpinned	TimeWindowBenchmark	hardwoodRowFiltered[last25pct]	28.027	-	-

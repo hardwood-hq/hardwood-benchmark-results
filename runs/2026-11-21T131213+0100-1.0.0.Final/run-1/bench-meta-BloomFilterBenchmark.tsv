@@ -1,9 +1,0 @@
-rows	8000000
-bytes	138542259
-window	unique 64-bit key
-java	Java 25.0.4 (Eclipse Adoptium)
-hardwood	1.0.0.Final (cb41af6)
-simd	scalar
-threads	8 (default)
-machine	Intel(R) Core(TM) i3-N300 (8 cores)
-preset	regression

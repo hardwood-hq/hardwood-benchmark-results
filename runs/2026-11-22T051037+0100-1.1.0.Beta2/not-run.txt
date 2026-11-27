@@ -1,1 +1,0 @@
-  1.1.0.Beta2  encodings: Not supported by this Hardwood version: encoding ALP (needs alp, from 1.1.0.CR1)
