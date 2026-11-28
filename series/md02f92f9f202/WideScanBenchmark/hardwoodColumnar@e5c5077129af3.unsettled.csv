@@ -1,0 +1,2 @@
+time,commit,version,run,schema,verdict,wall_ms,wall_spread_pct,wall_forks_ms,cpu_ms,jit_ms,gc_ms,alloc_bytes,live_bytes,caller_ms
+2026-11-25T22:07:16+01:00,3c42b98a98531c1a21340d8f24640ce475752bfc,1.1.0-main3c42b98-SNAPSHOT,2026-11-28T03:54:47+0100,1,bimodal,41363.9,8.69,41363.9;39003;46194.3,41770,163,0,2.44532e+08,,40644.1
