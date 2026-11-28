@@ -6,12 +6,16 @@ measures them, one series per benchmark contender, for [Apache Otava](https://ot
 to find change points in.
 
 hardwood-benchmarks' nightly job (`nightly.sh`) writes everything here: once a night, and after
-each batch of backfills of older versions. Its `charts/record-results.py` writes the series and
+each batch of backfills of older versions, on each machine that runs it. Its `charts/record-results.py` writes the series and
 `charts/nightly.py` the rest.
 Nothing is edited by hand. The [history page](https://hardwood.dev/hardwood-benchmark-results/)
 charts every series.
 
 ## Layout
+
+Each machine has a directory of its own, named after it (`n300/`), which holds everything it
+records; every path below is relative to it, and no two machines write the same file. Only the
+page's entry is at the root: `index.html` and `machines.json`, the machine directories it shows.
 
 | Path | Holds |
 | --- | --- |
@@ -19,15 +23,15 @@ charts every series.
 | `series/…/<contender>@<epoch>.unsettled.csv` | the rows of runs in which the contender did not settle or its forks disagreed; Otava does not read them |
 | `epochs/<Benchmark>/<contender>/<epoch>.json` | what a contender's epoch measures: its script, preset, the iteration counts every preset shares, its benchmark method's source and a digest of each piece of benchmark code the method reaches, its parameters and the files it reads, each by name and size |
 | `machines/<machine epoch>.json` | the machine and JVM of a machine epoch: CPU, cores, microcode, JDK build, heap and collector flags, governor, clock and turbo; each run's manifest under `runs/` also records the kernel |
-| `runs/<start>-<version>/` | each recorded run as it was: its manifest (with the benchmarks commit it ran), its tables and what it did not run, and per round the results files and `RegressionProfiler`'s per-iteration metrics |
+| `runs/<start>-<version>/` | each recorded run as it was: its manifest (with the machine's name and the benchmarks commit it ran), its tables and what it did not run, and per round the results files and `RegressionProfiler`'s per-iteration metrics |
 | `otava.yaml` | one Otava test per series file |
-| `nights.csv` | each night the job measured as its own: date, commit, version, run |
-| `changes.json` | every change point Otava found: series, commit before and after, each metric's change, and its status (regression at a commit a night measured, history at one only a backfill measured, improvement, or unstable for a contender that stopped settling), with the side-by-side run of a new regression and the issue it opened |
+| `nights.csv` | each night the machine measured as its own: date, commit, version, run |
+| `changes.json` | every change point Otava found: series, commit before and after, each metric's change, and its status (regression at a commit a night of the machine measured, history at one only a backfill measured, improvement, or unstable for a contender that stopped settling), with the side-by-side run of a new regression and the issue it opened |
 | `reports/<date>.md`, `reports/latest.md` | each night's report: the version measured, each metric against the median of the series' last five nights, what did not run, the change points found that night; or why the night recorded nothing |
-| `index.html`, `history.json` | the history page and the index of series, machines and change points it reads |
+| `history.json` | the index of the machine's series, machine epochs, nights and change points the history page reads |
 
-A change to what a contender measures starts a new epoch, and a new machine or JDK a new
-machine epoch; either starts a new series, so that no series mixes two definitions or two
+A change to what a contender measures starts a new epoch, and a change to the machine's
+hardware or JDK a new machine epoch; either starts a new series, so that no series mixes two definitions or two
 machines, and the new series is backfilled with every release. A new kernel does not: a step
 it causes shows as a change point at a commit where Hardwood did not change, which the
 side-by-side run, on one kernel, does not reproduce.
@@ -52,11 +56,12 @@ layout.
 
 ```sh
 pip install apache-otava
+cd n300
 otava list-tests --config-file otava.yaml
 otava analyze --config-file otava.yaml '<test>'
 ```
 
-`--config-file` follows the command. Run from this repository's root, since `otava.yaml`
+`--config-file` follows the command. Run from the machine's directory, since its `otava.yaml`
 names its files relative to it.
 
 ## License
