@@ -5,7 +5,7 @@
 | Version | 1.1.0-main7dcb71f-SNAPSHOT |
 | Commit | [7dcb71f86](https://github.com/hardwood-hq/hardwood/commit/7dcb71f86f249cdd2eb9e049c07d1d0ccf8f1249) |
 | Run | 2026-11-28T07:18:51+0100 |
-| Machine | [md02f92f9f202](../machines/md02f92f9f202.json) |
+| Machine | [md02f92f9f202](../machine-epochs/md02f92f9f202.json) |
 | Duration | 46 min |
 
 Each metric against the median of the series' last 5 nights. The caller share is the CPU time of the thread calling the benchmark against wall time; in bold from 0.8, where that thread hardly waits on Hardwood and wall time misses decode changes that CPU time still shows.
