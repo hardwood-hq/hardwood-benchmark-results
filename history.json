@@ -1832,7 +1832,7 @@
       "version": "1.1.0-main3d331ab-SNAPSHOT"
     }
   ],
-  "generated": "2026-11-28T07:05:09Z",
+  "generated": "2026-11-28T08:27:15Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -1852,8 +1852,16 @@
       },
       "commit": "7dcb71f86f249cdd2eb9e049c07d1d0ccf8f1249",
       "date": "2026-11-28",
-      "flagged": [],
       "minutes": 46,
+      "points": [
+        {
+          "benchmark": "FilterBenchmark",
+          "contender": "hardwoodRowReader[selective]",
+          "issue": null,
+          "machine": "md02f92f9f202",
+          "status": "improvement"
+        }
+      ],
       "report": "reports/2026-11-28.md",
       "run": "2026-11-28T07:18:51+0100",
       "scripts": [
