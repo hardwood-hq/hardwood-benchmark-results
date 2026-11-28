@@ -1,0 +1,35 @@
+rows	3475226
+bytes	59158238
+requests.projectedScan	8
+bytes.projectedScan	14390343
+requests.filteredScan	3
+bytes.filteredScan	3383607
+requests.wideFilteredScan	44
+bytes.wideFilteredScan	28044989
+indexRequests.wideFilteredScan	2
+indexBytes.wideFilteredScan	5351372
+requests.bloomLookup	3
+bytes.bloomLookup	6622434
+requests.largeBloomLookup	7
+bytes.largeBloomLookup	6553708
+requests.fixedSizeBloomLookup	4
+bytes.fixedSizeBloomLookup	21234024
+requests.multiFileScan	65
+bytes.multiFileScan	62048789
+wide.indexRegionBytes	5436257
+wide.neededIndexBytes	46976
+latencyMs	30
+bandwidthKBps	81920
+fixture	yellow_tripdata_2025-01.parquet:59158238
+fixture.hardwoodFilteredScan	filter_benchmark_5000000.parquet:103839604
+fixture.hardwoodWideFilteredScan	wide_filter_200c_40rg_20p.parquet:27951813
+fixture.hardwoodBloomLookup	bloom_lookup_small_200rg_20000r_ndv20000_max1048576.parquet:70639255
+fixture.hardwoodLargeBloomLookup	bloom_lookup_large_6rg_800000r_ndv800000_max1048576.parquet:83126808
+fixture.hardwoodFixedSizeBloomLookup	bloom_lookup_fixed_20rg_20000r_ndv0_max1048576.parquet:27380217
+fixture.hardwoodMultiFileScan	yellow_tripdata_2025-01.parquet:59158238,yellow_tripdata_2025-02.parquet:60343086,yellow_tripdata_2025-03.parquet:69964745,yellow_tripdata_2025-04.parquet:67352824,yellow_tripdata_2025-05.parquet:77837865,yellow_tripdata_2025-06.parquet:73542954,yellow_tripdata_2025-07.parquet:66943728,yellow_tripdata_2025-08.parquet:62293743,yellow_tripdata_2025-09.parquet:72432945,yellow_tripdata_2025-10.parquet:75267589,yellow_tripdata_2025-11.parquet:71134255,yellow_tripdata_2025-12.parquet:73701327
+java	Java 25.0.4 (Eclipse Adoptium)
+hardwood	1.1.0-main3d331ab-SNAPSHOT (3d331ab)
+simd	scalar
+threads	7 (default)
+machine	Intel(R) Core(TM) i3-N300 (8 cores)
+preset	regression
