@@ -1,0 +1,7 @@
+pass	benchmark	contender	ms_per_op	m_rows_per_s	mb_per_s
+unpinned	S3ScanBenchmark	hardwoodFixedSizeBloomLookup	307.521	-	-
+unpinned	S3ScanBenchmark	hardwoodLargeBloomLookup	112.175	-	-
+unpinned	S3ScanBenchmark	hardwoodMultiFileScan	503.629	-	-
+unpinned	S3ScanBenchmark	hardwoodProjectedScan	174.353	-	-
+unpinned	S3ScanBenchmark	hardwoodRemoteBesideWideRemote	233.768	-	-
+unpinned	S3ScanBenchmark	hardwoodWideFilteredScan	309.695	-	-
