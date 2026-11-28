@@ -1,0 +1,11 @@
+rows	10000000
+bytes	207688169
+rowGroupMb	16
+rowGroups	13
+fixture	window_benchmark_10000000_16mb.parquet:207688169
+java	Java 25.0.4 (Eclipse Adoptium)
+hardwood	1.1.0.CR1 (c371968)
+simd	scalar
+threads	8 (default)
+machine	Intel(R) Core(TM) i3-N300 (8 cores)
+preset	regression
