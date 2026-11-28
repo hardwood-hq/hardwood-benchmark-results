@@ -1804,5 +1804,30 @@
     "status": "improvement",
     "test": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202",
     "version": "1.1.0-main3d331ab-SNAPSHOT"
+  },
+  {
+    "before_commit": "3c42b98a98531c1a21340d8f24640ce475752bfc",
+    "before_version": "1.1.0-main3c42b98-SNAPSHOT",
+    "benchmark": "FilterBenchmark",
+    "commit": "3d331abd669aedfe8d80ddd18f8a719e08476599",
+    "contender": "hardwoodRowReader[selective]",
+    "epoch": "e77f7d13d9411",
+    "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@e77f7d13d9411.csv",
+    "found": "2026-11-28",
+    "id": "FilterBenchmark.hardwoodRowReader[selective]@e77f7d13d9411@md02f92f9f202@improvement@3d331abd6",
+    "kind": "improvement",
+    "machine": "md02f92f9f202",
+    "metrics": {
+      "wall_ms": {
+        "after": 6.090313,
+        "before": 6.685173,
+        "percent": -8.9,
+        "pvalue": 2.3e-05
+      }
+    },
+    "script": "filter",
+    "status": "improvement",
+    "test": "FilterBenchmark.hardwoodRowReader[selective]@e77f7d13d9411@md02f92f9f202",
+    "version": "1.1.0-main3d331ab-SNAPSHOT"
   }
 ]

@@ -1805,9 +1805,34 @@
       "status": "improvement",
       "test": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202",
       "version": "1.1.0-main3d331ab-SNAPSHOT"
+    },
+    {
+      "before_commit": "3c42b98a98531c1a21340d8f24640ce475752bfc",
+      "before_version": "1.1.0-main3c42b98-SNAPSHOT",
+      "benchmark": "FilterBenchmark",
+      "commit": "3d331abd669aedfe8d80ddd18f8a719e08476599",
+      "contender": "hardwoodRowReader[selective]",
+      "epoch": "e77f7d13d9411",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@e77f7d13d9411.csv",
+      "found": "2026-11-28",
+      "id": "FilterBenchmark.hardwoodRowReader[selective]@e77f7d13d9411@md02f92f9f202@improvement@3d331abd6",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 6.090313,
+          "before": 6.685173,
+          "percent": -8.9,
+          "pvalue": 2.3e-05
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodRowReader[selective]@e77f7d13d9411@md02f92f9f202",
+      "version": "1.1.0-main3d331ab-SNAPSHOT"
     }
   ],
-  "generated": "2026-11-28T05:51:40Z",
+  "generated": "2026-11-28T07:05:09Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
@@ -1820,7 +1845,97 @@
       "no_turbo": "0"
     }
   },
-  "nights": [],
+  "nights": [
+    {
+      "changes": {
+        "improvement": 1
+      },
+      "commit": "7dcb71f86f249cdd2eb9e049c07d1d0ccf8f1249",
+      "date": "2026-11-28",
+      "flagged": [],
+      "minutes": 46,
+      "report": "reports/2026-11-28.md",
+      "run": "2026-11-28T07:18:51+0100",
+      "scripts": [
+        {
+          "gate_s": 0,
+          "measure_s": 459,
+          "script": "filter"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 104,
+          "script": "bloom"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 106,
+          "script": "window"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 124,
+          "script": "dictfilter"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 232,
+          "script": "1brc"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 117,
+          "script": "binary"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 78,
+          "script": "nested"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 133,
+          "script": "nested-columns"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 372,
+          "script": "flat"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 146,
+          "script": "narrow"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 72,
+          "script": "wide"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 99,
+          "script": "fixedlist"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 72,
+          "script": "write"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 277,
+          "script": "encodings"
+        },
+        {
+          "gate_s": 0,
+          "measure_s": 361,
+          "script": "s3"
+        }
+      ],
+      "version": "1.1.0-main7dcb71f-SNAPSHOT"
+    }
+  ],
   "releases": [
     {
       "base": "09b1fe3be7ef9de5d38d7c876d111c544825f489",
