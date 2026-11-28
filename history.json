@@ -1,6 +1,1813 @@
 {
-  "changes": [],
-  "generated": "2026-11-28T05:51:22Z",
+  "changes": [
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "BinaryScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodColumnViews",
+      "epoch": "eb1c73184fd44",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodColumnViews@eb1c73184fd44.csv",
+      "found": "2026-11-27",
+      "id": "BinaryScanBenchmark.hardwoodColumnViews@eb1c73184fd44@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 379549400.0,
+          "before": 1037976666.666667,
+          "percent": -63.43,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 1670.333333,
+          "before": 2059.996667,
+          "percent": -18.92,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 222.288083,
+          "before": 447.578,
+          "percent": -50.34,
+          "pvalue": 0.0
+        }
+      },
+      "script": "binary",
+      "status": "improvement",
+      "test": "BinaryScanBenchmark.hardwoodColumnViews@eb1c73184fd44@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "BinaryScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodColumnViews",
+      "epoch": "eb1c73184fd44",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodColumnViews@eb1c73184fd44.csv",
+      "found": "2026-11-27",
+      "id": "BinaryScanBenchmark.hardwoodColumnViews@eb1c73184fd44@md02f92f9f202@regression@5f3b19115",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 387958285.714286,
+          "before": 379549400.0,
+          "percent": 2.22,
+          "pvalue": 0.0
+        }
+      },
+      "script": "binary",
+      "status": "history",
+      "test": "BinaryScanBenchmark.hardwoodColumnViews@eb1c73184fd44@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "BinaryScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodRowStrings",
+      "epoch": "ea88286eb648d",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@ea88286eb648d.csv",
+      "found": "2026-11-27",
+      "id": "BinaryScanBenchmark.hardwoodRowStrings@ea88286eb648d@md02f92f9f202@regression@69cb8478d",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 797244000.0,
+          "before": 1205200000.0,
+          "percent": -33.85,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 2472.5,
+          "before": 2823.333333,
+          "percent": -12.43,
+          "pvalue": 0.000907
+        },
+        "wall_ms": {
+          "after": 1000.314583,
+          "before": 949.218667,
+          "percent": 5.38,
+          "pvalue": 0.0
+        }
+      },
+      "script": "binary",
+      "status": "history",
+      "test": "BinaryScanBenchmark.hardwoodRowStrings@ea88286eb648d@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "BinaryScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRowStrings",
+      "epoch": "ea88286eb648d",
+      "file": "series/md02f92f9f202/BinaryScanBenchmark/hardwoodRowStrings@ea88286eb648d.csv",
+      "found": "2026-11-27",
+      "id": "BinaryScanBenchmark.hardwoodRowStrings@ea88286eb648d@md02f92f9f202@regression@5f3b19115",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 805349000.0,
+          "before": 797244000.0,
+          "percent": 1.02,
+          "pvalue": 0.0
+        }
+      },
+      "script": "binary",
+      "status": "history",
+      "test": "BinaryScanBenchmark.hardwoodRowStrings@ea88286eb648d@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "cb41af6d068792dc1c2bcd43ca7afbffa190aa36",
+      "before_version": "1.0.0.Final",
+      "benchmark": "BloomFilterBenchmark",
+      "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "contender": "hardwoodBloom[absent]",
+      "epoch": "e2748e4929223",
+      "file": "series/md02f92f9f202/BloomFilterBenchmark/hardwoodBloom[absent]@e2748e4929223.csv",
+      "found": "2026-11-27",
+      "id": "BloomFilterBenchmark.hardwoodBloom[absent]@e2748e4929223@md02f92f9f202@improvement@fe06a5d09",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 15590.45,
+          "before": 270256000.0,
+          "percent": -99.99,
+          "pvalue": 8e-06
+        },
+        "cpu_ms": {
+          "after": 0.28433,
+          "before": 413.571,
+          "percent": -99.93,
+          "pvalue": 0.000123
+        },
+        "wall_ms": {
+          "after": 0.178495,
+          "before": 73.9883,
+          "percent": -99.76,
+          "pvalue": 0.000443
+        }
+      },
+      "script": "bloom",
+      "status": "improvement",
+      "test": "BloomFilterBenchmark.hardwoodBloom[absent]@e2748e4929223@md02f92f9f202",
+      "version": "1.1.0.Beta1"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "DictionaryFilterBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodRowIn",
+      "epoch": "e9ea1eeab2fc2",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e9ea1eeab2fc2.csv",
+      "found": "2026-11-27",
+      "id": "DictionaryFilterBenchmark.hardwoodRowIn@e9ea1eeab2fc2@md02f92f9f202@improvement@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 13563953.846154,
+          "before": 432697000.0,
+          "percent": -96.87,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 63.025117,
+          "before": 738.3335,
+          "percent": -91.46,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 32.1662,
+          "before": 475.664,
+          "percent": -93.24,
+          "pvalue": 0.0
+        }
+      },
+      "script": "dictfilter",
+      "status": "improvement",
+      "test": "DictionaryFilterBenchmark.hardwoodRowIn@e9ea1eeab2fc2@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "DictionaryFilterBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRowIn",
+      "epoch": "e9ea1eeab2fc2",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowIn@e9ea1eeab2fc2.csv",
+      "found": "2026-11-27",
+      "id": "DictionaryFilterBenchmark.hardwoodRowIn@e9ea1eeab2fc2@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 10.025626,
+          "before": 32.1662,
+          "percent": -68.83,
+          "pvalue": 0.0
+        }
+      },
+      "script": "dictfilter",
+      "status": "improvement",
+      "test": "DictionaryFilterBenchmark.hardwoodRowIn@e9ea1eeab2fc2@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "DictionaryFilterBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodRowLtWide",
+      "epoch": "e921dc696cfe5",
+      "file": "series/md02f92f9f202/DictionaryFilterBenchmark/hardwoodRowLtWide@e921dc696cfe5.csv",
+      "found": "2026-11-27",
+      "id": "DictionaryFilterBenchmark.hardwoodRowLtWide@e921dc696cfe5@md02f92f9f202@improvement@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 150.870375,
+          "before": 1240.0,
+          "percent": -87.83,
+          "pvalue": 0.0
+        }
+      },
+      "script": "dictfilter",
+      "status": "improvement",
+      "test": "DictionaryFilterBenchmark.hardwoodRowLtWide@e921dc696cfe5@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FilterBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodDefault[matchAll]",
+      "epoch": "e5960e43329b5",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[matchAll]@e5960e43329b5.csv",
+      "found": "2026-11-27",
+      "id": "FilterBenchmark.hardwoodDefault[matchAll]@e5960e43329b5@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 17.877117,
+          "before": 48.958667,
+          "percent": -63.49,
+          "pvalue": 6e-06
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodDefault[matchAll]@e5960e43329b5@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "FilterBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodDefault[selective]",
+      "epoch": "ef273ed95e67f",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@ef273ed95e67f.csv",
+      "found": "2026-11-27",
+      "id": "FilterBenchmark.hardwoodDefault[selective]@ef273ed95e67f@md02f92f9f202@improvement@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 5.468778,
+          "before": 7.10533,
+          "percent": -23.03,
+          "pvalue": 4e-06
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodDefault[selective]@ef273ed95e67f@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FilterBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodDefault[selective]",
+      "epoch": "ef273ed95e67f",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodDefault[selective]@ef273ed95e67f.csv",
+      "found": "2026-11-27",
+      "id": "FilterBenchmark.hardwoodDefault[selective]@ef273ed95e67f@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 20.440243,
+          "before": 24.046913,
+          "percent": -15.0,
+          "pvalue": 0.000778
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodDefault[selective]@ef273ed95e67f@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FilterBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodRowReader[matchAll]",
+      "epoch": "e2070af4af58a",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@e2070af4af58a.csv",
+      "found": "2026-11-27",
+      "id": "FilterBenchmark.hardwoodRowReader[matchAll]@e2070af4af58a@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 34216960.0,
+          "before": 47902700.0,
+          "percent": -28.57,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 97.92302,
+          "before": 131.538,
+          "percent": -25.56,
+          "pvalue": 4.6e-05
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodRowReader[matchAll]@e2070af4af58a@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FilterBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRowReader[matchAll]",
+      "epoch": "e2070af4af58a",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[matchAll]@e2070af4af58a.csv",
+      "found": "2026-11-27",
+      "id": "FilterBenchmark.hardwoodRowReader[matchAll]@e2070af4af58a@md02f92f9f202@regression@5f3b19115",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 31041328.571429,
+          "before": 34216960.0,
+          "percent": -9.28,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 104.776143,
+          "before": 97.92302,
+          "percent": 7.0,
+          "pvalue": 3e-06
+        }
+      },
+      "script": "filter",
+      "status": "history",
+      "test": "FilterBenchmark.hardwoodRowReader[matchAll]@e2070af4af58a@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "FilterBenchmark",
+      "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "contender": "hardwoodRowReader[selective]",
+      "epoch": "e77f7d13d9411",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@e77f7d13d9411.csv",
+      "found": "2026-11-27",
+      "id": "FilterBenchmark.hardwoodRowReader[selective]@e77f7d13d9411@md02f92f9f202@improvement@5f5b27b66",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 20.125538,
+          "before": 22.71778,
+          "percent": -11.41,
+          "pvalue": 8.1e-05
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodRowReader[selective]@e77f7d13d9411@md02f92f9f202",
+      "version": "1.1.0-main5f5b27b-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FilterBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodRowReader[selective]",
+      "epoch": "e77f7d13d9411",
+      "file": "series/md02f92f9f202/FilterBenchmark/hardwoodRowReader[selective]@e77f7d13d9411.csv",
+      "found": "2026-11-27",
+      "id": "FilterBenchmark.hardwoodRowReader[selective]@e77f7d13d9411@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 7744980.0,
+          "before": 11927400.0,
+          "percent": -35.07,
+          "pvalue": 0.0
+        }
+      },
+      "script": "filter",
+      "status": "improvement",
+      "test": "FilterBenchmark.hardwoodRowReader[selective]@e77f7d13d9411@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FixedSizeListScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "columnFast[768]",
+      "epoch": "ebe7477cfa3bb",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@ebe7477cfa3bb.csv",
+      "found": "2026-11-27",
+      "id": "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 32177480.0,
+          "before": 66321650.0,
+          "percent": -51.48,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 62.71256,
+          "before": 93.125,
+          "percent": -32.66,
+          "pvalue": 2.8e-05
+        },
+        "wall_ms": {
+          "after": 15.1785,
+          "before": 25.062,
+          "percent": -39.44,
+          "pvalue": 0.0
+        }
+      },
+      "script": "fixedlist",
+      "status": "improvement",
+      "test": "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FixedSizeListScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "columnFast[768]",
+      "epoch": "ebe7477cfa3bb",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/columnFast[768]@ebe7477cfa3bb.csv",
+      "found": "2026-11-27",
+      "id": "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 33389114.285714,
+          "before": 32177480.0,
+          "percent": 3.77,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 50.765843,
+          "before": 62.71256,
+          "percent": -19.05,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 12.38844,
+          "before": 15.05812,
+          "percent": -17.73,
+          "pvalue": 0.0
+        }
+      },
+      "script": "fixedlist",
+      "status": "improvement",
+      "test": "FixedSizeListScanBenchmark.columnFast[768]@ebe7477cfa3bb@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FixedSizeListScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "rowFast[768]",
+      "epoch": "e48f1093e0d89",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e48f1093e0d89.csv",
+      "found": "2026-11-27",
+      "id": "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 32222300.0,
+          "before": 66310400.0,
+          "percent": -51.41,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 23.781725,
+          "before": 26.9269,
+          "percent": -11.68,
+          "pvalue": 2e-06
+        }
+      },
+      "script": "fixedlist",
+      "status": "improvement",
+      "test": "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "FixedSizeListScanBenchmark",
+      "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "contender": "rowFast[768]",
+      "epoch": "e48f1093e0d89",
+      "file": "series/md02f92f9f202/FixedSizeListScanBenchmark/rowFast[768]@e48f1093e0d89.csv",
+      "found": "2026-11-27",
+      "id": "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202@improvement@5f5b27b66",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 22.546,
+          "before": 23.781725,
+          "percent": -5.2,
+          "pvalue": 0.000509
+        }
+      },
+      "script": "fixedlist",
+      "status": "improvement",
+      "test": "FixedSizeListScanBenchmark.rowFast[768]@e48f1093e0d89@md02f92f9f202",
+      "version": "1.1.0-main5f5b27b-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FlatScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "columnarDrain",
+      "epoch": "e0d3eb57274cd",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/columnarDrain@e0d3eb57274cd.csv",
+      "found": "2026-11-27",
+      "id": "FlatScanBenchmark.columnarDrain@e0d3eb57274cd@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 592955916.666667,
+          "before": 1350970000.0,
+          "percent": -56.11,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 159.4975,
+          "before": 339.389333,
+          "percent": -53.0,
+          "pvalue": 1e-06
+        }
+      },
+      "script": "flat",
+      "status": "improvement",
+      "test": "FlatScanBenchmark.columnarDrain@e0d3eb57274cd@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FlatScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodColumnar",
+      "epoch": "ede09a944fed6",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodColumnar@ede09a944fed6.csv",
+      "found": "2026-11-27",
+      "id": "FlatScanBenchmark.hardwoodColumnar@ede09a944fed6@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 662979750.0,
+          "before": 1420453333.333333,
+          "percent": -53.33,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 1335.0,
+          "before": 2651.666667,
+          "percent": -49.65,
+          "pvalue": 0.000795
+        },
+        "wall_ms": {
+          "after": 282.125833,
+          "before": 471.392,
+          "percent": -40.15,
+          "pvalue": 1e-06
+        }
+      },
+      "script": "flat",
+      "status": "improvement",
+      "test": "FlatScanBenchmark.hardwoodColumnar@ede09a944fed6@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FlatScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodColumnar",
+      "epoch": "ede09a944fed6",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodColumnar@ede09a944fed6.csv",
+      "found": "2026-11-27",
+      "id": "FlatScanBenchmark.hardwoodColumnar@ede09a944fed6@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 1092.857143,
+          "before": 1335.0,
+          "percent": -18.14,
+          "pvalue": 0.0
+        }
+      },
+      "script": "flat",
+      "status": "improvement",
+      "test": "FlatScanBenchmark.hardwoodColumnar@ede09a944fed6@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FlatScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodRowReaderIndexed",
+      "epoch": "e2fd5775b764f",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e2fd5775b764f.csv",
+      "found": "2026-11-27",
+      "id": "FlatScanBenchmark.hardwoodRowReaderIndexed@e2fd5775b764f@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 332741818.181818,
+          "before": 833253666.666667,
+          "percent": -60.07,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 1424.002,
+          "before": 2678.333333,
+          "percent": -46.83,
+          "pvalue": 0.000934
+        },
+        "wall_ms": {
+          "after": 427.607,
+          "before": 659.521,
+          "percent": -35.16,
+          "pvalue": 1.1e-05
+        }
+      },
+      "script": "flat",
+      "status": "improvement",
+      "test": "FlatScanBenchmark.hardwoodRowReaderIndexed@e2fd5775b764f@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FlatScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRowReaderIndexed",
+      "epoch": "e2fd5775b764f",
+      "file": "series/md02f92f9f202/FlatScanBenchmark/hardwoodRowReaderIndexed@e2fd5775b764f.csv",
+      "found": "2026-11-27",
+      "id": "FlatScanBenchmark.hardwoodRowReaderIndexed@e2fd5775b764f@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 1169.443333,
+          "before": 1424.002,
+          "percent": -17.88,
+          "pvalue": 0.0
+        }
+      },
+      "script": "flat",
+      "status": "improvement",
+      "test": "FlatScanBenchmark.hardwoodRowReaderIndexed@e2fd5775b764f@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRead[ZSTD][ALP]",
+      "epoch": "ec2994a9b5a47",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@ec2994a9b5a47.csv",
+      "found": "2026-11-27",
+      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@ec2994a9b5a47@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 102135142.857143,
+          "before": 107459000.0,
+          "percent": -4.95,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 142.3124,
+          "before": 149.724,
+          "percent": -4.95,
+          "pvalue": 1e-06
+        },
+        "wall_ms": {
+          "after": 31.4077,
+          "before": 34.7542,
+          "percent": -9.63,
+          "pvalue": 0.0
+        }
+      },
+      "script": "encodings",
+      "status": "improvement",
+      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@ec2994a9b5a47@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "c371968606d40e8f3db260bc8b71b6112ab41336",
+      "before_version": "1.1.0.CR1",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "3c42b98a98531c1a21340d8f24640ce475752bfc",
+      "contender": "hardwoodRead[ZSTD][ALP]",
+      "epoch": "ec2994a9b5a47",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][ALP]@ec2994a9b5a47.csv",
+      "found": "2026-11-27",
+      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@ec2994a9b5a47@md02f92f9f202@regression@3c42b98a9",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 32.538433,
+          "before": 31.4077,
+          "percent": 3.6,
+          "pvalue": 8e-05
+        }
+      },
+      "script": "encodings",
+      "status": "history",
+      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][ALP]@ec2994a9b5a47@md02f92f9f202",
+      "version": "1.1.0-main3c42b98-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]",
+      "epoch": "e1835d93d9859",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv",
+      "found": "2026-11-27",
+      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 69.8207,
+          "before": 103.331317,
+          "percent": -32.43,
+          "pvalue": 4.2e-05
+        }
+      },
+      "script": "encodings",
+      "status": "improvement",
+      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]",
+      "epoch": "e1835d93d9859",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859.csv",
+      "found": "2026-11-27",
+      "id": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 106203636.363636,
+          "before": 238372500.0,
+          "percent": -55.45,
+          "pvalue": 0.0
+        }
+      },
+      "script": "encodings",
+      "status": "improvement",
+      "test": "FloatEncodingBenchmark.hardwoodRead[ZSTD][BYTE_STREAM_SPLIT]@e1835d93d9859@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodWrite[ZSTD][ALP]",
+      "epoch": "e49097b4a5400",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][ALP]@e49097b4a5400.csv",
+      "found": "2026-11-27",
+      "id": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e49097b4a5400@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 655.857143,
+          "before": 730.0,
+          "percent": -10.16,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 108.629714,
+          "before": 120.6276,
+          "percent": -9.95,
+          "pvalue": 0.0
+        }
+      },
+      "script": "encodings",
+      "status": "improvement",
+      "test": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][ALP]@e49097b4a5400@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "FloatEncodingBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]",
+      "epoch": "ef2970f5ab64a",
+      "file": "series/md02f92f9f202/FloatEncodingBenchmark/hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a.csv",
+      "found": "2026-11-27",
+      "id": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 179118416.666667,
+          "before": 165211500.0,
+          "percent": 8.42,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 1317.6,
+          "before": 1085.0,
+          "percent": 21.44,
+          "pvalue": 1.3e-05
+        },
+        "wall_ms": {
+          "after": 204.59525,
+          "before": 1075.065,
+          "percent": -80.97,
+          "pvalue": 0.0
+        }
+      },
+      "script": "encodings",
+      "status": "improvement",
+      "test": "FloatEncodingBenchmark.hardwoodWrite[ZSTD][BYTE_STREAM_SPLIT]@ef2970f5ab64a@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "NarrowScanBenchmark",
+      "commit": "c6eb5eb4b136f0a753eebb97eac4d24f5afef6d0",
+      "contender": "hardwoodColumnar",
+      "epoch": "e044f18199212",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@e044f18199212.csv",
+      "found": "2026-11-27",
+      "id": "NarrowScanBenchmark.hardwoodColumnar@e044f18199212@md02f92f9f202@improvement@c6eb5eb4b",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 341746500.0,
+          "before": 648139666.666667,
+          "percent": -47.27,
+          "pvalue": 0.000146
+        }
+      },
+      "script": "narrow",
+      "status": "improvement",
+      "test": "NarrowScanBenchmark.hardwoodColumnar@e044f18199212@md02f92f9f202",
+      "version": "1.1.0-mainc6eb5eb-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "NarrowScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodColumnar",
+      "epoch": "e044f18199212",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodColumnar@e044f18199212.csv",
+      "found": "2026-11-27",
+      "id": "NarrowScanBenchmark.hardwoodColumnar@e044f18199212@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 281680571.428571,
+          "before": 341746500.0,
+          "percent": -17.58,
+          "pvalue": 0.0
+        }
+      },
+      "script": "narrow",
+      "status": "improvement",
+      "test": "NarrowScanBenchmark.hardwoodColumnar@e044f18199212@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "NarrowScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodRowReaderIndexed",
+      "epoch": "e59cf9b37f6f5",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@e59cf9b37f6f5.csv",
+      "found": "2026-11-27",
+      "id": "NarrowScanBenchmark.hardwoodRowReaderIndexed@e59cf9b37f6f5@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 143939000.0,
+          "before": 393202666.666667,
+          "percent": -63.39,
+          "pvalue": 8.9e-05
+        },
+        "cpu_ms": {
+          "after": 615.138833,
+          "before": 1192.833333,
+          "percent": -48.43,
+          "pvalue": 1e-06
+        },
+        "wall_ms": {
+          "after": 174.943167,
+          "before": 236.863667,
+          "percent": -26.14,
+          "pvalue": 1e-06
+        }
+      },
+      "script": "narrow",
+      "status": "improvement",
+      "test": "NarrowScanBenchmark.hardwoodRowReaderIndexed@e59cf9b37f6f5@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "NarrowScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRowReaderIndexed",
+      "epoch": "e59cf9b37f6f5",
+      "file": "series/md02f92f9f202/NarrowScanBenchmark/hardwoodRowReaderIndexed@e59cf9b37f6f5.csv",
+      "found": "2026-11-27",
+      "id": "NarrowScanBenchmark.hardwoodRowReaderIndexed@e59cf9b37f6f5@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 84521714.285714,
+          "before": 143939000.0,
+          "percent": -41.28,
+          "pvalue": 0.0
+        }
+      },
+      "script": "narrow",
+      "status": "improvement",
+      "test": "NarrowScanBenchmark.hardwoodRowReaderIndexed@e59cf9b37f6f5@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "NestedColumnScanBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodColumnReaders",
+      "epoch": "ead3988f9a241",
+      "file": "series/md02f92f9f202/NestedColumnScanBenchmark/hardwoodColumnReaders@ead3988f9a241.csv",
+      "found": "2026-11-27",
+      "id": "NestedColumnScanBenchmark.hardwoodColumnReaders@ead3988f9a241@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 6632095000.0,
+          "before": 24225200000.0,
+          "percent": -72.62,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 20020.0,
+          "before": 49376.666667,
+          "percent": -59.45,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 2807.939167,
+          "before": 9958.386667,
+          "percent": -71.8,
+          "pvalue": 0.000555
+        }
+      },
+      "script": "nested-columns",
+      "status": "improvement",
+      "test": "NestedColumnScanBenchmark.hardwoodColumnReaders@ead3988f9a241@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "OneBrcBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodColumnIds",
+      "epoch": "e6b578946ef5d",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnIds@e6b578946ef5d.csv",
+      "found": "2026-11-27",
+      "id": "OneBrcBenchmark.hardwoodColumnIds@e6b578946ef5d@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 1236940000.0,
+          "before": 2436390000.0,
+          "percent": -49.23,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 1333.166,
+          "before": 1445.78,
+          "percent": -7.79,
+          "pvalue": 5.1e-05
+        }
+      },
+      "script": "1brc",
+      "status": "improvement",
+      "test": "OneBrcBenchmark.hardwoodColumnIds@e6b578946ef5d@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "OneBrcBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodColumnIds",
+      "epoch": "e6b578946ef5d",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnIds@e6b578946ef5d.csv",
+      "found": "2026-11-27",
+      "id": "OneBrcBenchmark.hardwoodColumnIds@e6b578946ef5d@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 1221966666.666667,
+          "before": 1236940000.0,
+          "percent": -1.21,
+          "pvalue": 0.0
+        }
+      },
+      "script": "1brc",
+      "status": "improvement",
+      "test": "OneBrcBenchmark.hardwoodColumnIds@e6b578946ef5d@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "OneBrcBenchmark",
+      "commit": "c6eb5eb4b136f0a753eebb97eac4d24f5afef6d0",
+      "contender": "hardwoodColumnSplits",
+      "epoch": "ee312766ec833",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@ee312766ec833.csv",
+      "found": "2026-11-27",
+      "id": "OneBrcBenchmark.hardwoodColumnSplits@ee312766ec833@md02f92f9f202@improvement@c6eb5eb4b",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 1242920000.0,
+          "before": 2444600000.0,
+          "percent": -49.16,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 4142.0,
+          "before": 6127.14,
+          "percent": -32.4,
+          "pvalue": 2e-06
+        },
+        "wall_ms": {
+          "after": 544.577333,
+          "before": 798.127,
+          "percent": -31.77,
+          "pvalue": 4e-06
+        }
+      },
+      "script": "1brc",
+      "status": "improvement",
+      "test": "OneBrcBenchmark.hardwoodColumnSplits@ee312766ec833@md02f92f9f202",
+      "version": "1.1.0-mainc6eb5eb-SNAPSHOT"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "OneBrcBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodColumnSplits",
+      "epoch": "ee312766ec833",
+      "file": "series/md02f92f9f202/OneBrcBenchmark/hardwoodColumnSplits@ee312766ec833.csv",
+      "found": "2026-11-27",
+      "id": "OneBrcBenchmark.hardwoodColumnSplits@ee312766ec833@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 1226780000.0,
+          "before": 1242920000.0,
+          "percent": -1.3,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 3670.0,
+          "before": 4142.0,
+          "percent": -11.4,
+          "pvalue": 2.8e-05
+        },
+        "wall_ms": {
+          "after": 502.775,
+          "before": 544.577333,
+          "percent": -7.68,
+          "pvalue": 1e-06
+        }
+      },
+      "script": "1brc",
+      "status": "improvement",
+      "test": "OneBrcBenchmark.hardwoodColumnSplits@ee312766ec833@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodFixedSizeBloomLookup",
+      "epoch": "ed720ee3e8431",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@ed720ee3e8431.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@ed720ee3e8431@md02f92f9f202@improvement@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 399.0382,
+          "before": 1106.565,
+          "percent": -63.94,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@ed720ee3e8431@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "contender": "hardwoodFixedSizeBloomLookup",
+      "epoch": "ed720ee3e8431",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodFixedSizeBloomLookup@ed720ee3e8431.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@ed720ee3e8431@md02f92f9f202@improvement@5f5b27b66",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 306.886625,
+          "before": 399.0382,
+          "percent": -23.09,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodFixedSizeBloomLookup@ed720ee3e8431@md02f92f9f202",
+      "version": "1.1.0-main5f5b27b-SNAPSHOT"
+    },
+    {
+      "before_commit": "cb41af6d068792dc1c2bcd43ca7afbffa190aa36",
+      "before_version": "1.0.0.Final",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "contender": "hardwoodLargeBloomLookup",
+      "epoch": "e851ae5de5a67",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e851ae5de5a67.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202@improvement@fe06a5d09",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 7414520.0,
+          "before": 249898000.0,
+          "percent": -97.03,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 71.1111,
+          "before": 625.0,
+          "percent": -88.62,
+          "pvalue": 1.1e-05
+        },
+        "wall_ms": {
+          "after": 346.014167,
+          "before": 972.429,
+          "percent": -64.42,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202",
+      "version": "1.1.0.Beta1"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "contender": "hardwoodLargeBloomLookup",
+      "epoch": "e851ae5de5a67",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e851ae5de5a67.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202@improvement@5f5b27b66",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 56.347225,
+          "before": 78.333333,
+          "percent": -28.07,
+          "pvalue": 9e-06
+        },
+        "wall_ms": {
+          "after": 112.09675,
+          "before": 346.014167,
+          "percent": -67.6,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202",
+      "version": "1.1.0-main5f5b27b-SNAPSHOT"
+    },
+    {
+      "before_commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "before_version": "1.1.0-main69cb847-SNAPSHOT",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "c6eb5eb4b136f0a753eebb97eac4d24f5afef6d0",
+      "contender": "hardwoodLargeBloomLookup",
+      "epoch": "e851ae5de5a67",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodLargeBloomLookup@e851ae5de5a67.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202@regression@c6eb5eb4b",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 7501950.909091,
+          "before": 7414520.0,
+          "percent": 1.18,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "history",
+      "test": "S3ScanBenchmark.hardwoodLargeBloomLookup@e851ae5de5a67@md02f92f9f202",
+      "version": "1.1.0-mainc6eb5eb-SNAPSHOT"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodMultiFileScan",
+      "epoch": "e5714553b017d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e5714553b017d.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodMultiFileScan@e5714553b017d@md02f92f9f202@improvement@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 1442.715,
+          "before": 3461.595,
+          "percent": -58.32,
+          "pvalue": 7e-06
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodMultiFileScan@e5714553b017d@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodMultiFileScan",
+      "epoch": "e5714553b017d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodMultiFileScan@e5714553b017d.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodMultiFileScan@e5714553b017d@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 1072.856714,
+          "before": 1385.0,
+          "percent": -22.54,
+          "pvalue": 4e-06
+        },
+        "wall_ms": {
+          "after": 487.016714,
+          "before": 534.05975,
+          "percent": -8.81,
+          "pvalue": 1.8e-05
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodMultiFileScan@e5714553b017d@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "before_version": "1.1.0-main69cb847-SNAPSHOT",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "c6eb5eb4b136f0a753eebb97eac4d24f5afef6d0",
+      "contender": "hardwoodProjectedScan",
+      "epoch": "e210fc05a6caf",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodProjectedScan@e210fc05a6caf.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodProjectedScan@e210fc05a6caf@md02f92f9f202@improvement@c6eb5eb4b",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "wall_ms": {
+          "after": 185.16175,
+          "before": 293.43325,
+          "percent": -36.9,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodProjectedScan@e210fc05a6caf@md02f92f9f202",
+      "version": "1.1.0-mainc6eb5eb-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodProjectedScan",
+      "epoch": "e210fc05a6caf",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodProjectedScan@e210fc05a6caf.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodProjectedScan@e210fc05a6caf@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 110601285.714286,
+          "before": 135703600.0,
+          "percent": -18.5,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 175.249857,
+          "before": 185.16175,
+          "percent": -5.35,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodProjectedScan@e210fc05a6caf@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "before_version": "1.1.0-main69cb847-SNAPSHOT",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "c6eb5eb4b136f0a753eebb97eac4d24f5afef6d0",
+      "contender": "hardwoodRemoteBesideWideRemote",
+      "epoch": "e2acc55cd6201",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodRemoteBesideWideRemote@e2acc55cd6201.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodRemoteBesideWideRemote@e2acc55cd6201@md02f92f9f202@improvement@c6eb5eb4b",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 361195636.363636,
+          "before": 741000500.0,
+          "percent": -51.26,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 770.590909,
+          "before": 1598.335,
+          "percent": -51.79,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodRemoteBesideWideRemote@e2acc55cd6201@md02f92f9f202",
+      "version": "1.1.0-mainc6eb5eb-SNAPSHOT"
+    },
+    {
+      "before_commit": "fe06a5d09d299c20c21823692c574edfdf780189",
+      "before_version": "1.1.0.Beta1",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "contender": "hardwoodWideFilteredScan",
+      "epoch": "e360bc0b8e09d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodWideFilteredScan@e360bc0b8e09d.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodWideFilteredScan@e360bc0b8e09d@md02f92f9f202@improvement@29c1af9c1",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 44368500.0,
+          "before": 155495000.0,
+          "percent": -71.47,
+          "pvalue": 7.4e-05
+        },
+        "wall_ms": {
+          "after": 1074.63,
+          "before": 3697.975,
+          "percent": -70.94,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodWideFilteredScan@e360bc0b8e09d@md02f92f9f202",
+      "version": "1.1.0.Beta2"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "S3ScanBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodWideFilteredScan",
+      "epoch": "e360bc0b8e09d",
+      "file": "series/md02f92f9f202/S3ScanBenchmark/hardwoodWideFilteredScan@e360bc0b8e09d.csv",
+      "found": "2026-11-27",
+      "id": "S3ScanBenchmark.hardwoodWideFilteredScan@e360bc0b8e09d@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 41772314.285714,
+          "before": 42998000.0,
+          "percent": -2.85,
+          "pvalue": 0.0
+        }
+      },
+      "script": "s3",
+      "status": "improvement",
+      "test": "S3ScanBenchmark.hardwoodWideFilteredScan@e360bc0b8e09d@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "TimeWindowBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodColumnFiltered[last25pct]",
+      "epoch": "e3077579faf4f",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e3077579faf4f.csv",
+      "found": "2026-11-27",
+      "id": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e3077579faf4f@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 30605560.0,
+          "before": 82385566.666667,
+          "percent": -62.85,
+          "pvalue": 0.000678
+        },
+        "cpu_ms": {
+          "after": 73.020342,
+          "before": 171.788833,
+          "percent": -57.49,
+          "pvalue": 6e-06
+        }
+      },
+      "script": "window",
+      "status": "improvement",
+      "test": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e3077579faf4f@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "TimeWindowBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodColumnFiltered[last25pct]",
+      "epoch": "e3077579faf4f",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodColumnFiltered[last25pct]@e3077579faf4f.csv",
+      "found": "2026-11-27",
+      "id": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e3077579faf4f@md02f92f9f202@improvement@5f3b19115",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 28929514.285714,
+          "before": 30605560.0,
+          "percent": -5.48,
+          "pvalue": 0.0
+        }
+      },
+      "script": "window",
+      "status": "improvement",
+      "test": "TimeWindowBenchmark.hardwoodColumnFiltered[last25pct]@e3077579faf4f@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "c6eb5eb4b136f0a753eebb97eac4d24f5afef6d0",
+      "before_version": "1.1.0-mainc6eb5eb-SNAPSHOT",
+      "benchmark": "TimeWindowBenchmark",
+      "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "contender": "hardwoodRowFiltered[last25pct]",
+      "epoch": "e8328799634e7",
+      "file": "series/md02f92f9f202/TimeWindowBenchmark/hardwoodRowFiltered[last25pct]@e8328799634e7.csv",
+      "found": "2026-11-27",
+      "id": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@e8328799634e7@md02f92f9f202@improvement@5f5b27b66",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 88.80498,
+          "before": 99.67865,
+          "percent": -10.91,
+          "pvalue": 7.3e-05
+        }
+      },
+      "script": "window",
+      "status": "improvement",
+      "test": "TimeWindowBenchmark.hardwoodRowFiltered[last25pct]@e8328799634e7@md02f92f9f202",
+      "version": "1.1.0-main5f5b27b-SNAPSHOT"
+    },
+    {
+      "before_commit": "4e51455c6887e7b8ba2594d5b58a8159be630ba3",
+      "before_version": "1.1.0-main4e51455-SNAPSHOT",
+      "benchmark": "WideScanBenchmark",
+      "commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "contender": "hardwoodColumnar",
+      "epoch": "e5c5077129af3",
+      "file": "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e5c5077129af3.csv",
+      "found": "2026-11-27",
+      "id": "WideScanBenchmark.hardwoodColumnar@e5c5077129af3@md02f92f9f202@regression@5f5b27b66",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 27820.0,
+          "before": 5783.571429,
+          "percent": 381.02,
+          "pvalue": 0.000176
+        },
+        "wall_ms": {
+          "after": 39468.1,
+          "before": 3232.679286,
+          "percent": 1120.91,
+          "pvalue": 0.0
+        }
+      },
+      "script": "wide",
+      "status": "history",
+      "test": "WideScanBenchmark.hardwoodColumnar@e5c5077129af3@md02f92f9f202",
+      "version": "1.1.0-main5f5b27b-SNAPSHOT"
+    },
+    {
+      "before_commit": "c371968606d40e8f3db260bc8b71b6112ab41336",
+      "before_version": "1.1.0.CR1",
+      "benchmark": "WideScanBenchmark",
+      "commit": "3d331abd669aedfe8d80ddd18f8a719e08476599",
+      "contender": "hardwoodColumnar",
+      "epoch": "e5c5077129af3",
+      "file": "series/md02f92f9f202/WideScanBenchmark/hardwoodColumnar@e5c5077129af3.csv",
+      "found": "2026-11-27",
+      "id": "WideScanBenchmark.hardwoodColumnar@e5c5077129af3@md02f92f9f202@improvement@3d331abd6",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "cpu_ms": {
+          "after": 785.0,
+          "before": 39542.0,
+          "percent": -98.01,
+          "pvalue": 0.000327
+        },
+        "wall_ms": {
+          "after": 372.785,
+          "before": 39468.1,
+          "percent": -99.06,
+          "pvalue": 0.000295
+        }
+      },
+      "script": "wide",
+      "status": "improvement",
+      "test": "WideScanBenchmark.hardwoodColumnar@e5c5077129af3@md02f92f9f202",
+      "version": "1.1.0-main3d331ab-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "WriteBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodColumnar[ZSTD]",
+      "epoch": "e874d37616bec",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodColumnar[ZSTD]@e874d37616bec.csv",
+      "found": "2026-11-27",
+      "id": "WriteBenchmark.hardwoodColumnar[ZSTD]@e874d37616bec@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 85456066.666667,
+          "before": 78735750.0,
+          "percent": 8.54,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 412.1465,
+          "before": 317.5,
+          "percent": 29.81,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 103.228167,
+          "before": 306.5235,
+          "percent": -66.32,
+          "pvalue": 0.0
+        }
+      },
+      "script": "write",
+      "status": "improvement",
+      "test": "WriteBenchmark.hardwoodColumnar[ZSTD]@e874d37616bec@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "29c1af9c1a061d52e8f2b18c22d4ec8cba0e84ef",
+      "before_version": "1.1.0.Beta2",
+      "benchmark": "WriteBenchmark",
+      "commit": "69cb8478d8c1c67a981c7841d1b1f6342a7db1f4",
+      "contender": "hardwoodRow[ZSTD]",
+      "epoch": "e641ad6953670",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e641ad6953670.csv",
+      "found": "2026-11-27",
+      "id": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202@improvement@69cb8478d",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 123100200.0,
+          "before": 116535000.0,
+          "percent": 5.63,
+          "pvalue": 0.000627
+        },
+        "cpu_ms": {
+          "after": 669.5,
+          "before": 468.3335,
+          "percent": 42.95,
+          "pvalue": 8e-06
+        },
+        "wall_ms": {
+          "after": 298.0412,
+          "before": 467.767,
+          "percent": -36.28,
+          "pvalue": 5.9e-05
+        }
+      },
+      "script": "write",
+      "status": "improvement",
+      "test": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202",
+      "version": "1.1.0-main69cb847-SNAPSHOT"
+    },
+    {
+      "before_commit": "5f5b27b66cdaf7ee68e7461b3828b16bffbfc1c5",
+      "before_version": "1.1.0-main5f5b27b-SNAPSHOT",
+      "benchmark": "WriteBenchmark",
+      "commit": "5f3b1911517c531426c14fac20fa49e16aa444ab",
+      "contender": "hardwoodRow[ZSTD]",
+      "epoch": "e641ad6953670",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e641ad6953670.csv",
+      "found": "2026-11-27",
+      "id": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202@regression@5f3b19115",
+      "kind": "regression",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 137488000.0,
+          "before": 123100200.0,
+          "percent": 11.69,
+          "pvalue": 0.0
+        },
+        "wall_ms": {
+          "after": 314.443,
+          "before": 298.0412,
+          "percent": 5.5,
+          "pvalue": 0.0
+        }
+      },
+      "script": "write",
+      "status": "history",
+      "test": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202",
+      "version": "1.1.0-main5f3b191-SNAPSHOT"
+    },
+    {
+      "before_commit": "3c42b98a98531c1a21340d8f24640ce475752bfc",
+      "before_version": "1.1.0-main3c42b98-SNAPSHOT",
+      "benchmark": "WriteBenchmark",
+      "commit": "3d331abd669aedfe8d80ddd18f8a719e08476599",
+      "contender": "hardwoodRow[ZSTD]",
+      "epoch": "e641ad6953670",
+      "file": "series/md02f92f9f202/WriteBenchmark/hardwoodRow[ZSTD]@e641ad6953670.csv",
+      "found": "2026-11-27",
+      "id": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202@improvement@3d331abd6",
+      "kind": "improvement",
+      "machine": "md02f92f9f202",
+      "metrics": {
+        "alloc_bytes": {
+          "after": 125503500.0,
+          "before": 137488000.0,
+          "percent": -8.72,
+          "pvalue": 0.0
+        },
+        "cpu_ms": {
+          "after": 588.75,
+          "before": 655.5,
+          "percent": -10.18,
+          "pvalue": 0.000109
+        },
+        "wall_ms": {
+          "after": 269.939,
+          "before": 314.443,
+          "percent": -14.15,
+          "pvalue": 0.0
+        }
+      },
+      "script": "write",
+      "status": "improvement",
+      "test": "WriteBenchmark.hardwoodRow[ZSTD]@e641ad6953670@md02f92f9f202",
+      "version": "1.1.0-main3d331ab-SNAPSHOT"
+    }
+  ],
+  "generated": "2026-11-28T05:51:40Z",
   "machines": {
     "md02f92f9f202": {
       "cores": 8,
